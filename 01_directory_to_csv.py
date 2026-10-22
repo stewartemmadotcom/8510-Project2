@@ -5,6 +5,7 @@ import json
 import mimetypes
 import os
 import re
+from datetime import datetime
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -70,14 +71,21 @@ PRICES = {
     "gemini-2.5-flash-lite": (0.10, 0.40),
 }
 
+# Each run saves everything to its own folder: output/runs/<RUN_NAME>/
+# Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
+# results are kept. Reuse the same name to retry pages that failed or to
+# add more pages to a run.
+RUN_NAME = "2026-10-21_test"
+
 SCRIPT_DIR = Path(__file__).parent
 IMAGE_FOLDER = SCRIPT_DIR / "images"
-OUTPUT_FILE = SCRIPT_DIR / "output" / "land_directory.csv"
+RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME
+OUTPUT_FILE = RUN_FOLDER / "land_directory.csv"
+SETTINGS_FILE = RUN_FOLDER / "settings.json"
 
 # Each page's results are saved here as soon as Gemini returns them, and a
-# page that already has a file here is not sent again. After changing FIELDS
-# or PROMPT, delete this folder so every page is extracted fresh.
-PAGES_FOLDER = SCRIPT_DIR / "output" / "pages"
+# page that already has a file here is not sent again.
+PAGES_FOLDER = RUN_FOLDER / "pages"
 
 # Only extract these images, to check the results before a full run.
 # Set to [] to extract every image in IMAGE_FOLDER.
@@ -198,6 +206,41 @@ def fill_sections(rows):
             row["section"] = current.get(row["issue"], "")
 
 
+def run_settings():
+    """The settings that decide what Gemini returns. A run keeps one set."""
+    return {"model": MODEL, "prompt": PROMPT, "fields": [list(field) for field in FIELDS]}
+
+
+def start_run_record():
+    """Save this run's settings before any page is extracted. If the run
+    name was used before with different settings, return False."""
+    if SETTINGS_FILE.exists():
+        record = json.loads(SETTINGS_FILE.read_text(encoding="utf-8"))
+        if record["settings"] != run_settings():
+            print(f"Run '{RUN_NAME}' was made with different MODEL, PROMPT, or FIELDS.")
+            print("Give this run a new RUN_NAME so the earlier results are kept.")
+            return False
+        return True
+    RUN_FOLDER.mkdir(parents=True, exist_ok=True)
+    record = {"run_name": RUN_NAME, "settings": run_settings(), "log": []}
+    SETTINGS_FILE.write_text(json.dumps(record, indent=2, ensure_ascii=False), encoding="utf-8")
+    return True
+
+
+def log_run(images, row_count, cost, failed):
+    """Add a line to settings.json for each time the script is run."""
+    record = json.loads(SETTINGS_FILE.read_text(encoding="utf-8"))
+    record["log"].append({
+        "date": datetime.now().isoformat(timespec="seconds"),
+        "test_pages": TEST_PAGES,
+        "images": [p.name for p in images],
+        "failed": failed,
+        "rows": row_count,
+        "cost_usd": round(cost, 6),
+    })
+    SETTINGS_FILE.write_text(json.dumps(record, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def calculate_cost(input_tokens, output_tokens):
     input_price, output_price = PRICES[MODEL]
     return (input_tokens * input_price + output_tokens * output_price) / 1_000_000
@@ -217,6 +260,9 @@ def main():
     if not images:
         print(f"No images found in {IMAGE_FOLDER}")
         return
+    if not start_run_record():
+        return
+    print(f"Run: {RUN_NAME}  (saving to {RUN_FOLDER.relative_to(SCRIPT_DIR)})\n")
 
     client = genai.Client(api_key=api_key)
     PAGES_FOLDER.mkdir(parents=True, exist_ok=True)
@@ -278,6 +324,7 @@ def main():
     print("=" * 40)
     print(f"Saved {len(all_rows)} rows to {OUTPUT_FILE.relative_to(SCRIPT_DIR)}")
     print(f"Total cost: ${total_cost:.6f}")
+    log_run(images, len(all_rows), total_cost, failed)
     if failed:
         print(f"\n{len(failed)} page(s) failed: {', '.join(failed)}")
         print("Run the script again to retry them; saved pages won't be sent again.")
