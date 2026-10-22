@@ -1,0 +1,202 @@
+{
+  "run_name": "2026-10-21_gemini-flash-lite-3.5",
+  "settings": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. This image is a page from the periodical Lesbian Connection. Specifically, it is part of Lesbian Connection's Land Directory, which listed communities across the country. Extract every listing on the page as one row, in the order they appear.\nSome listings continue from one page to the next. If the text at the top of the page does not start with a community name, it is the end of a listing from the previous page: extract it as its own entry and follow the instructions for the continues_previous column.\nDo not extract these as listings: the page number, section headings (record them in the section field instead), introductory or explanatory paragraphs that are not a listing, the \"This content downloaded from...\" notice at the bottom of the page, and faint text showing through from the back of the page.\n\nRules:\n- Extract EVERY entry. Never skip an entry because a field is unclear or\n  missing: leave that field empty instead. An entry with blank fields is\n  better than a missing entry.\n- Transcribe exactly as printed. Do not correct spelling, expand\n  abbreviations, or modernize anything.\n  Also report the printed page number. ",
+    "fields": [
+      [
+        "section",
+        "If a centered, underlined section heading (e.g. TRIPS, ALTERNATIVE LAND) appears on this page above this listing, transcribe the nearest one exactly as printed. If no heading appears above it on this page, leave blank."
+      ],
+      [
+        "community_name",
+        "Transcribe the community name exactly as written. This is usually underlined, in bold, or in all capital letters at the beginning of a listing. (e.g. FEATHERS FARM, DUTCH MOUNTAIN, NORTH CROW VACATION RANCH)"
+      ],
+      [
+        "street_address",
+        "Transcribe the street address exactly as printed. If it is not included, leave blank."
+      ],
+      [
+        "city",
+        "Transcribe the city or town exactly as printed. If it is not included, leave blank."
+      ],
+      [
+        "state",
+        "Transcribe the state or province exactly as printed. If it is not included, leave blank."
+      ],
+      [
+        "zip",
+        "Transcribe the zip or postal code exactly as printed. If it is not provided, leave blank."
+      ],
+      [
+        "country",
+        "Transcribe the country exactly as printed. If it is not included, leave blank."
+      ],
+      [
+        "phone",
+        "Transcribe the phone numbers exactly as printed. If it is not included, leave blank."
+      ],
+      [
+        "acreage",
+        "Transcribe the number of acres of the land community exactly as printed, if it is provided. (e.g. 3/4 acre, 100 acres) If not, leave blank."
+      ],
+      [
+        "num_residents",
+        "Transcribe the number of residents exactly as printed. Do not count, add up, or estimate. (e.g. 4 lesbians, 1 nonlesbian) If it is not provided, leave blank."
+      ],
+      [
+        "land_description",
+        "Transcribe verbatim the description of the land community as described in the listing. If there is none, leave blank."
+      ],
+      [
+        "welcomed_groups",
+        "If a listing specifically notes that they welcome certain types of people, include those people here. (e.g. 'We welcome: girl children' 'We welcome: girl children, boy babies, nonlesbian women')"
+      ],
+      [
+        "notes",
+        "Transcribe exactly as printed any information in the listing that is not already captured in another field. Do not repeat text that is in another field. Leave empty if there is nothing left over."
+      ],
+      [
+        "continues_previous",
+        "Write 'yes' only if this is the first text on the page and it does not start with a community name, because it is the end of a listing that began on the previous page. It may start partway through a sentence, address, or phone number. Leave community_name blank and put the text in whichever other fields fit. Otherwise leave this blank."
+      ]
+    ]
+  },
+  "log": [
+    {
+      "date": "2026-10-21T23:58:55",
+      "test_pages": [],
+      "images": [
+        "lc-december82-023.png",
+        "lc-december82-024.png",
+        "lc-december82-025.png",
+        "lc-december82-026.png",
+        "lc-december82-027.png",
+        "lc-july86-020.png",
+        "lc-july88-018.png",
+        "lc-july88-019.png",
+        "lc-july88-020.png",
+        "lc-july88-021.png",
+        "lc-july88-022.png",
+        "lc-july88-023.png",
+        "lc-july88-024.png",
+        "lc-july88-025.png",
+        "lc-june83-024.png",
+        "lc-june83-025.png",
+        "lc-june83-026.png",
+        "lc-march83-020.png",
+        "lc-march83-021.png",
+        "lc-march86-009.png",
+        "lc-march86-010.png",
+        "lc-march86-011.png",
+        "lc-march86-012.png",
+        "lc-march86-013.png",
+        "lc-may86-007.png",
+        "lc-may86-008.png",
+        "lc-may86-009.png",
+        "lc-may88-015.png",
+        "lc-may88-016.png",
+        "lc-may88-017.png",
+        "lc-may88-018.png",
+        "lc-september76-014.png",
+        "lc-september76-015.png",
+        "lc-september76-016.png"
+      ],
+      "failed": [
+        "lc-july88-023.png"
+      ],
+      "rows": 253,
+      "cost_usd": 0.189156
+    },
+    {
+      "date": "2026-10-21T23:59:10",
+      "test_pages": [],
+      "images": [
+        "lc-december82-023.png",
+        "lc-december82-024.png",
+        "lc-december82-025.png",
+        "lc-december82-026.png",
+        "lc-december82-027.png",
+        "lc-july86-020.png",
+        "lc-july88-018.png",
+        "lc-july88-019.png",
+        "lc-july88-020.png",
+        "lc-july88-021.png",
+        "lc-july88-022.png",
+        "lc-july88-023.png",
+        "lc-july88-024.png",
+        "lc-july88-025.png",
+        "lc-june83-024.png",
+        "lc-june83-025.png",
+        "lc-june83-026.png",
+        "lc-march83-020.png",
+        "lc-march83-021.png",
+        "lc-march86-009.png",
+        "lc-march86-010.png",
+        "lc-march86-011.png",
+        "lc-march86-012.png",
+        "lc-march86-013.png",
+        "lc-may86-007.png",
+        "lc-may86-008.png",
+        "lc-may86-009.png",
+        "lc-may88-015.png",
+        "lc-may88-016.png",
+        "lc-may88-017.png",
+        "lc-may88-018.png",
+        "lc-september76-014.png",
+        "lc-september76-015.png",
+        "lc-september76-016.png"
+      ],
+      "failed": [
+        "lc-july88-023.png"
+      ],
+      "rows": 253,
+      "cost_usd": 0.0
+    },
+    {
+      "date": "2026-10-22T00:05:37",
+      "test_pages": [],
+      "images": [
+        "lc-december82-023.png",
+        "lc-december82-024.png",
+        "lc-december82-025.png",
+        "lc-december82-026.png",
+        "lc-december82-027.png",
+        "lc-july86-020.png",
+        "lc-july88-018.png",
+        "lc-july88-019.png",
+        "lc-july88-020.png",
+        "lc-july88-021.png",
+        "lc-july88-022.png",
+        "lc-july88-023.png",
+        "lc-july88-024.png",
+        "lc-july88-025.png",
+        "lc-june83-024.png",
+        "lc-june83-025.png",
+        "lc-june83-026.png",
+        "lc-march83-020.png",
+        "lc-march83-021.png",
+        "lc-march86-009.png",
+        "lc-march86-010.png",
+        "lc-march86-011.png",
+        "lc-march86-012.png",
+        "lc-march86-013.png",
+        "lc-may86-007.png",
+        "lc-may86-008.png",
+        "lc-may86-009.png",
+        "lc-may88-015.png",
+        "lc-may88-016.png",
+        "lc-may88-017.png",
+        "lc-may88-018.png",
+        "lc-september76-014.png",
+        "lc-september76-015.png",
+        "lc-september76-016.png"
+      ],
+      "failed": [
+        "lc-july88-023.png: Gemini returned no text (finish reason: RECITATION; feedback: None)"
+      ],
+      "rows": 253,
+      "cost_usd": 0.0
+    }
+  ]
+}

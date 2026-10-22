@@ -132,7 +132,19 @@ def extract_page(client, image_path):
             response_json_schema=build_schema(FIELDS),  # ...shaped like this
         ),
     )
-    return json.loads(response.text), response
+
+    # Say why an answer is unusable: the finish reason shows whether Gemini
+    # ran out of room (MAX_TOKENS), refused to copy text (RECITATION), etc.
+    candidate = response.candidates[0] if response.candidates else None
+    finish = candidate.finish_reason.name if candidate and candidate.finish_reason else "none given"
+    if not response.text:
+        raise ValueError(f"Gemini returned no text (finish reason: {finish}; "
+                         f"feedback: {response.prompt_feedback})")
+    try:
+        return json.loads(response.text), response
+    except json.JSONDecodeError:
+        raise ValueError(f"Gemini's answer was not complete JSON (finish reason: {finish}; "
+                         f"answer ended with: ...{response.text[-80:]!r})")
 
 
 def issue_from_filename(image_path):
@@ -282,7 +294,7 @@ def main():
                 data, response = extract_page(client, image_path)
             except Exception as err:
                 print(f"  FAILED: {err}\n")
-                failed.append(image_path.name)
+                failed.append(f"{image_path.name}: {err}")
                 continue
             saved_page.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
 
@@ -326,7 +338,9 @@ def main():
     print(f"Total cost: ${total_cost:.6f}")
     log_run(images, len(all_rows), total_cost, failed)
     if failed:
-        print(f"\n{len(failed)} page(s) failed: {', '.join(failed)}")
+        print(f"\n{len(failed)} page(s) failed:")
+        for failure in failed:
+            print(f"  {failure}")
         print("Run the script again to retry them; saved pages won't be sent again.")
 
 
