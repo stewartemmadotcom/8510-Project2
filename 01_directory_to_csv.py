@@ -75,7 +75,7 @@ PRICES = {
 # Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
 # results are kept. Reuse the same name to retry pages that failed or to
 # add more pages to a run.
-RUN_NAME = "2026-10-21_test"
+RUN_NAME = "2026-10-21_gemini-flash-lite-3.5"
 
 SCRIPT_DIR = Path(__file__).parent
 IMAGE_FOLDER = SCRIPT_DIR / "images"
@@ -89,7 +89,7 @@ PAGES_FOLDER = RUN_FOLDER / "pages"
 
 # Only extract these images, to check the results before a full run.
 # Set to [] to extract every image in IMAGE_FOLDER.
-TEST_PAGES = ["lc-may86-007.png", "lc-may86-008.png"]
+TEST_PAGES = []
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 
