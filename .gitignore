@@ -3,3 +3,4 @@ venv/
 venv/
 pdfs/
 images/
+.DS_Store
