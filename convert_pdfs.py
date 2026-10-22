@@ -6,7 +6,7 @@ from pathlib import Path
 
 # ---Settings---
 INPUT_DIR = Path("pdfs") 
-OUTPUT_DIR = Path("images")
+OUTPUT_DIR = Path("images") / "all_pages"
 DPI = 300
 # ----- 
 
@@ -44,7 +44,7 @@ def main() -> None:
         except subprocess.CalledProcessError as err:
             print(f" Failed on {pdf.name} (exit code {err.returncode}); skipping.")
 
-        print(f"Done. Images are in {OUTPUT_DIR.resolve()}")
+    print(f"Done. Images are in {OUTPUT_DIR.resolve()}")
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
