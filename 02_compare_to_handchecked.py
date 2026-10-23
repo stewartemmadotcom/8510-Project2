@@ -63,11 +63,20 @@ COLUMNS = [
 TEXT_FIELDS = [   # same text after trimming spaces and ignoring case
     "row_kind", "type",
     "contact_name", "contact_street_address", "contact_city", "contact_state", "contact_zip",
-    "land_street_address", "land_city", "land_state", "land_zip", "land_location_as_stated",
+    "land_street_address", "land_city", "land_state", "land_zip",
 ]
+# Same place phrase, allowing a few words more or less: after ignoring case,
+# punctuation and leading words like "located in the", the two are the same
+# or one contains the other ("in the Adirondacks" = "the Adirondacks";
+# "Central Maine" = "tucked away in the woods of Central Maine").
+# A blank never matches a filled-in value.
+LOOSE_TEXT_FIELDS = ["land_location_as_stated"]
 NUMBER_FIELDS = ["page", "acreage", "num_residents"]   # same number; blank must equal blank
 LIST_FIELDS = ["accepted_groups", "focuses"]            # same set of names
-SCORED_FIELDS = TEXT_FIELDS + NUMBER_FIELDS + LIST_FIELDS + ["raw_text"]
+SCORED_FIELDS = TEXT_FIELDS + LOOSE_TEXT_FIELDS + NUMBER_FIELDS + LIST_FIELDS + ["raw_text"]
+
+# Words dropped from the start of a place phrase before comparing
+LEADING_WORDS = {"located", "in", "the", "a", "an", "on", "at"}
 
 # ----------------------------------------------------------------------------
 
@@ -236,6 +245,21 @@ def clean(text):
     return " ".join(text.split()).casefold()
 
 
+def place_phrase(text):
+    """'Located in the rolling Berkshire mountains.' -> 'rolling berkshire mountains'"""
+    words = re.sub(r"[^\w\s]", " ", text.casefold()).split()
+    while words and words[0] in LEADING_WORDS:
+        words.pop(0)
+    return " ".join(words)
+
+
+def same_place(hand_value, model_value):
+    hand, model = place_phrase(hand_value), place_phrase(model_value)
+    if not hand or not model:
+        return hand == model   # both blank agree; blank vs. filled does not
+    return hand == model or hand in model or model in hand
+
+
 def as_number(text):
     """'145' -> 145.0, '' -> None, anything unreadable stays as text."""
     text = text.strip()
@@ -255,6 +279,8 @@ def compare_field(field, hand_value, model_value):
     """Returns (agrees?, a short explanation for lists and raw_text)."""
     if field in TEXT_FIELDS:
         return clean(hand_value) == clean(model_value), ""
+    if field in LOOSE_TEXT_FIELDS:
+        return same_place(hand_value, model_value), ""
     if field in NUMBER_FIELDS:
         return as_number(hand_value) == as_number(model_value), ""
     if field in LIST_FIELDS:

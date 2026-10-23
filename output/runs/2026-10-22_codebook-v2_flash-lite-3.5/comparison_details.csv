@@ -1,5 +1,6 @@
 issue,page,community,field,hand_value,model_value,explanation
 september76,14,Four Women,focuses,Lesbian separatism,,model missed: lesbian separatism
+september76,14,Ashfield Farm Women,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
 december82,21,Womonground,accepted_groups,Lesbian women; Non-lesbian women; Girl children,Lesbian women; Non-lesbian women; Girl children; Boy children,model added: boy children
 december82,22,The Beachtree,focuses,Disabled women,Disabled women; Farming/self-sufficiency,model added: farming/self-sufficiency
 december82,22,Susan Stone's land,num_residents,0,1,
@@ -7,6 +8,7 @@ december82,22,Susan Stone's land,accepted_groups,,Lesbian women,model added: les
 december82,22,Turtle Land for Wimmin,num_residents,,10,
 december82,22,Turtle Land for Wimmin,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Boy children,model missed: non-lesbian women
 december82,22,Turtle Land for Wimmin,focuses,Spirituality/ritual; Farming/self-sufficiency; Workshops/education,Spirituality/ritual; Farming/self-sufficiency,model missed: workshops/education
+december82,22,Herland,num_residents,0,1,
 december82,22,Okra Ridge Farm,focuses,Recovery/substance-free; Archives/cultural work,Recovery/substance-free; Archives/cultural work; Farming/self-sufficiency,model added: farming/self-sufficiency
 december82,23,Wisconsin Womyn's Land Co-op,focuses,Farming/self-sufficiency; Environmentalism/eco-friendly,Environmentalism/eco-friendly,model missed: farming/self-sufficiency
 december82,23,The Web,focuses,Disabled women; Environmentalism/eco-friendly,,model missed: disabled women; environmentalism/eco-friendly
@@ -16,13 +18,19 @@ december82,23,Yorkville Women's Land Collective,focuses,,Recovery/substance-free
 december82,23,The Ranch,num_residents,,0,
 december82,23,Lavender Hill,acreage,60,160,
 december82,23,Lavender Hill,focuses,Older women; Working-class women; Farming/self-sufficiency; Women of color,Older women; Farming/self-sufficiency,model missed: women of color; working-class women
+december82,24,Who Farm Inc,num_residents,4,,
+december82,24,Who Farm Inc,focuses,Farming/self-sufficiency; Workshops/education,Workshops/education,model missed: farming/self-sufficiency
 december82,24,Rainbow's End,num_residents,5,,
 december82,24,Goldenwimmin,num_residents,10,,
 december82,24,Goldenwimmin,accepted_groups,Lesbian women; Girl children; Boy children,Lesbian women; Non-lesbian women; Girl children; Boy children,model added: non-lesbian women
+december82,24,Womanshare,num_residents,5,,
 december82,25,Far Away Farm,focuses,Spirituality/ritual; Archives/cultural work,Recovery/substance-free; Archives/cultural work,model missed: spirituality/ritual | model added: recovery/substance-free
+march83,18,Laughing Rock Farm,land_location_as_stated,"on an old blue stone quarry with a lovely, secluded pond",,
+march83,18,Laughing Rock Farm,focuses,Disabled women; Lesbian separatism; Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Lesbian separatism; Spirituality/ritual; Farming/self-sufficiency; Workshops/education,model missed: disabled women; environmentalism/eco-friendly | model added: spirituality/ritual
 march83,18,Northwoods,num_residents,6,,
 march83,18,Northwoods,accepted_groups,Lesbian women; Girl children,Lesbian women; Non-lesbian women; Girl children,model added: non-lesbian women
 march83,18,Northwoods,focuses,Farming/self-sufficiency,Farming/self-sufficiency; Environmentalism/eco-friendly,model added: environmentalism/eco-friendly
+march83,18,Misty Bottoms Farm,accepted_groups,Lesbian women; Girl children,Lesbian women; Non-lesbian women; Girl children,model added: non-lesbian women
 march83,18,Silver Circle Farm,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Non-lesbian women; Girl children; Boy children; Gay men; Non-gay men,model added: gay men; non-gay men
 march83,18,Silver Circle Farm,focuses,Farming/self-sufficiency,Spirituality/ritual; Farming/self-sufficiency,model added: spirituality/ritual
 march83,18,Earth Current Womens Hermitage,focuses,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work; Environmentalism/eco-friendly,model added: environmentalism/eco-friendly
@@ -37,22 +45,24 @@ march86,9,Silver Circle Farm,num_residents,2,4,
 march86,9,Silver Circle Farm,focuses,Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Farming/self-sufficiency,model missed: environmentalism/eco-friendly; workshops/education
 march86,9,Silver Circle Farm,raw_text,"SILVER CIRCLE FARM c/o Gwen O Demeter, Rt 5 Box 100, Holly Springs, MS 38635. We are presently two wimmin living on the land and two wimmin living in different cities who share financial/emotional responsibilities for caretaking 40 acres. We are an intentional family of four who enjoy the support of several other extended family members who visit regularly to help with the farmwork and enjoy its special energy. Our interests include spiritual tolerance and development, organic farming, prosperity thinking and being, networking, and providing a working example of an alternative to patriarchal patterns. We give training in survival back to the earth skills: organic gardening, woodswomanship, natural healing, carpentry, plumbing, etc. We welcome: new members/residents, girl & boy children, nonlesbian women, dogs on leash. We have/are: 4 lesbians, 40 acres, housing/permanent structures, electricity, outhouse, running water in kitchen, camping space, woods, farmland, women living and working on the land.","SILVER CIRCLE FARM c/o Gwen O Demeter, Rt 5 Box 100, Holly Springs, MS 38635. We are presently two wimmin living on the land and two wimmin living in different cities who share financial/emotional responsibilities for caretaking 40 acres. We are an intentional family of four who enjoy the support of several other extended family members who visit regularly to help with the farmwork and enjoy its special energy. Our interests include spiritual tolerance and development, organic gardening, woodswomanship, natural healing, carpentry, plumbing, etc. We welcome: new members/residents, girl & boy children, nonlesbian women, dogs on leash. We have/are: 4 lesbians, 40 acres, housing/permanent structures, electricity, outhouse, running water in kitchen, camping space, woods, farmland, women living and working on the land.",similarity 0.897
 march86,9,O.W.L. Sanctuary,focuses,Spirituality/ritual; Women of color,Spirituality/ritual; Environmentalism/eco-friendly,model missed: women of color | model added: environmentalism/eco-friendly
+march86,9,Wisconsin Womyn's Land Co-op,land_location_as_stated,west central Wisconsin,,
+march86,9,Wisconsin Womyn's Land Co-op,num_residents,4,10,
+march86,9,Wisconsin Womyn's Land Co-op,focuses,Farming/self-sufficiency; Environmentalism/eco-friendly,Farming/self-sufficiency,model missed: environmentalism/eco-friendly
 march86,9,Earth Current Womens Hermitage,num_residents,2,,
 march86,9,Earth Current Womens Hermitage,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women,model missed: boy children; girl children; non-lesbian women
 march86,9,Earth Current Womens Hermitage,focuses,Spirituality/ritual,,model missed: spirituality/ritual
+march86,10,Arlene & Arline's land,land_location_as_stated,beautiful desert country with big skies filled with stars,,
+march86,10,Arlene & Arline's land,focuses,Farming/self-sufficiency,,model missed: farming/self-sufficiency
 march86,10,Bee Song Honey Farms,accepted_groups,,Lesbian women,model added: lesbian women
 march86,10,Bee Song Honey Farms,focuses,Farming/self-sufficiency; Archives/cultural work,Farming/self-sufficiency,model missed: archives/cultural work
+march86,10,"Penthesileia, Inc",focuses,Workshops/education,,model missed: workshops/education
 march86,10,Rainbow's End,accepted_groups,Lesbian women; Girl children,Lesbian women,model missed: girl children
 march86,10,Rainbow's End,focuses,Older women; Spirituality/ritual; Environmentalism/eco-friendly,Environmentalism/eco-friendly; Spirituality/ritual,model missed: older women
 september76,13,Oregon Women's Land Trust,contact_name,,Oregon Women's Land Trust,
 september76,13,Oregon Women's Land Trust,focuses,Working-class women; Farming/self-sufficiency,,model missed: farming/self-sufficiency; working-class women
 september76,14,Nourishing Space for Women,contact_street_address,PO Box D-11,"Cave Canyon Ranch, PO Box D-11",
-september76,14,Ashfield Farm Women,land_location_as_stated,a farm in Massachusetts,on a farm in Massachusetts,
-september76,14,Ashfield Farm Women,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
 september76,14,Womanshare,type,Retreat/Gathering Space,Intentional Community/Cooperative,
 september76,14,Womanshare,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Non-lesbian women,model missed: boy children; girl children
-december82,22,Herland,land_location_as_stated,"Pittsboro, NC","in Pittsboro, NC",
-december82,22,Herland,num_residents,0,1,
 december82,22,Spiral Wimmin's Land Trust,land_state,,KY,
 december82,22,Spiral Wimmin's Land Trust,num_residents,,12,
 december82,22,Spiral Wimmin's Land Trust,accepted_groups,Lesbian women; Non-lesbian women; Girl children,Lesbian women; Non-lesbian women,model missed: girl children
@@ -61,15 +71,14 @@ december82,23,"Rebecca, Susan, Anne & Maurine's land",type,Intentional Community
 december82,23,"Rebecca, Susan, Anne & Maurine's land",num_residents,0,4,
 december82,23,"Rebecca, Susan, Anne & Maurine's land",accepted_groups,Lesbian women,Lesbian women; Non-lesbian women,model added: non-lesbian women
 december82,23,"Rebecca, Susan, Anne & Maurine's land",focuses,Spirituality/ritual; Environmentalism/eco-friendly,Environmentalism/eco-friendly,model missed: spirituality/ritual
-december82,24,Who Farm Inc,land_location_as_stated,approx 30 miles SE of Portland,30 miles SE of Portland,
-december82,24,Who Farm Inc,num_residents,4,,
-december82,24,Who Farm Inc,focuses,Farming/self-sufficiency; Workshops/education,Workshops/education,model missed: farming/self-sufficiency
-december82,24,Womanshare,land_location_as_stated,forested land in Southern OR,Southern OR,
-december82,24,Womanshare,num_residents,5,,
-march83,18,Laughing Rock Farm,land_location_as_stated,"on an old blue stone quarry with a lovely, secluded pond",,
-march83,18,Laughing Rock Farm,focuses,Disabled women; Lesbian separatism; Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Lesbian separatism; Spirituality/ritual; Farming/self-sufficiency; Workshops/education,model missed: disabled women; environmentalism/eco-friendly | model added: spirituality/ritual
-march83,18,Misty Bottoms Farm,land_location_as_stated,in a hollow on a creek in the mountains of WV,in the mountains of WV,
-march83,18,Misty Bottoms Farm,accepted_groups,Lesbian women; Girl children,Lesbian women; Non-lesbian women; Girl children,model added: non-lesbian women
+march83,18,Cedar,land_city,,Camptonville,
+march83,18,Cedar,focuses,,Recovery/substance-free; Farming/self-sufficiency; Workshops/education,model added: farming/self-sufficiency; recovery/substance-free; workshops/education
+march83,18,Cedar,raw_text,"CEDAR c/o Linda or Sara, PO Box 274, Camptonville, CA 95922. We are a couple in our 40's, vegies/non-smokers, living on 13 acres, deeply forested, sub-alpine beauty at 3200'. Looking for 1-3 semi-collective members, very hard to make a living locally, rural, quite isolated, wet winters, hot summers, near incredible Yuba River, other parcels for sale nearby and looking for lesbian buyers. We welcome: new members, girl and boy children, nonlesbian women. We have/are: 2 lesbians, 13 acres, trailer, shed, electricity/well, camping space, woods, organic garden/ orchard, women living and working on the land.","CEDAR c/o Linda or Sara, PO Box 274, Camptonville, CA 95922. We are a couple in our 40's, vegies/non-smokers, living on 13 acres, deeply forested, sub-alpine beauty at 3200'. Looking for 1-3 semi-collective members, very hard to make a living locally, rural, quite isolated, wet winters, hot summers, near incredible Yuba River, other parcels for sale nearby and looking for lesbian buyers. We welcome: new members, girl and boy children, nonlesbian women. We have/are: 2 lesbians, 13 acres, trailer, shed, electricity/well, camping space, woods, organic garden/ orchard, women living and working on the land. oriented homestead whose main farm income is from sales of bees and honey and from hatching rare breeds of poultry. Off-farm income is derived from graphic design, photography and writing for the organic agriculture journals. We also produce and sell lesbian/feminist t-shirts and rubber stamps under the name of Armadillo Mountain. Would welcome correspondence with other lesbians on the land. Longer-term apprenticeships/work exchanges are a possibility. Would also trade apprenticeships in beekeeping and Permaculture (particularly dryland and forage systems) for some good, solid vocational skills, especially carpentry and stone masonry. We have/are: 2 lesbians, 22 acres, good tools and equipment, dogs, cats, chickens, ducks, guineas, peabirds and 60 zillion bees.",similarity 0.612
+march83,19,Fly Away Home,type,Intentional Community/Cooperative,Private/Individual Land,
+march83,19,Fly Away Home,land_location_as_stated,a secluded forest hilltop,,
+march83,19,Fly Away Home,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
+march83,19,Fly Away Home,focuses,Spirituality/ritual; Farming/self-sufficiency; Workshops/education; Archives/cultural work,,model missed: archives/cultural work; farming/self-sufficiency; spirituality/ritual; workshops/education
+march83,19,Fly Away Home,raw_text,"FLY AWAY HOME POB 593, Myrtle Creek, OR 97457. We are a family of 4 lesbians living on a secluded forest hilltop. We grow food and tender our emotional and spiritual depths. And we make art and song that celebrate woman. We invite women to our workshops in Theatre and in Tai Chi several times during the year. We are unable to welcome visitors at other times. We have/are: 4 lesbians, 40 acres, housing/permanent structures, woods, farm land, women living and working on the land.","FLY AWAY HOME POB 593, Myrtle Creek, OR 97457. We are a family of 4 lesbians living on a secluded forest hilltop. We grow food and tender our emotional and spiritual depths. And we make art and song that celebrate woman. We invite women to our workshops in Theatre and in Tai Chi several times during the year. We are unable to welcome visitors at other times. We have/are: 4 lesbians, 40 acres, housing/permanent structures, woods, farm land, women living and working the land.",similarity 0.978
 march83,19,Ozark Wimmin's Land Trust,land_state,,AR,
 june83,23,Hardscrabble Hill Center,contact_name,,none,
 june83,23,Hardscrabble Hill Center,accepted_groups,Lesbian women; Non-lesbian women,,model missed: lesbian women; non-lesbian women
@@ -81,8 +90,12 @@ june83,23,Oneida Farm,contact_name,,none,
 june83,23,Oneida Farm,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
 june83,23,Moon Ridge,contact_name,,none,
 june83,23,Moon Ridge,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Boy children,model missed: non-lesbian women
+june83,23,Whispering Winds,contact_name,,none,
+june83,23,Whispering Winds,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
 march86,7,Feathers Farm,type,Intentional Community/Cooperative,Private/Individual Land,
 march86,7,Feathers Farm,num_residents,3,,
+march86,8,Gathering Ground,type,Private/Individual Land,Intentional Community/Cooperative,
+march86,8,Gathering Ground,land_location_as_stated,End of #10 Rd; central Maine,,
 march86,8,Deer Song,type,Intentional Community/Cooperative,Private/Individual Land,
 march86,8,Deer Song,num_residents,1,3,
 march86,8,Deer Song,accepted_groups,Lesbian women; Girl children; Boy children,Lesbian women; Non-lesbian women; Girl children; Boy children,model added: non-lesbian women
@@ -95,20 +108,19 @@ march86,8,Herland,accepted_groups,Lesbian women; Girl children; Boy children,Les
 march86,9,Spiral Wimmin's Land Trust,land_city,,Monticello,
 march86,9,Spiral Wimmin's Land Trust,num_residents,,33,
 march86,9,Spiral Wimmin's Land Trust,focuses,Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Farming/self-sufficiency,model missed: environmentalism/eco-friendly; workshops/education
-march86,9,Susan B Anthony Memorial Unrest Home,land_location_as_stated,"near Athens, OH; near Ohio University in the Appalachian hills","near Athens, OH",
-march86,9,Wisconsin Womyn's Land Co-op,land_location_as_stated,west central Wisconsin,,
-march86,9,Wisconsin Womyn's Land Co-op,num_residents,4,10,
-march86,9,Wisconsin Womyn's Land Co-op,focuses,Farming/self-sufficiency; Environmentalism/eco-friendly,Farming/self-sufficiency,model missed: environmentalism/eco-friendly
-march86,10,Arlene & Arline's land,land_location_as_stated,beautiful desert country with big skies filled with stars,,
-march86,10,Arlene & Arline's land,focuses,Farming/self-sufficiency,,model missed: farming/self-sufficiency
-march86,10,"Penthesileia, Inc",land_location_as_stated,central Oregon coast,central Oregon coast climate,
-march86,10,"Penthesileia, Inc",focuses,Workshops/education,,model missed: workshops/education
 march86,10,Rootworks,type,Intentional Community/Cooperative,Private/Individual Land,
 march86,10,Rootworks,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Non-lesbian women,model missed: boy children
-march86,10,Womanshare,land_location_as_stated,forested land in southern Oregon,southern Oregon,
+march86,11,River Spirit Retreat,land_city,,Kampsville,
+march86,11,River Spirit Retreat,focuses,Workshops/education,,model missed: workshops/education
 september76,13,California Women's Land Trust,type,Land Fund/Seeking Land,Land Trust,
 september76,13,California Women's Land Trust,land_state,CA,,
 september76,13,California Women's Land Trust,focuses,Working-class women; Farming/self-sufficiency,,model missed: farming/self-sufficiency; working-class women
+september76,14,Women's Ways Retreat,contact_name,Andrews/Mulholland,,
+september76,14,Women's Ways Retreat,contact_street_address,"RD1, Box 375A","Andrews/Mulholland, RD1, Box 375A",
+september76,14,Women's Ways Retreat,acreage,10,100,
+september76,14,A Woman's Place,contact_street_address,,A Woman's Place,
+september76,14,A Woman's Place,land_zip,12810,,
+september76,14,A Woman's Place,num_residents,,7,
 december82,23,Jan F Walsh's land,contact_street_address,"Two Towers, 201 S 132nd Ave",201 S 132nd Ave,
 december82,23,Jan F Walsh's land,land_street_address,"Two Towers, 201 S 132nd Ave",201 S 132nd Ave,
 december82,23,Jan F Walsh's land,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children; Gay men; Non-gay men,Lesbian women; Non-lesbian women; Girl children; Boy children,model missed: gay men; non-gay men
@@ -120,18 +132,9 @@ december82,25,Oakynwomyn,contact_street_address,Twin Oaks Community,Louisa,
 december82,25,Oakynwomyn,land_street_address,,Louisa,
 december82,25,Oakynwomyn,num_residents,69,4,
 december82,25,Oakynwomyn,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children; Gay men; Non-gay men,Lesbian women; Non-lesbian women; Gay men; Non-gay men,model missed: boy children; girl children
-march83,18,Cedar,land_city,,Camptonville,
-march83,18,Cedar,land_location_as_stated,"deeply forested, sub-alpine beauty at 3200'... near incredible Yuba River",sub-alpine beauty at 3200',
-march83,18,Cedar,focuses,,Recovery/substance-free; Farming/self-sufficiency; Workshops/education,model added: farming/self-sufficiency; recovery/substance-free; workshops/education
-march83,18,Cedar,raw_text,"CEDAR c/o Linda or Sara, PO Box 274, Camptonville, CA 95922. We are a couple in our 40's, vegies/non-smokers, living on 13 acres, deeply forested, sub-alpine beauty at 3200'. Looking for 1-3 semi-collective members, very hard to make a living locally, rural, quite isolated, wet winters, hot summers, near incredible Yuba River, other parcels for sale nearby and looking for lesbian buyers. We welcome: new members, girl and boy children, nonlesbian women. We have/are: 2 lesbians, 13 acres, trailer, shed, electricity/well, camping space, woods, organic garden/ orchard, women living and working on the land.","CEDAR c/o Linda or Sara, PO Box 274, Camptonville, CA 95922. We are a couple in our 40's, vegies/non-smokers, living on 13 acres, deeply forested, sub-alpine beauty at 3200'. Looking for 1-3 semi-collective members, very hard to make a living locally, rural, quite isolated, wet winters, hot summers, near incredible Yuba River, other parcels for sale nearby and looking for lesbian buyers. We welcome: new members, girl and boy children, nonlesbian women. We have/are: 2 lesbians, 13 acres, trailer, shed, electricity/well, camping space, woods, organic garden/ orchard, women living and working on the land. oriented homestead whose main farm income is from sales of bees and honey and from hatching rare breeds of poultry. Off-farm income is derived from graphic design, photography and writing for the organic agriculture journals. We also produce and sell lesbian/feminist t-shirts and rubber stamps under the name of Armadillo Mountain. Would welcome correspondence with other lesbians on the land. Longer-term apprenticeships/work exchanges are a possibility. Would also trade apprenticeships in beekeeping and Permaculture (particularly dryland and forage systems) for some good, solid vocational skills, especially carpentry and stone masonry. We have/are: 2 lesbians, 22 acres, good tools and equipment, dogs, cats, chickens, ducks, guineas, peabirds and 60 zillion bees.",similarity 0.612
 march83,19,Oregon Women's Land Trust,type,Land Trust,Intentional Community/Cooperative,
 march83,19,Oregon Women's Land Trust,land_city,,Days Creek,
 march83,19,Oregon Women's Land Trust,focuses,Women of color,Recovery/substance-free,model missed: women of color | model added: recovery/substance-free
-march83,19,Fly Away Home,type,Intentional Community/Cooperative,Private/Individual Land,
-march83,19,Fly Away Home,land_location_as_stated,a secluded forest hilltop,,
-march83,19,Fly Away Home,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
-march83,19,Fly Away Home,focuses,Spirituality/ritual; Farming/self-sufficiency; Workshops/education; Archives/cultural work,,model missed: archives/cultural work; farming/self-sufficiency; spirituality/ritual; workshops/education
-march83,19,Fly Away Home,raw_text,"FLY AWAY HOME POB 593, Myrtle Creek, OR 97457. We are a family of 4 lesbians living on a secluded forest hilltop. We grow food and tender our emotional and spiritual depths. And we make art and song that celebrate woman. We invite women to our workshops in Theatre and in Tai Chi several times during the year. We are unable to welcome visitors at other times. We have/are: 4 lesbians, 40 acres, housing/permanent structures, woods, farm land, women living and working on the land.","FLY AWAY HOME POB 593, Myrtle Creek, OR 97457. We are a family of 4 lesbians living on a secluded forest hilltop. We grow food and tender our emotional and spiritual depths. And we make art and song that celebrate woman. We invite women to our workshops in Theatre and in Tai Chi several times during the year. We are unable to welcome visitors at other times. We have/are: 4 lesbians, 40 acres, housing/permanent structures, woods, farm land, women living and working the land.",similarity 0.978
 june83,22,Lavender Hill,row_kind,not_a_listing,listing,
 june83,22,Lavender Hill,type,,Intentional Community/Cooperative,
 june83,22,Lavender Hill,num_residents,0,,
@@ -144,19 +147,21 @@ june83,23,Heathcote Womens Community,focuses,Environmentalism/eco-friendly,Envir
 june83,23,Greenstalk,land_city,,Unger,
 june83,23,Greenstalk,land_state,,WV,
 june83,23,Greenstalk,focuses,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work; Environmentalism/eco-friendly,Recovery/substance-free; Farming/self-sufficiency,model missed: archives/cultural work; environmentalism/eco-friendly
-june83,23,Whispering Winds,contact_name,,none,
-june83,23,Whispering Winds,land_location_as_stated,"near Virginia; Northern Minnesota, ten miles from town, access to a small lake","Northern Minnesota, ten miles from town",
-june83,23,Whispering Winds,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
 june83,23,D W Outpost,type,Intentional Community/Cooperative,Land Fund/Seeking Land,
 june83,23,D W Outpost,contact_name,,none,
-march86,8,Gathering Ground,type,Private/Individual Land,Intentional Community/Cooperative,
-march86,8,Gathering Ground,land_location_as_stated,End of #10 Rd; central Maine,,
+june83,24,Arlene & Arline's land,contact_name,Arlene & Arline,,
+june83,24,Arlene & Arline's land,land_state,CA,,
+june83,24,Arlene & Arline's land,focuses,Farming/self-sufficiency; Workshops/education,Farming/self-sufficiency,model missed: workshops/education
+march86,7,Dutch Mountain,type,Private/Individual Land,Intentional Community/Cooperative,
+march86,7,Dutch Mountain,land_zip,04438,,
+march86,7,Dutch Mountain,num_residents,0,1,
+march86,7,Dutch Mountain,focuses,Older women; Recovery/substance-free; Working-class women; Lesbian separatism; Archives/cultural work,Older women; Working-class women; Lesbian separatism; Farming/self-sufficiency,model missed: archives/cultural work; recovery/substance-free | model added: farming/self-sufficiency
 march86,9,The Web,type,,Intentional Community/Cooperative,
 march86,9,The Web,land_state,MN,,
 march86,9,The Web,focuses,Environmentalism/eco-friendly,,model missed: environmentalism/eco-friendly
-march86,11,River Spirit Retreat,land_city,,Kampsville,
-march86,11,River Spirit Retreat,land_location_as_stated,"Rt 100 North of Kampsville, IL, 1 hr from Alton, 2 hrs from St Louis; by the Illinois River","Rt 100 North of Kampsville, IL, 1 hr from Alton, 2 hrs from St Louis",
-march86,11,River Spirit Retreat,focuses,Workshops/education,,model missed: workshops/education
+march86,11,Labrys,type,Retreat/Gathering Space,Private/Individual Land,
+march86,11,Labrys,land_street_address,4115 M-22,Rt 1 Box 257,
+march86,11,Labrys,focuses,Workshops/education; Environmentalism/eco-friendly,,model missed: environmentalism/eco-friendly; workshops/education
 september76,13,Women on Land,type,Intentional Community/Cooperative,Land Trust,
 september76,13,Women on Land,contact_state,AR,Arkansas,
 september76,13,Women on Land,land_state,AR,Arkansas,
@@ -165,14 +170,11 @@ september76,13,Sappha Survival School,land_city,,Tonasket,
 september76,13,Sappha Survival School,land_zip,,98855,
 september76,13,Sappha Survival School,num_residents,3,,
 september76,13,Sappha Survival School,focuses,Farming/self-sufficiency; Workshops/education,Workshops/education; Environmentalism/eco-friendly,model missed: farming/self-sufficiency | model added: environmentalism/eco-friendly
-september76,14,Women's Ways Retreat,contact_name,Andrews/Mulholland,,
-september76,14,Women's Ways Retreat,contact_street_address,"RD1, Box 375A","Andrews/Mulholland, RD1, Box 375A",
-september76,14,Women's Ways Retreat,land_location_as_stated,"the rolling Berkshire mountains in Craryville, New York","in the rolling Berkshire mountains in Craryville, New York",
-september76,14,Women's Ways Retreat,acreage,10,100,
-september76,14,A Woman's Place,contact_street_address,,A Woman's Place,
-september76,14,A Woman's Place,land_zip,12810,,
-september76,14,A Woman's Place,land_location_as_stated,the Adirondacks,in the Adirondacks,
-september76,14,A Woman's Place,num_residents,,7,
+september76,14,Elwha River land,type,Intentional Community/Cooperative,Private/Individual Land,
+september76,14,Elwha River land,contact_city,Port Angles,Port Angeles,
+september76,14,Elwha River land,land_city,Port Angles,Port Angeles,
+september76,14,Elwha River land,num_residents,5,,
+september76,14,Elwha River land,accepted_groups,Lesbian women; Gay men,Lesbian women; Gay men; Non-gay men,model added: non-gay men
 december82,21,Feathers Farm,land_street_address,,Box 19,
 december82,21,Feathers Farm,land_city,,Bryantville,
 december82,21,Feathers Farm,land_zip,,02327,
@@ -181,43 +183,13 @@ december82,21,Greenhope,land_street_address,,Box 226,
 december82,21,Greenhope,land_city,,E Hardwick,
 december82,21,Greenhope,land_zip,,05836,
 december82,21,Greenhope,focuses,Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Farming/self-sufficiency; Workshops/education,model missed: environmentalism/eco-friendly
-june83,24,Arlene & Arline's land,contact_name,Arlene & Arline,,
-june83,24,Arlene & Arline's land,land_state,CA,,
-june83,24,Arlene & Arline's land,land_location_as_stated,25 miles NE of Palm Springs in a rural desert area,in a rural desert area,
-june83,24,Arlene & Arline's land,focuses,Farming/self-sufficiency; Workshops/education,Farming/self-sufficiency,model missed: workshops/education
-march86,7,Dutch Mountain,type,Private/Individual Land,Intentional Community/Cooperative,
-march86,7,Dutch Mountain,land_zip,04438,,
-march86,7,Dutch Mountain,land_location_as_stated,"Frankfort, ME, 12 mi from Belfast; mid-coast","Frankfort, ME, 12 mi from Belfast",
-march86,7,Dutch Mountain,num_residents,0,1,
-march86,7,Dutch Mountain,focuses,Older women; Recovery/substance-free; Working-class women; Lesbian separatism; Archives/cultural work,Older women; Working-class women; Lesbian separatism; Farming/self-sufficiency,model missed: archives/cultural work; recovery/substance-free | model added: farming/self-sufficiency
-march86,8,Greenstalk,land_street_address,,"South Morgan Dr, Box 65",
-march86,8,Greenstalk,land_city,Unger,Berkeley Springs,
-march86,8,Greenstalk,land_zip,,25411,
-march86,11,Labrys,type,Retreat/Gathering Space,Private/Individual Land,
-march86,11,Labrys,land_street_address,4115 M-22,Rt 1 Box 257,
-march86,11,Labrys,land_location_as_stated,northwest Michigan a mile from Lake Michigan; on Long Lake,northwest Michigan a mile from Lake Michigan,
-march86,11,Labrys,focuses,Workshops/education; Environmentalism/eco-friendly,,model missed: environmentalism/eco-friendly; workshops/education
-september76,14,Elwha River land,type,Intentional Community/Cooperative,Private/Individual Land,
-september76,14,Elwha River land,contact_city,Port Angles,Port Angeles,
-september76,14,Elwha River land,land_city,Port Angles,Port Angeles,
-september76,14,Elwha River land,land_location_as_stated,the Elwha River running through the back meadow,on the Elwha River running through the back meadow,
-september76,14,Elwha River land,num_residents,5,,
-september76,14,Elwha River land,accepted_groups,Lesbian women; Gay men,Lesbian women; Gay men; Non-gay men,model added: non-gay men
-december82,22,Adlai Neubauer & Karen Hamm's land,land_street_address,3634 Loudon St,,
-december82,22,Adlai Neubauer & Karen Hamm's land,land_city,Granville,,
-december82,22,Adlai Neubauer & Karen Hamm's land,land_state,OH,,
-december82,22,Adlai Neubauer & Karen Hamm's land,land_zip,43023,,
-december82,22,Adlai Neubauer & Karen Hamm's land,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children; Gay men; Non-gay men,Lesbian women; Girl children; Boy children; Non-gay men,model missed: gay men; non-lesbian women
-december82,22,Adlai Neubauer & Karen Hamm's land,focuses,,Recovery/substance-free; Farming/self-sufficiency,model added: farming/self-sufficiency; recovery/substance-free
 march86,8,Chris of Coventree,type,Intentional Community/Cooperative,Private/Individual Land,
 march86,8,Chris of Coventree,contact_name,Chris,,
 march86,8,Chris of Coventree,land_city,,Troy,
 march86,8,Chris of Coventree,land_location_as_stated,tucked away in the woods of Central Maine,,
-march86,9,Maple Row Farm,type,Intentional Community/Cooperative,Private/Individual Land,
-march86,9,Maple Row Farm,land_street_address,,Rt 1 Box 88,
-march86,9,Maple Row Farm,land_city,Atwood,Ellsworth,
-march86,9,Maple Row Farm,land_zip,,49729,
-march86,9,Maple Row Farm,focuses,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work; Women of color,Farming/self-sufficiency,model missed: archives/cultural work; recovery/substance-free; women of color
+march86,8,Greenstalk,land_street_address,,"South Morgan Dr, Box 65",
+march86,8,Greenstalk,land_city,Unger,Berkeley Springs,
+march86,8,Greenstalk,land_zip,,25411,
 march86,11,Pagoda,land_street_address,207 Coastal Hwy,,
 march86,11,Pagoda,land_city,St Augustine,,
 march86,11,Pagoda,land_zip,32084,,
@@ -228,11 +200,21 @@ december82,21,Generous Earth Land,land_street_address,,Box 51A,
 december82,21,Generous Earth Land,land_city,,Hinesburg,
 december82,21,Generous Earth Land,land_zip,,05461,
 december82,21,Generous Earth Land,land_location_as_stated,15 miles from town with jobs,,
+december82,22,Adlai Neubauer & Karen Hamm's land,land_street_address,3634 Loudon St,,
+december82,22,Adlai Neubauer & Karen Hamm's land,land_city,Granville,,
+december82,22,Adlai Neubauer & Karen Hamm's land,land_state,OH,,
+december82,22,Adlai Neubauer & Karen Hamm's land,land_zip,43023,,
+december82,22,Adlai Neubauer & Karen Hamm's land,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children; Gay men; Non-gay men,Lesbian women; Girl children; Boy children; Non-gay men,model missed: gay men; non-lesbian women
+december82,22,Adlai Neubauer & Karen Hamm's land,focuses,,Recovery/substance-free; Farming/self-sufficiency,model added: farming/self-sufficiency; recovery/substance-free
+march86,9,Maple Row Farm,type,Intentional Community/Cooperative,Private/Individual Land,
+march86,9,Maple Row Farm,land_street_address,,Rt 1 Box 88,
+march86,9,Maple Row Farm,land_city,Atwood,Ellsworth,
+march86,9,Maple Row Farm,land_zip,,49729,
+march86,9,Maple Row Farm,focuses,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work; Women of color,Farming/self-sufficiency,model missed: archives/cultural work; recovery/substance-free; women of color
 march86,11,Laurel Ridge,type,Retreat/Gathering Space,Private/Individual Land,
 march86,11,Laurel Ridge,land_street_address,,RFD 2 Box 277,
 march86,11,Laurel Ridge,land_city,Northport,Lincolnville,
 march86,11,Laurel Ridge,land_zip,,04849,
-march86,11,Laurel Ridge,land_location_as_stated,"Northport, ME; in the heart of Mid-Coast Maine, where the mountains meet the sea",heart of Mid-Coast Maine,
 june83,22,Dutch Mountain,type,Private/Individual Land,Land Fund/Seeking Land,
 june83,22,Dutch Mountain,contact_name,Reggie Odom & Eileen Kennedy,Reggie Odom & Eileen Kennedy none,
 june83,22,Dutch Mountain,land_city,Frankfort,,

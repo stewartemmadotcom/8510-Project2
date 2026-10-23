@@ -18,7 +18,7 @@ Field accuracy on matched pairs:
   land_city                    70.1%  (68/97)
   land_state                   86.6%  (84/97)
   land_zip                     72.2%  (70/97)
-  land_location_as_stated      70.1%  (68/97)
+  land_location_as_stated      88.7%  (86/97)
   page                        100.0%  (97/97)
   acreage                      95.9%  (93/97)
   num_residents                73.2%  (71/97)

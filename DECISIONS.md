@@ -155,6 +155,25 @@
 - Same caution as v2: some codebook examples come from these test listings.
   Test next on a hand-checked issue that was not used to write the codebook.
 
+## Scoring change: land_location_as_stated
+- Exact matching was too strict for this field: most disagreements were the
+  same place with a word more or less ("in the Adirondacks" vs "the
+  Adirondacks", a final period).
+- New rule in `02_compare_to_handchecked.py`: ignore case and punctuation,
+  drop leading "located / in / the / a / an / on / at", then the two match if
+  they are the same or one contains the other. A blank never matches a
+  filled-in value. The self-test still passes at 100%.
+- All three runs re-scored with the new rule (other fields unchanged):
+  v1 flash-lite 70 -> 89%, v2 flash-lite 70 -> 89%, v2 3.8 Flash 71 -> 91%.
+- What is still different in the 3.8 Flash run (9) is real:
+  - 7 where the model left it blank and I didn't. Several of mine are
+    scenery rather than a place ("beautiful desert country with big skies",
+    "on an old blue stone quarry", "ocean"), and two are towns from
+    not-a-listing rows ("Athol, NY", "Talmage, CA"). Question for me: should
+    this field hold descriptions of the land, or only where it is?
+  - 2 where we picked different phrases from the same listing (Whispering
+    Winds, Another Demention).
+
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database
 
