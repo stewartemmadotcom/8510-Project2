@@ -1,0 +1,59 @@
+{
+  "page_number": "22",
+  "entries": [
+    {
+      "row_kind": "not_a_listing",
+      "community_name": "LAVENDER HILL",
+      "contact_name": "",
+      "contact_street_address": "1085 Greenwood Rd",
+      "contact_city": "Elk",
+      "contact_state": "CA",
+      "contact_zip": "95432",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "Elk, CA",
+      "acreage": "",
+      "num_residents": "",
+      "type": "none",
+      "accepted_groups": [],
+      "focuses": [],
+      "description": "Update saying Lavender Hill was sold to the Hare Krishna and is no longer women's land.",
+      "raw_text": "LAVENDER HILL (listed in VI,1) 1085 Greenwood Rd, Elk, CA 95432 - was sold last month to the Hare Krishna. So, it is NO LONGER WOMIN'S LAND, it is not a place for womin to visit, and we have lost it. It is sad for those of us who lived there, but good for those womin (many of them crones) who had money invested and wanted it out. Time to move on.",
+      "notes": "Not a listing: notice that the land was sold ('was sold last month to the Hare Krishna'; 'NO LONGER WOMIN'S LAND'). Printed 'CA·95432' read as CA 95432. Update to listing in VI,1.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "REGGIE ODOM & EILEEN KENNEDY",
+      "contact_name": "Reggie Odom & Eileen Kennedy",
+      "contact_street_address": "86 Rossmore Rd #3",
+      "contact_city": "Jamaica Plain",
+      "contact_state": "MA",
+      "contact_zip": "02130",
+      "land_street_address": "",
+      "land_city": "Frankfort",
+      "land_state": "ME",
+      "land_zip": "",
+      "land_location_as_stated": "c/o General Delivery, Frankfort, ME 04438, where our land is located",
+      "acreage": "",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Older women",
+        "Lesbian separatism"
+      ],
+      "description": "Two radical lesbians living in a city who own land in Frankfort, Maine and plan to build in 1983 or 1984, eventually forming a small lesbian community; they especially want to hear from older lesbians, artists, and dykes with girl children.",
+      "raw_text": "REGGIE ODOM & EILEEN KENNEDY 86 Rossmore Rd #3, Jamaica Plain, MA 02130 (617)522-2472. If we haven't replied within 15 days, write us c/o General Delivery, Frankfort, ME 04438, where our land is located. We are two radical lesbians, ages 34 & 37, who are currently living in city with plans to build as soon as financially possible ('83 or '84). Eventually, want to form small lesbian community on land; especially interested in hearing from older lesbians, artists, dykes with girl children.",
+      "notes": "Name is the two women's names (no community name); contact_name filled. Contact address is a Jamaica Plain street address, but they are 'currently living in city', so land street/zip blank; land city Frankfort, ME named in listing ('where our land is located'). Type: Private/Individual Land under the two-woman rule; they do not live on the land yet. Residents 0: 'currently living in city'. Accepted: Lesbian women ('two radical lesbians', 'small lesbian community'); Girl children from 'dykes with girl children'. Focus Older women: 'especially interested in hearing from older lesbians'. Lesbian separatism not clearly stated; 'radical lesbians' only, so reconsidered but retained weakly as 'small lesbian community' - uncertain. Artists welcome noted but not coded as Archives/cultural work.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    }
+  ]
+}

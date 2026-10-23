@@ -1,0 +1,277 @@
+{
+  "page_number": "22",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "",
+      "contact_name": "",
+      "contact_street_address": "",
+      "contact_city": "",
+      "contact_state": "",
+      "contact_zip": "",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "17",
+      "num_residents": "3",
+      "type": "none",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Workshops/education"
+      ],
+      "description": "End of a listing from the previous page: offers holistic health, survival skills, yoga and organic gardening, plus winter activities. Welcomes new members/residents, girl and boy children and non-lesbian women. 3 lesbians on 17 acres with housing, plumbing/electricity, camping, woods and farm land.",
+      "raw_text": "holistic health, survival skills, yoga, and organic gardening. Winter activities include skiing (x-country and downhill), horse drawn sleigh rides, cozy fireplace, music and dance. We welcome: new members/residents, girl and boy children, nonlesbian women, dogs, horses. We have/are: 3 lesbians, 17 acres, housing/permanent structures, plumbing/electricity, camping spaces, woods, farm land, women living and working on the land.",
+      "notes": "Continues from previous page; community name and address not on this page. Type 'none' because the beginning of the listing is not visible. Residents: 3 from '3 lesbians' plus 'women living and working on the land'. Accepted groups: Lesbian women assumed for questionnaire directory; 'girl and boy children', 'nonlesbian women' named. Workshops/education inferred from 'holistic health, survival skills, yoga, and organic gardening' as activities, uncertain since the beginning is cut off.",
+      "section": "",
+      "continues_previous": "yes"
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "THE BEACHTREE",
+      "contact_name": "",
+      "contact_street_address": "RD 1 Box 98",
+      "contact_city": "Monticello",
+      "contact_state": "NY",
+      "contact_zip": "12701",
+      "land_street_address": "RD 1 Box 98",
+      "land_city": "Monticello",
+      "land_state": "NY",
+      "land_zip": "12701",
+      "land_location_as_stated": "",
+      "acreage": "21",
+      "num_residents": "5",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Disabled women"
+      ],
+      "description": "Disabled lesbians trying to build a recreation and independent living place for disabled people on 21 acres with 5 lesbians living there. Plans to open to disabled men within two years. Welcomes new members/residents, girl and boy children, non-lesbian women and donations/work exchange.",
+      "raw_text": "THE BEACHTREE RD 1 Box 98, Monticello, NY 12701 (914)794-6121. Disabled lesbians trying to build recreation — independent living for disabled. Land will be opening to disabled men within next two years. We welcome women, donations, work exchange, no space in house available now. Possible openings in May. (No smoking in house). We welcome: new members/residents, girl and boy children, nonlesbian women, dogs. We have/are: 5 lesbians, 21 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women living on the land.",
+      "notes": "Rural route address is the land (RD 1), so copied to land_*. Type: 5 lesbians living on the land, 'women living on the land', recruiting new members -> Intentional Community/Cooperative. Accepted groups: 'nonlesbian women', 'girl and boy children' named; Lesbian women assumed. 'Land will be opening to disabled men within next two years' is future so men not coded. Focus Disabled women: 'Disabled lesbians trying to build recreation — independent living for disabled'. Residents 5 from '5 lesbians' with 'women living on the land'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "SUSAN STONE",
+      "contact_name": "Susan Stone",
+      "contact_street_address": "124 Maplewood Ave",
+      "contact_city": "Philadelphia",
+      "contact_state": "PA",
+      "contact_zip": "19144",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "PA",
+      "land_zip": "",
+      "land_location_as_stated": "north central PA",
+      "acreage": "22",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [],
+      "description": "One lesbian owns 22 acres in north central Pennsylvania, half wooded and half clear, with a spring site and available electricity but no improvements. She lives in Philadelphia and wants people to develop the land under a long term lease.",
+      "raw_text": "SUSAN STONE 124 Maplewood Ave, Philadelphia, PA 19144. I have 22 acres of land in north central PA. There is a spring site, but it needs to be developed. The land is ½ wooded and ½ clear. Electricity is available. There are no improvements to the property. I would be interested in having people develop the land in return for a long term lease. I welcome: letters. I have/am: 1 lesbian, 22 acres, camping space, woods, farm land.",
+      "notes": "No community name; used person's name, which is also contact_name. Mailing address is a street address in Philadelphia, but land is described as in north central PA, so land street/city/zip blank; land_state PA. Type: one woman owns land -> Private/Individual Land. Residents 0: she lives in Philadelphia and there are 'no improvements to the property'. Accepted groups: only letters welcomed; Lesbian women assumed as the one lesbian owner is listed in 'I have/am: 1 lesbian'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "TURTLE LAND FOR WIMMIN",
+      "contact_name": "",
+      "contact_street_address": "719 N Irving St",
+      "contact_city": "Arlington",
+      "contact_state": "VA",
+      "contact_zip": "22201",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "20",
+      "num_residents": "10",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Spirituality/ritual",
+        "Workshops/education",
+        "Archives/cultural work",
+        "Environmentalism/eco-friendly",
+        "Farming/self-sufficiency"
+      ],
+      "description": "A diverse, spiritually and politically conscious community of 10 lesbians on 20 acres, aiming to live in harmony with nature and be as self-sufficient as possible. Retreats, workshops, music and rituals already happen. A hexagon cabin is due by summer '83. Welcomes new members, girl children, boy children only the 2nd weekend of each month, and non-lesbian women who accept that men are not welcome and accept its lesbian identification.",
+      "raw_text": "TURTLE LAND FOR WIMMIN 719 N Irving St, Arlington, VA 22201 (703)527-7396. Our goal is to create a diverse, fun, spiritually and politically conscious community living in harmony with nature and as self-sufficient as possible. Some retreats, workshops, music, rituals, etc. are going on already. A one room hexagon cabin should be finished by Summer '83. We welcome: new members/residents, girl children, boy children (only the 2nd weekend of each month), nonlesbian women who accept that men are not welcome and accept our lesbian identification, dogs. We have/are: 10 lesbians, 20 acres, camping space, woods, women living and working on the land.",
+      "notes": "Mailing is a street address in Arlington VA, but land location is not stated and a cabin is only planned, so land fields blank. Type: community with 10 lesbians living and working on the land. Residents 10 from '10 lesbians' with 'women living and working on the land'. Boy children coded with condition 'only the 2nd weekend of each month'. Nonlesbian women welcome if they 'accept that men are not welcome'. Focuses: Spirituality/ritual ('spiritually... rituals'); Workshops/education ('retreats, workshops'); Archives/cultural work ('music'); Farming/self-sufficiency ('as self-sufficient as possible'). Environmentalism not coded since 'living in harmony with nature' alone is not enough. Lesbian separatism not coded: listing says 'men are not welcome' but welcomes non-lesbian women and boys part-time; not named as separatism.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "DUFFY Z BAUM",
+      "contact_name": "Duffy Z Baum",
+      "contact_street_address": "PO Box 678",
+      "contact_city": "Carrboro",
+      "contact_state": "NC",
+      "contact_zip": "27510",
+      "land_street_address": "",
+      "land_city": "Pittsboro",
+      "land_state": "NC",
+      "land_zip": "",
+      "land_location_as_stated": "in Pittsboro, NC",
+      "acreage": "50",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Older women"
+      ],
+      "description": "One lesbian owns 50 acres in Pittsboro, NC, isolated with big old trees, building a house and with an old house on the land. She does not live there yet but hopes to by next summer, and wants other women to join her and hopes to create a haven for older dykes. Welcomes new members/residents and girl children.",
+      "raw_text": "DUFFY Z BAUM PO Box 678, Carrboro, NC 27510 (919)942-5340. I own 50 acres of land in Pittsboro, NC. I am building a house on the land and also have an old house on the land. I do not live on my land but hope to by next summer. I am anxious to have other women join me on my land. The land is quite isolated and has some nice big old trees. I'd like to be a haven for older dykes. I welcome: new members/residents, girl children. I have/am: 1 lesbian, 50 acres, electricity, camping space, woods, farm land (questionable).",
+      "notes": "Name is a person's name, used as community_name and contact_name. PO box is not the land; land city Pittsboro stated ('50 acres of land in Pittsboro, NC'). Type: one woman owns land and does not live there yet -> Private/Individual Land. Residents 0: 'I do not live on my land'. Focus Older women: 'haven for older dykes'. Accepted: Lesbian women assumed; 'girl children' named. Acreage 50.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "OKRA RIDGE FARM",
+      "contact_name": "",
+      "contact_street_address": "Rt 2 Box 252",
+      "contact_city": "Luttrell",
+      "contact_state": "TN",
+      "contact_zip": "37779",
+      "land_street_address": "Rt 2 Box 252",
+      "land_city": "Luttrell",
+      "land_state": "TN",
+      "land_zip": "37779",
+      "land_location_as_stated": "",
+      "acreage": "100",
+      "num_residents": "4",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Recovery/substance-free",
+        "Archives/cultural work"
+      ],
+      "description": "Drug/alcohol-free farm of 4 lesbians on 100 acres, which houses the Tennessee Lesbian Archives. Currently two members and two renters. Visitors welcome for 1-3 days if they write or call first and are prepared to work and contribute. Welcomes girl children.",
+      "raw_text": "OKRA RIDGE FARM Rt 2 Box 252, Luttrell, TN 37779 (615)992-8423. Currently two members and two renters. Drug/ alcohol-free space. Support and house the Tennessee Lesbian Archives. Visitors welcome for 1-3 days, but WRITE OR CALL FIRST; be prepared to work and contribute financially if you can. No smoking in main house or Archives. We welcome: girl children. We have/are: 4 lesbians, 100 acres, housing/permanent structures, plumbing, electricity, camping space, woods, farm land, women living and working on the land.",
+      "notes": "Rural route is the land. Type: four women live on the land ('4 lesbians', 'women living and working on the land'), 'two members and two renters' -> Intentional Community/Cooperative. Residents 4: renters count when placed in the community. Focuses: Recovery/substance-free from 'Drug/alcohol-free space'; Archives/cultural work from 'Support and house the Tennessee Lesbian Archives'. Accepted: Lesbian women assumed; 'girl children' named.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "SPIRAL",
+      "contact_name": "",
+      "contact_street_address": "PO Box 337",
+      "contact_city": "Monticello",
+      "contact_state": "KY",
+      "contact_zip": "42633",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "KY",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "300",
+      "num_residents": "14",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [],
+      "description": "Community in the process of creating an alternative wimmins community on 300 acres (250 woods, 30 farmland), with 12 lesbians and 2 nonlesbians. Welcomes new members, girl children and non-lesbian women, and asks wimmin to write or call before visiting.",
+      "raw_text": "SPIRAL PO Box 337, Monticello, KY 42633 (606)348-5215. Spiral in essence is change. Spiral is in the process of creating an alternative wimmins community. We welcome constructive input/feedback to aide in our growth. Prefer wimmin write or call before visit. We welcome: new members, girl children, nonlesbian women. We have/are: 12 lesbians, 2 nonlesbians, 300 acres, camping space, woods (250 acres), farmland (30 acres).",
+      "notes": "PO box is not the land; land_state KY assumed from mailing state as listing places land nearby (300 acres, no other location). Type: community with 14 people and acres, 'creating an alternative wimmins community' -> Intentional Community/Cooperative. Residents: the list does not say women live on the land, so the count of 12 lesbians + 2 nonlesbians is only a questionnaire count; num_residents set to 14 is a judgment but the listing says 'We have/are'. Accepted: 'girl children', 'nonlesbian women' named; Lesbian women assumed.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "ADLAI NEUBAUER & KAREN HAMM",
+      "contact_name": "Adlai Neubauer & Karen Hamm",
+      "contact_street_address": "3634 Loudon St",
+      "contact_city": "Granville",
+      "contact_state": "OH",
+      "contact_zip": "43023",
+      "land_street_address": "3634 Loudon St",
+      "land_city": "Granville",
+      "land_state": "OH",
+      "land_zip": "43023",
+      "land_location_as_stated": "",
+      "acreage": "2.3",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "Two lesbians on 2.3 acres with a small piece of land and the start of an organic garden, envisioning a community of women supporting each other emotionally, spiritually and financially through collective work. Visitors may stay a maximum of two nights. Welcomes girl and boy children, non-lesbian women and non oppressive males (not overnight). No drug addicts/alcoholics, kleptomaniacs or other disrespectful people.",
+      "raw_text": "ADLAI NEUBAUER & KAREN HAMM 3634 Loudon St, Granville, OH 43023 (614)587-4527. We are only beginning. We have a small piece of land and the start of an organic garden. We envision a community of women supporting each other emotionally, spiritually and financially through responsible collective work. Visitors should plan to stay a maximum of two nights unless a work exchange or other arrangements are made (2 week advance notice preferred). No drug addicts/alcoholics, kleptomaniacs, or other disrespectful people welcome. We welcome: girl and boy children, nonlesbian women, non oppressive males (not overnight), dogs. We have/are: 2 lesbians, 2.3 acres, housing/permanent structures, plumbing/electricity, camping space, farm land, women living on the land.",
+      "notes": "Street address is the land, copied to land_*. Type: two-woman rule -> Private/Individual Land; they 'envision a community' but do not actively recruit members to live there. Residents 2 from '2 lesbians' with 'women living on the land'. Accepted: 'girl and boy children', 'nonlesbian women' named; 'non oppressive males (not overnight)' coded as Gay men and Non-gay men with the condition 'not overnight'. Focuses: Farming/self-sufficiency from 'start of an organic garden' (organic gardening as farming only). 'No drug addicts/alcoholics' is a ban on addicts, not a drug rule of the place, so Recovery not coded.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "SUSAN B ANTHONY MEMORIAL UNREST HOME",
+      "contact_name": "",
+      "contact_street_address": "Rt 1 Box 215",
+      "contact_city": "Millfield",
+      "contact_state": "OH",
+      "contact_zip": "45761",
+      "land_street_address": "Rt 1 Box 215",
+      "land_city": "Millfield",
+      "land_state": "OH",
+      "land_zip": "45761",
+      "land_location_as_stated": "southeast Ohio",
+      "acreage": "150",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Older women"
+      ],
+      "description": "Two lesbians on 150 acres in southeast Ohio, wanting feminist pioneers to begin a women's rural community. Older feminists especially encouraged to respond. Written inquiries welcome, send long SASE for brochure, no drop-ins. Welcomes new members/residents, girl and boy children (only during July) and non-lesbian women.",
+      "raw_text": "SUSAN B ANTHONY MEMORIAL UNREST HOME Rt 1 Box 215, Millfield, OH 45761. Feminist pioneers wanted to begin women's rural community in southeast Ohio. Send long SASE for brochure. Older feminists especially encouraged to respond. We welcome written (or taped) inquiries and correspondence. No drop ins or surprise telephone requests for overnight accommodations. We welcome: new members/residents, girl and boy children (only during July), nonlesbian women, older women especially welcome. We have/are: 2 lesbians, 150 acres, housing/permanent structures, plumbing/electricity, primitive camping space, woods, farm land, women living and working on the land.",
+      "notes": "Rural route is the land. Type: two-woman rule (2 lesbians) -> Private/Individual Land; they recruit members to begin a community, but the listing says pioneers are wanted 'to begin' a community, so it is not yet one. Residents 2 from '2 lesbians' with 'women living and working on the land'. Boy and girl children coded with condition 'only during July'. Focus Older women: 'older women especially welcome'.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

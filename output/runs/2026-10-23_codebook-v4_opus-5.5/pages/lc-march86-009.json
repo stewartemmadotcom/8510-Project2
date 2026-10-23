@@ -1,0 +1,70 @@
+{
+  "page_number": "7",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "DUTCH MOUNTAIN",
+      "contact_name": "Eileen Kennedy",
+      "contact_street_address": "91 Rossmore Rd #3",
+      "contact_city": "Jamaica Plain",
+      "contact_state": "MA",
+      "contact_zip": "02130",
+      "land_street_address": "",
+      "land_city": "Frankfort",
+      "land_state": "ME",
+      "land_zip": "",
+      "land_location_as_stated": "Frankfort, ME; mid-coast",
+      "acreage": "100",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Lesbian separatism",
+        "Working-class women",
+        "Older women",
+        "Recovery/substance-free"
+      ],
+      "description": "100 acres of woods and uncultivated farmland in Frankfort, Maine, owned by one working-class lesbian separatist artist and environmental educator currently living in Boston and building housing in 1986. She dreams of an intergenerational lesbian community with a lesbian burial ground, seeks lesbians to cabin-sit or rent cheaply, and welcomes new members/residents, girl children, older lesbians, artists, working-class lesbians and 12-step lesbians. No alcohol or drugs; camping space available.",
+      "raw_text": "DUTCH MOUNTAIN c/o Eileen Kennedy, 91 Rossmore Rd #3, Jamaica Plain, MA 02130 (617)522-2472 (Frankfort, ME, 12 mi from Belfast; mid-coast). I am a 39-year-old working class Lesbian separatist, artist and environmental educator with a long-time dream of an intergenerational Lesbian community (from infancy to very elderly), including a Lesbian burial ground. I'm currently living in Boston, but building May, Sept & Oct 86 - finally! Write c/o General Delivery, Frankfort, ME 04438 while I'm building. I will need a dyke(s) to cabinsit or rent real cheap through winter and maybe longer. I welcome: new members/residents, girl children, older lesbians, artists, working class dykes, 12-step Program dykes. No alcohol or drugs of any kind. I have/am: 1 lesbian, 100 acres, housing/permanent structure this year, camping space, woods, uncultivated farmland.",
+      "notes": "Type: Private/Individual Land under the two-woman rule — one owner (\"I have/am: 1 lesbian\") who does not live there yet (\"I'm currently living in Boston, but building\"), so stays Private even though welcoming new members. Land: \"(Frankfort, ME, 12 mi from Belfast; mid-coast)\" gives land_city Frankfort, ME; land street/zip left blank since the mailing address is her Boston-area home; distance to Belfast omitted from location field. Alternate mailing address while building: General Delivery, Frankfort, ME 04438. num_residents 0 because owner lives in Boston and housing is only being built this year. Accepted: Lesbian women (directory for lesbians; \"new members/residents\", \"older lesbians\"); Girl children (\"girl children\" only). Focuses: Lesbian separatism (\"I am a 39-year-old working class Lesbian separatist\" and dream of \"Lesbian community\"); Working-class women (owner identifies as working class and welcomes \"working class dykes\"); Older women (\"from infancy to very elderly\", welcomes \"older lesbians\"); Recovery/substance-free (\"No alcohol or drugs of any kind\", welcomes \"12-step Program dykes\"). Environmental educator is a personal description, not coded as a place focus.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "FEATHERS FARM",
+      "contact_name": "",
+      "contact_street_address": "PO Box 19",
+      "contact_city": "Bryantville",
+      "contact_state": "MA",
+      "contact_zip": "02327",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "MA",
+      "land_zip": "",
+      "land_location_as_stated": "off Rte 27 at Kingston & Pembroke Town Line on Silver Lake",
+      "acreage": "100",
+      "num_residents": "3",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "100-acre farm on Silver Lake at the Kingston/Pembroke town line in Massachusetts, offering secluded outdoor space to groups and individuals for workshops and retreats, with rough accommodations (outhouse, barn kitchen), ponds, organic gardens, small livestock and bees. Camping by donation ($6/night). Two women and a girl child live and work on the land with one house, plumbing and electricity. Welcomes new members, children, non-lesbian women, possibly men, leashed dogs and horses.",
+      "raw_text": "FEATHERS FARM PO Box 19, Bryantville, MA 02327 (617)585-8826 (off Rte 27 at Kingston & Pembroke Town Line on Silver Lake). We offer scenic grounds and meaningful work experience with easy access to Boston and Cape Cod - secluded outdoor space available to groups and individuals for workshops, retreats, etc. Accomodations are rough (outhouse, barn kitchen) - ponds for swimming, fishing, canoe - organic gardens, small livestock, bees. Usual donation for camping $6 a night. We welcome: new members, girl & boy children, non-lesbian women, males (maybe), dogs on leashes, horses. BYO food. We have/are: two with a girl child, 100 acres, 1 house, plumbing/electricity, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Type: Retreat/Gathering Space because the listing is defined by what it offers visitors (\"secluded outdoor space available to groups and individuals for workshops, retreats, etc.\", camping donation). Two-woman rule would otherwise suggest Private/Individual Land (\"two with a girl child\"), though they also welcome \"new members\". Land: PO box is not the land; location from \"(off Rte 27 at Kingston & Pembroke Town Line on Silver Lake)\"; land_state MA inferred; no single town named so land_city blank. num_residents 3: \"two with a girl child\" plus \"women living and working on the land\" (two women and the girl child). Accepted: Lesbian women (directory for lesbians); Non-lesbian women (\"non-lesbian women\"); Girl and Boy children (\"girl & boy children\"); Gay men and Non-gay men from \"males (maybe)\" — conditional. Also welcomes dogs on leashes and horses. Focus: Farming/self-sufficiency (\"organic gardens, small livestock, bees\"). Workshops/education not coded: the place provides space for others' workshops rather than running them. Spelling \"Accomodations\" kept as printed.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    }
+  ]
+}

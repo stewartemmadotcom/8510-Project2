@@ -1,0 +1,143 @@
+{
+  "page_number": "22",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "LEARNING BY DOING",
+      "contact_name": "Kringle/Wood",
+      "contact_street_address": "Route 2, Box 205",
+      "contact_city": "Rice Lake",
+      "contact_state": "Wisconsin",
+      "contact_zip": "54868",
+      "land_street_address": "Route 2, Box 205",
+      "land_city": "Rice Lake",
+      "land_state": "Wisconsin",
+      "land_zip": "54868",
+      "land_location_as_stated": "dairy farm in Wisc.",
+      "acreage": "210",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Workshops/education"
+      ],
+      "description": "A woman-owned and operated 210-acre dairy farm in Wisconsin offering paid 3-month or one-month programs in country living, farming and homesteading skills, including room, board and personal instruction.",
+      "raw_text": "LEARNING BY DOING: skills in country living/farming/homesteading on woman-owned and operated 210 acre dairy farm in Wisc. Cost: $1000 for a 3 month program. Includes room, board and personal instruction in skills you want to learn, eg animal care, woodlot management, carpentry, fencing, crop production, machinery repair, plumbing, cement work, etc. Or $400 for intensive one-month program in skills you choose. Kringle/Wood, Route 2, Box 205, Rice Lake, Wisconsin 54868.",
+      "notes": "Appears in the classified section above the Directory of Land Groups, not in the directory itself; included because it describes land the place holds ('woman-owned and operated 210 acre dairy farm'). Type Retreat/Gathering Space because its main purpose is running courses ('3 month program', 'intensive one-month program'). Farming/self-sufficiency and Workshops/education focuses from the farming/homesteading skills instruction. Land address copied from mailing address because it is a rural route ('Route 2, Box 205'). Accepted groups left empty: the listing names no one it welcomes. Number of residents not stated.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WISCONSIN WOMYN'S LAND",
+      "contact_name": "",
+      "contact_street_address": "Rt 2",
+      "contact_city": "Norwalk",
+      "contact_state": "WI",
+      "contact_zip": "54648",
+      "land_street_address": "Rt 2",
+      "land_city": "Norwalk",
+      "land_state": "WI",
+      "land_zip": "54648",
+      "land_location_as_stated": "",
+      "acreage": "80",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Workshops/education",
+        "Recovery/substance-free"
+      ],
+      "description": "80 secluded acres of women's land in Wisconsin (DOE Farm) with a campground, farming and workshops; camping equipment and chem-free space available on a sliding scale; also looking for resident members.",
+      "raw_text": "WISCONSIN WOMYN'S LAND: 80 secluded acres. Campground, farming, workshops. Camp equip and chem free space avail. Sliding scale. Looking for resident members too. DOE Farm, Rt 2, Norwalk, WI 54648.",
+      "notes": "Appears in the classified section above the Directory of Land Groups; included because it describes its own land ('80 secluded acres'). Mail goes to 'DOE Farm', apparently the farm's own name, so contact_name left blank. Type Retreat/Gathering Space because it is defined first by what it offers visitors ('Campground, farming, workshops'), though it is also 'Looking for resident members too'. Land address copied from the rural route ('Rt 2'). Lesbian women and Non-lesbian women coded from 'Womyn's Land' (pre-1986, 'womyn' read as all women); this is an inference from the name. Farming/self-sufficiency from 'farming'; Workshops/education from 'workshops'. Recovery/substance-free coded from 'chem free space', read in the festival sense of alcohol/drug-free space; it could alternatively mean chemical-free (environmental). Number of residents not stated.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "Wilderness Way",
+      "contact_name": "",
+      "contact_street_address": "Box 176",
+      "contact_city": "Wascott",
+      "contact_state": "WI",
+      "contact_zip": "54890",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "WI",
+      "land_zip": "",
+      "land_location_as_stated": "on lake in NW Wisc.",
+      "acreage": "",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women"
+      ],
+      "focuses": [],
+      "description": "A resort and campground for women on a lake in northwestern Wisconsin, with new housekeeping units, a lounge, indoor baths for campers and many activities.",
+      "raw_text": "VACATION: at a resort/campground for women on lake in NW Wisc. New housekeeping units. Lounge & indoor baths for campers. Many activities. Wilderness Way, Box 176, Wascott, WI 54890 (715)466-2635.",
+      "notes": "Appears in the classified section above the Directory of Land Groups; included because it is a women's campground on its own land. The underlined heading is 'VACATION', a category label; community_name taken as 'Wilderness Way', the place's name as printed in the listing. Type Retreat/Gathering Space: a 'resort/campground'. 'for women' (pre-1986) coded as Lesbian women and Non-lesbian women. Mailing address is a box, so land street and zip left blank; land_state WI from 'NW Wisc.'; Wascott not assumed to be the land city.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "not_a_listing",
+      "community_name": "LAVENDER HILL",
+      "contact_name": "",
+      "contact_street_address": "1085 Greenwood Rd",
+      "contact_city": "Elk",
+      "contact_state": "CA",
+      "contact_zip": "95432",
+      "land_street_address": "1085 Greenwood Rd",
+      "land_city": "Elk",
+      "land_state": "CA",
+      "land_zip": "95432",
+      "land_location_as_stated": "Elk, CA",
+      "acreage": "",
+      "num_residents": "",
+      "type": "none",
+      "accepted_groups": [],
+      "focuses": [],
+      "description": "Notice that Lavender Hill in Elk, California, previously listed in LC VI,1, was sold to the Hare Krishna and is no longer women's land or open to visitors.",
+      "raw_text": "LAVENDER HILL (listed in VI,1) 1085 Greenwood Rd, Elk, CA 95432 - was sold last month to the Hare Krishna. So, it is NO LONGER WOMIN'S LAND, it is not a place for womin to visit, and we have lost it. It is sad for those of us who lived there, but good for those womin (many of them crones) who had money invested and wanted it out. Time to move on.",
+      "notes": "Not a listing: notice that the community has ended ('was sold last month to the Hare Krishna. So, it is NO LONGER WOMIN'S LAND'). The directory introduction calls it 'an update on Lavender Hill (VI,1)'. Land address taken from the printed street address of the former land.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "REGGIE ODOM & EILEEN KENNEDY",
+      "contact_name": "Reggie Odom & Eileen Kennedy",
+      "contact_street_address": "86 Rossmore Rd #3",
+      "contact_city": "Jamaica Plain",
+      "contact_state": "MA",
+      "contact_zip": "02130",
+      "land_street_address": "",
+      "land_city": "Frankfort",
+      "land_state": "ME",
+      "land_zip": "",
+      "land_location_as_stated": "Frankfort, ME 04438, where our land is located",
+      "acreage": "",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Older women"
+      ],
+      "description": "Two radical lesbians, ages 34 and 37, currently living in the city (Jamaica Plain, MA) who own land in Frankfort, Maine, and plan to build there in 1983 or 1984; they eventually want to form a small lesbian community and especially want to hear from older lesbians, artists, and lesbians with girl children.",
+      "raw_text": "REGGIE ODOM & EILEEN KENNEDY 86 Rossmore Rd #3, Jamaica Plain, MA 02130 (617)522-2472. If we haven't replied within 15 days, write us c/o General Delivery, Frankfort, ME 04438, where our land is located. We are two radical lesbians, ages 34 & 37, who are currently living in city with plans to build as soon as financially possible ('83 or '84). Eventually, want to form small lesbian community on land; especially interested in hearing from older lesbians, artists, dykes with girl children.",
+      "notes": "No community name; the heading names the two women, used as community_name and contact_name. Type Private/Individual Land under the two-woman rule ('We are two radical lesbians') and because they do not yet live on the land ('currently living in city with plans to build'), even though they 'Eventually, want to form small lesbian community'. num_residents 0 because they live in the city. Land city/state from 'Frankfort, ME 04438, where our land is located'; land zip left blank because 04438 is a General Delivery mailing zip, not a land address. Lesbian women coded (lesbian community, 'older lesbians'); Girl children from 'dykes with girl children'. Older women focus from 'especially interested in hearing from older lesbians'. Alternate mailing address c/o General Delivery, Frankfort, ME 04438 noted here.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    }
+  ]
+}

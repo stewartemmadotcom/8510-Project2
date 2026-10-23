@@ -288,6 +288,91 @@
   my Project 1 coding keeps them when they locate the land. Fix for v5:
   keep a distance or direction from a named place when it says where the
   land is.
+- Why type and accepted_groups were higher in v3 3.8 Flash than v4: the
+  codebook did not change for those fields, so most of it is run-to-run
+  variation on borderline listings (type: 2 listings; groups: 4). But 3 of
+  the 4 group errors show a gap in the rule (all Dec 1982, and Argon made
+  the same mistake): the model added Non-lesbian women from "women"
+  outside the "We welcome:" list - The Web ("open to wimmin"), North Crow
+  ("Some weeks are for womyn only"), Rebecca, Susan, Anne & Maurine's land
+  ("visiting women"). My actual practice: when a listing has a "We welcome:"
+  list, only that list counts; in a free-text listing with no form (Feathers
+  Farm, "women and children"), a welcome to "women" means both groups.
+
+## 2026-10-23_codebook-v4_sonnet-5.5 run (first Claude run)
+- Codebook v4 (same as the v4 3.8 Flash run), model claude-sonnet-5-5
+  ($2 in / $10 out per 1M tokens), effort high. Same 19 pages.
+- Cost $1.41; about 10 minutes (20-60 seconds per page, vs 1-3 minutes
+  for 3.8 Flash). No refusals: July 1988 p. 23, which 3.8 Flash refused in
+  every run, came through.
+- Results (v4 3.8 Flash -> v4 Sonnet 5.5): differences per listing
+  1.09 -> 1.38.
+  - Better: land_location_as_stated 83 -> 94% (best yet), contact_name
+    95 -> 97%, land street/city 90 -> 92%.
+  - Same: page, acreage, row_kind, contact address, raw_text (96%).
+  - Worse: focuses 78 -> 52%, type 90 -> 82%, num_residents 93 -> 87%,
+    accepted_groups 94 -> 89%. Extra rows 4 -> 6 (Women's Wilderness
+    Experience and Sea Gnomes Home, March 1983, added).
+- Patterns:
+  - type: 9 of my Intentional Communities called Private/Individual Land;
+    Sonnet applies the two-woman rule too widely.
+  - focuses: left out Environmentalism 11 times and Archives 5, while
+    adding Farming 9, Recovery 7, Spirituality 5. Disagreements both ways.
+  - accepted_groups: left out men ("males") in 3 listings.
+- Sonnet writes far less thinking than Gemini 3.8 Flash (about 2,000-7,000
+  output tokens per page vs 6,000-27,000). The facts printed on the page
+  are as good; the judgment fields (type, focuses, residents) are worse.
+- Next: Opus 5.5 on the same codebook, as planned; Sonnet at a higher
+  effort (xhigh) is another option.
+
+## 2026-10-23_codebook-v4_opus-5.5 run
+- Codebook v4, model claude-opus-5-5 ($4 in / $20 out per 1M tokens),
+  effort high, same 19 pages. Cost $4.16 (incl. a $0.18 one-page test);
+  about 20 minutes. No refusals.
+- All three v4 runs (same codebook, same pages):
+
+  | field | 3.8 Flash | Sonnet 5.5 | Opus 5.5 |
+  |---|---|---|---|
+  | type | **90** | 82 | 86 |
+  | num_residents | **93** | 87 | **93** |
+  | accepted_groups | **94** | 89 | 92 |
+  | focuses | **78** | 52 | 67 |
+  | land_location_as_stated | 83 | **94** | 86 |
+  | land city | 90 | 92 | **96** |
+  | raw_text | 96 | 96 | **97** |
+  | differences per listing | **1.09** | 1.38 | 1.20 |
+  | listings matching me exactly | 34 | 29 | 34 |
+  | cost | **$1.10** | $1.41 | $4.16 |
+  | refusals | 2 pages | none | none |
+
+- Opus is between the other two on the judgment fields, at about 4 times
+  the cost of 3.8 Flash. 3.8 Flash is still the best and cheapest; its
+  weak point is refusing some pages (RECITATION), which neither Claude
+  model did.
+- Patterns in Opus:
+  - focuses: left out Environmentalism 15 times (Sonnet 11), added
+    Recovery 8. Both Claude models code Environmentalism much less often
+    than I did, so the codebook's Environmentalism rule (written in v2 to
+    stop over-coding) may now be stricter than my own practice. Check my
+    Project 1 notes for what I counted.
+  - type: 6 Intentional Communities called Private/Individual Land (same
+    two-woman-rule pattern as Sonnet, less often).
+  - accepted_groups: added Non-lesbian women 5 times.
+
+## To change later (codebook v5) - not done yet
+Decided 2026-10-23 to wait until Claude has been tried on codebook v4, so
+the Claude runs compare fairly with the v4 3.8 Flash run.
+- land_location_as_stated: keep a distance or direction from a named place
+  when it says where the land is ("35 miles north of Baltimore", "approx 30
+  miles SE of Portland"); take out "leave out distances to other cities".
+- accepted_groups: when a listing has a "We welcome:" list, only that list
+  decides who is welcome; "women"/"wimmin" elsewhere in the text ("open to
+  wimmin", "womyn only" weeks, "visiting women") does not add Non-lesbian
+  women. In a free-text listing with no "We welcome:" list, the pre-1986
+  rule applies as now.
+- To check first: the Environmentalism/eco-friendly focus rule. Both Claude
+  models left it out where I coded it (Opus 15 times, Sonnet 11). Look at
+  what I counted in Project 1 before loosening the rule.
 
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database

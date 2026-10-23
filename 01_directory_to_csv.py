@@ -132,7 +132,7 @@ Rules:
 
 # A model name starting with "claude-" is sent to Anthropic (needs
 # ANTHROPIC_API_KEY in .env); anything else is sent to Gemini (GEMINI_API_KEY).
-MODEL = "claude-sonnet-5-5"
+MODEL = "claude-opus-5-5"
 
 # How hard a Claude model thinks before answering: low, medium, high, xhigh, max.
 # Higher costs more. (Gemini ignores this.)
@@ -155,7 +155,7 @@ PRICES = {
 # Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
 # results are kept. Reuse the same name to retry pages that failed or to
 # add more pages to a run.
-RUN_NAME = "2026-10-23_codebook-v4_sonnet-5.5"
+RUN_NAME = "2026-10-23_codebook-v4_opus-5.5"
 
 IMAGE_FOLDER = SCRIPT_DIR / "images"
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME

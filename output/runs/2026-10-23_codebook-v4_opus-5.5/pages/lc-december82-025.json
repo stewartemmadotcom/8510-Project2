@@ -1,0 +1,247 @@
+{
+  "page_number": "23",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "JAN F WALSH",
+      "contact_name": "JAN F WALSH",
+      "contact_street_address": "Two Towers, 201 S 132nd Ave",
+      "contact_city": "Shelby",
+      "contact_state": "MI",
+      "contact_zip": "49455",
+      "land_street_address": "Two Towers, 201 S 132nd Ave",
+      "land_city": "Shelby",
+      "land_state": "MI",
+      "land_zip": "49455",
+      "land_location_as_stated": "",
+      "acreage": "40",
+      "num_residents": "1",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children",
+        "Non-lesbian women",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "A 40-acre farm in Shelby, Michigan, owned and lived on by one lesbian who raises animals and keeps a 1-acre garden. Offers ample camping space for visitors (small nightly fee or trade), with housing, cold running water and electricity, woods and farm land. Welcomes visitors, especially lesbians, plus girl and boy children, non-lesbian women, and men if known to her or with women.",
+      "raw_text": "JAN F WALSH Two Towers, 201 S 132nd Ave, Shelby, MI 49455 (616)861-4939. I own a farm, live on it and work it somewhat. I raise animals and have a 1 acre garden. I welcome visitors, especially lesbians as I am quite isolated, but I do not forbid males of any age access IF known to me or with wimmin. There is camping space galore. If the visit is over 1 night I ask for a $2 fee (I trade)/night per person to defray my costs (water, toilet paper, produce, etc). Drugs in moderation are fine. No proselytizing please. Extended visits (over 1 week) need to be decided in person. I welcome: girl and boy children, nonlesbian women, (males). I have/am: 1 lesbian, 40 acres, housing/permanent structures, plumbing (cold running water only)/electricity, camping space, woods, farm land.",
+      "notes": "No separate community name; the listing is headed by the owner's name, used as community_name and contact_name. 'Two Towers' may be the farm's name but is printed as part of the address, so kept in the street field. A speck before '1 acre garden' ('have a . 1 acre garden') read as a stray mark and omitted. Land location: street address and 'I own a farm, live on it', so the mailing address is the land. Type: Private/Individual Land, one woman owns and lives on it ('I own a farm'; '1 lesbian'). num_residents 1 from 'live on it' and '1 lesbian'. Accepted groups: Lesbian women (owner; 'especially lesbians'); girl and boy children and non-lesbian women from the welcome list; '(males)' with no orientation coded as Gay men + Non-gay men, conditional: 'IF known to me or with wimmin'. Focus Farming/self-sufficiency from 'I own a farm, live on it and work it somewhat. I raise animals'. 'Drugs in moderation are fine' so not substance-free.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WISCONSIN WOMYN'S LAND CO-OP",
+      "contact_name": "",
+      "contact_street_address": "Rt 2 Box 42",
+      "contact_city": "Norwalk",
+      "contact_state": "WI",
+      "contact_zip": "54648",
+      "land_street_address": "Rt 2 Box 42",
+      "land_city": "Norwalk",
+      "land_state": "WI",
+      "land_zip": "54648",
+      "land_location_as_stated": "in West Central Wisconsin",
+      "acreage": "80",
+      "num_residents": "4",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children",
+        "Non-lesbian women"
+      ],
+      "focuses": [
+        "Recovery/substance-free"
+      ],
+      "description": "A cooperative of 175 members, almost all lesbians, that owns DOE (Daughters of Earth) Farm, 80 hilly, secluded acres in west central Wisconsin with wooded campground, hayfield, orchard, garden and berries. Four women live there year-round, more in summer. Offers camping with equipment and sliding-scale fees, part of it chemical-free. Welcomes new members/residents, girl children, boy children up to age 2, and non-lesbian women.",
+      "raw_text": "WISCONSIN WOMYN'S LAND CO-OP Rt 2 Box 42, Norwalk, WI 54648 (608)269-5301. WWLC owns DOE (Daughters of Earth) Farm; half wooded campground, half hayfield, orchard, garden, berries, etc in West Central Wisconsin. The land is hilly, secluded, very beautiful. Four womyn live here year 'round, more in summer. Some of the campground chemical free space. Camping equipment available if needed. Sliding scale fees. We welcome: new members/residents, girl children, boy children 'til age of 2, nonlesbian women. We have/are: 175 members almost all lesbians, 80 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women living and working on the land.",
+      "notes": "Land location: rural route address, so it is the land; also 'in West Central Wisconsin'. Type: Intentional Community/Cooperative, a co-op with women living on the land ('Four womyn live here year 'round'). num_residents 4 from 'Four womyn live here year 'round, more in summer'; the 175 members are mostly not residents. Accepted groups: Lesbian women ('almost all lesbians'); girl children; Boy children with condition ''til age of 2'; non-lesbian women named. Focus Recovery/substance-free coded from 'Some of the campground chemical free space', read as chem-free (substance-free) camping; it applies only to part of the campground, and could alternatively mean environmental chemical-free land.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "THE WEB",
+      "contact_name": "Lanning",
+      "contact_street_address": "Box 8742",
+      "contact_city": "Minneapolis",
+      "contact_state": "MN",
+      "contact_zip": "55408",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "80",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Recovery/substance-free",
+        "Disabled women"
+      ],
+      "description": "80 acres where two lesbians live, aiming to create a lesbian community in harmony with nature, centered on interdependent care, healing and health. Offers primitive camping to women. Chemical-free, no pets, guns or men. Welcomes girl and boy children by arrangement and disabled women. Has housing, plumbing/electricity, woods and farm land.",
+      "raw_text": "THE WEB c/o Lanning, Box 8742, Minneapolis, MN 55408 (612)983-2289. We are consciously creating a space in which to live our lesbian reality in harmony with the natural world. Primitive camping here is open to wimmin. We hope to build a community focused on interdependent care toward the healing and health of us all. Chemically free, no pets, no guns, no men. We welcome: girl and boy children by arrangement, differently abled. We have/are: 2 lesbians, 80 acres, housing/permanent structures, plumbing/ electricity, camping space, woods, farm land, women living on the land.",
+      "notes": "Land location unknown: mailing address is a PO box in Minneapolis and the listing does not say where the land is, so no land fields filled. Type: Private/Individual Land under the two-woman rule ('2 lesbians'); 'We hope to build a community' expresses an aim but the listing does not actively recruit residents (no 'new members' on welcome list), so not coded Intentional Community/Cooperative. num_residents 2 from '2 lesbians' with 'women living on the land'. Accepted groups: Lesbian women; Non-lesbian women from 'Primitive camping here is open to wimmin' (pre-1986 rule); girl and boy children 'by arrangement'. 'no men' so no men coded. Focus Recovery/substance-free from 'Chemically free' (read as substance-free rule). Focus Disabled women from welcoming 'differently abled' and 'community focused on interdependent care toward the healing and health of us all'. 'in harmony with the natural world' alone not coded as environmentalism. 'no men' noted; not explicitly separatist.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "NORTH CROW VACATION RANCH",
+      "contact_name": "",
+      "contact_street_address": "RR 1, Box 62-A",
+      "contact_city": "Ronan",
+      "contact_state": "MT",
+      "contact_zip": "59864",
+      "land_street_address": "RR 1, Box 62-A",
+      "land_city": "Ronan",
+      "land_state": "MT",
+      "land_zip": "59864",
+      "land_location_as_stated": "",
+      "acreage": "40",
+      "num_residents": "2",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Gay men",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "A 40-acre vacation ranch in Ronan, Montana, run by two lesbians as a holiday place for lesbians and gay men, with some women-only weeks. Offers tipi lodging or campsites, food service, hot tub, sports facilities and firewood, with swimming and boating nearby. Welcomes girl and boy children and gay men.",
+      "raw_text": "NORTH CROW VACATION RANCH RR 1, Box 62-A, Ronan, MT 59864 (406)676-5169. A new social alternative for lesbians and gay men on holiday. Tipi lodgings ($11/night) or campsite ($7/night). Some weeks are for womyn only. We provide food service ($11/night), hot tub, sports facilities, firewood and basic conveniences. Close by: swimming, boating, etc. Reservations preferred. We welcome: girl and boy children, gay males. We have/are: 2 lesbians, 40 acres, housing/permanent structures, plumbing/electricity, woods, farm land, women living and working on the land.",
+      "notes": "Land location: rural route address, so it is the land. Type: Retreat/Gathering Space, a vacation ranch defined by what it offers visitors ('A new social alternative for lesbians and gay men on holiday'). num_residents 2 from '2 lesbians' with 'women living and working on the land'. Accepted groups: Lesbian women; Gay men from 'gay males' and 'lesbians and gay men'; girl and boy children; Non-lesbian women inferred from 'Some weeks are for womyn only' (pre-1986 rule for 'womyn' in a statement of who is welcome), a weak inference.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "REBECCA, SUSAN, ANNE & MAURINE",
+      "contact_name": "REBECCA, SUSAN, ANNE & MAURINE",
+      "contact_street_address": "4026 Anderson SE",
+      "contact_city": "Albuquerque",
+      "contact_state": "NM",
+      "contact_zip": "87108",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "90",
+      "num_residents": "0",
+      "type": "Land Fund/Seeking Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women"
+      ],
+      "focuses": [
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "Four lesbians with 90 acres of woods, meadows and rocky bluffs with a creek and springs, not yet living there. Long-term plans include cabins for themselves, cabins and campsites for visiting women by pre-arrangement, and some farming, with emphasis on solar and appropriate technology and a place that nurtures the female principle. Welcomes new members/residents.",
+      "raw_text": "REBECCA, SUSAN, ANNE & MAURINE 4026 Anderson SE, Albuquerque, NM 87108 (505)268-1863. The land is a combination of woods, meadows, and rocky bluffs. We have a creek and springs. Long-term plans include: cabins for our personal use, additional cabins and campsites for use by visiting women (by pre-arrangement only), and some farming. Emphasis on solar and appropriate technology and on developing a place that nurtures the female principle. We welcome: new members/resident. We have/are: 4 lesbians, 90 acres, camping space, woods.",
+      "notes": "No community name; listing headed by the four women's names, used as community_name and contact_name. Land location: the mailing address is a city street address in Albuquerque, while cabins for their own use are only planned, so the women do not live on the land; land street/city/zip left blank. The land's state is not stated (possibly NM) so left blank. num_residents 0 because housing is only planned ('Long-term plans include: cabins for our personal use'). Type: they hold 90 acres but are not yet living on it; coded Land Fund/Seeking Land as a group not yet on its land (could also be seen as an intentional community in formation). Accepted groups: Lesbian women ('4 lesbians', welcomes new members); Non-lesbian women inferred from planned 'campsites for use by visiting women' (pre-1986 rule), a weak inference. Focus Environmentalism/eco-friendly from 'Emphasis on solar and appropriate technology'. 'nurtures the female principle' noted but not coded as spirituality; 'some farming' is a passing plan, not coded.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "YORKVILLE WOMEN'S LAND COLLECTIVE",
+      "contact_name": "Annie",
+      "contact_street_address": "50 Balmy",
+      "contact_city": "San Francisco",
+      "contact_state": "CA",
+      "contact_zip": "94110",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "CA",
+      "land_zip": "",
+      "land_location_as_stated": "2 hours north of SF",
+      "acreage": "167",
+      "num_residents": "",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [
+        "Recovery/substance-free"
+      ],
+      "description": "A women's land collective with 167 acres of woods, meadows and grazing land about two hours north of San Francisco. Most of the old group needs to sell and the collective seeks two lesbian-feminists to form a new group, needing commitment, money and respect. Interested in building living space, relationships and feminism, not drug abuse or S&M. Welcomes new members and loans.",
+      "raw_text": "YORKVILLE WOMEN'S LAND COLLECTIVE c/o Annie, 50 Balmy, San Francisco, CA 94110 (415)285-5145. YWLC seeking 2 lesbian-feminists for new group. Old group (save one) needs to sell. Lots of land 2 hours north of SF. Needs committment, money and respect. Into building living space, relationship, feminism. Not into drug abuse or S&M. Send name, address and phone for full details. Issues & money still negotiable. We welcome: new members, loans. We have/are: 6 lesbians, 167 acres, camping space, woods and meadows, farm land (grazing).",
+      "notes": "Land location: mailing address is a San Francisco city address and the land is '2 hours north of SF', so land state CA and other land fields blank. Type: Intentional Community/Cooperative as a collective that holds land and recruits members; uncertain because it does not say anyone lives there and the old group is selling out ('Old group (save one) needs to sell'). num_residents blank: '6 lesbians' but no statement that women live on the land. Accepted groups: Lesbian women only ('seeking 2 lesbian-feminists'). Focus Recovery/substance-free from 'Not into drug abuse'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "THE RANCH",
+      "contact_name": "Helen Wagner",
+      "contact_street_address": "440 Holladay",
+      "contact_city": "San Francisco",
+      "contact_state": "CA",
+      "contact_zip": "94110",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "CA",
+      "land_zip": "",
+      "land_location_as_stated": "near Russian River",
+      "acreage": "500",
+      "num_residents": "",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children",
+        "Non-lesbian women"
+      ],
+      "focuses": [],
+      "description": "500 acres of privately woman-owned land near the Russian River in California, open for camping and events June through September, with daily, weekly and event rates. Boards horses and welcomes workers, with housing limited to workers, plumbing, outhouses, woods, farm land, grills and a creek. Welcomes new members, girl children, boy children under 10, non-lesbian women, dogs and horses.",
+      "raw_text": "THE RANCH c/o Helen Wagner, 440 Holladay, San Francisco, CA 94110 (415)824-5352. Privately Woman owned land open to camping and events June-Sept. Horses boarded, workers welcomed. Daily and weekly rates and special event rates $5/day and up. We welcome: new members, girl children, boy children under 10, nonlesbian women, dogs, horses. We have/are: 500 acres, housing/permanent structures limited to workers, plumbing, outhouses, camping space, woods, farm land, cook out grills, creek on land, near Russian River, women living and working on the land.",
+      "notes": "Land location: mailing address is a San Francisco city address and the land is 'near Russian River', so land state CA and other land fields blank. Type: Private/Individual Land from 'Privately Woman owned land'; it is also defined by camping and events for visitors, so Retreat/Gathering Space was a possible alternative. num_residents blank: 'women living and working on the land' but no count given. Accepted groups: Lesbian women (questionnaire directory, welcomes visitors); girl children; Boy children with condition 'under 10'; non-lesbian women named. Dogs and horses also welcomed.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "LAVENDER HILL",
+      "contact_name": "",
+      "contact_street_address": "1085 Greenwood Rd",
+      "contact_city": "Elk",
+      "contact_state": "CA",
+      "contact_zip": "95432",
+      "land_street_address": "1085 Greenwood Rd",
+      "land_city": "Elk",
+      "land_state": "CA",
+      "land_zip": "95432",
+      "land_location_as_stated": "close to the ocean",
+      "acreage": "60",
+      "num_residents": "8",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Non-lesbian women"
+      ],
+      "focuses": [
+        "Older women"
+      ],
+      "description": "A women's community and retreat near the ocean north of San Francisco, with redwood slopes, meadows, waterfalls and pools, nine or ten structures including a communal kitchen, guesthouse and bath house, gardens and an orchard. Began as an older women's community; eight lesbians of diverse ages, races and backgrounds live there and seek permanent members, especially lesbians over 50. Visitors pay a nightly fee, waived for working-class, older and third world women. Welcomes new members/residents, girl children and possibly non-lesbian women.",
+      "raw_text": "LAVENDER HILL 1085 Greenwood Rd, Elk, AC 95432. A thriving womyn's community and retreat located 3 hours north of SF and close to the ocean. 160 acres of redwood-covered slopes, open grassy meadows, waterfalls, and pools for reflection. Nine structures including a communal kitchen, guesthouse, and bath house, look out over surrounding valleys and hills. A vegetable and flower garden, an herb garden, and an orchard. We began as an older womyn's community. We are now womyn of diverse ages, races and backgrounds, looking for permanent members (especially lesbians over 50). Visitors $5/night (exceptions: working class/older/third world women). We welcome: new members/residents, girl children, nonlesbian women (possibly). We have/are: 8 lesbians, 60 acres, 10 housing/permanent structures, plumbing/electricity with generator, camping space, woods, farm land, women living and working on the land.",
+      "notes": "State printed 'AC' corrected to CA (Elk, 95432 is in California); raw_text keeps 'AC'. Land location: street address, so it is the land. Acreage: text says '160 acres' and the list says '60 acres'; stored the smaller, 60. Structures: 'Nine structures' vs '10 housing/permanent structures'. Type: calls itself 'womyn's community and retreat'; community named first, so Intentional Community/Cooperative. num_residents 8 from '8 lesbians' with 'women living and working on the land'. Accepted groups: Lesbian women; girl children; non-lesbian women 'possibly'. No boy children or men named. Focus Older women from 'We began as an older womyn's community' and 'especially lesbians over 50'. Fee exceptions for 'working class/older/third world women' and 'womyn of diverse ages, races and backgrounds' noted as inclusiveness, not coded as Working-class women or Women of color. Distance '3 hours north of SF' left out of land_location_as_stated per rule.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

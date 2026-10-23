@@ -1,0 +1,48 @@
+Comparison of run '2026-10-23_codebook-v4_sonnet-5.5' with the Project 1 hand-checked rows
+
+Hand-checked rows in scope:   103
+Model rows on checked pages:  108  (10 model rows on other pages were left out)
+Matched pairs (scored):       102
+Missed (hand-checked only):   1
+Extra (model only):           6
+
+Field accuracy on matched pairs:
+  row_kind                    100.0%  (102/102)
+  type                         82.4%  (84/102)
+  contact_name                 97.1%  (99/102)
+  contact_street_address       98.0%  (100/102)
+  contact_city                 99.0%  (101/102)
+  contact_state                98.0%  (100/102)
+  contact_zip                  99.0%  (101/102)
+  land_street_address          92.2%  (94/102)
+  land_city                    92.2%  (94/102)
+  land_state                   92.2%  (94/102)
+  land_zip                     93.1%  (95/102)
+  land_location_as_stated      94.1%  (96/102)
+  page                        100.0%  (102/102)
+  acreage                     100.0%  (102/102)
+  num_residents                87.3%  (89/102)
+  accepted_groups              89.2%  (91/102)
+  focuses                      52.0%  (53/102)
+  raw_text                     96.1%  (98/102)
+  raw_text mean similarity:  0.984  (a match is 0.98 or above)
+
+Missed rows (only in hand-checked data):
+  march86 p.19: Women Only Ranch
+
+Extra rows (only in model output):
+  december82 p.25: ARADIA INC MARIE CURIE TASK FORCE
+  december82 p.25: WOMEN'S WILDERNESS EXPERIENCE
+  june83 p.24: PEPPERLAND
+  march83 p.19: SEA GNOMES HOME
+  march86 p.11: SEA GNOMES' HOME
+  march86 p.11: HALF MOON PINES
+
+Out of scope, not scored (classified ads):
+  june83 p.22: Wisconsin Womyn's Land Co-op (observation 72)
+  june83 p.22: Kringle/Wood's land (observation 73)
+  march83 p.16: Susan B Anthony Memorial Unrest Home (observation 74)
+  march86 p.19: 240 acres near Fayetteville, AR (observation 106)
+
+Pages that failed in this run (from settings.json):
+  none
