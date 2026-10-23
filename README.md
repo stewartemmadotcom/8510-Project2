@@ -41,16 +41,22 @@ DECISIONS.md tracks decisions made throughout this project, as well as notes for
    `requirements.txt`, at the exact versions this project was run with:
 
    ```bash
-   pip install -r requirements.txt
+   python -m pip install -r requirements.txt
    ```
+
+   Use `python -m pip`, not plain `pip`: this `venv` was copied from another
+   project, and its `pip` command still installs into that project's
+   environment.
 
    `convert_pdfs.py` also needs ImageMagick (the `magick` command), which is
    installed separately, e.g. with `brew install imagemagick`.
 
-4. Create a file named `.env` in this folder with your Gemini API key:
+4. Create a file named `.env` in this folder with your API keys. You only
+   need the key for the provider you're using (see `MODEL` below):
 
    ```
-   GEMINI_API_KEY=your-key-here
+   GEMINI_API_KEY=your-gemini-key
+   ANTHROPIC_API_KEY=your-claude-key
    ```
 
    `.env` is in `.gitignore`, so the key is never committed.
@@ -104,7 +110,10 @@ Before running, check the settings near the top of the script:
   name whenever you change `MODEL`, `codebook.md`, `PROMPT`, or `FIELDS`**;
   the script stops if you reuse a name with different settings. Reuse the
   same name to retry failed pages or add more pages to a run.
-- `MODEL`: which Gemini model to use (its price must be listed in `PRICES`).
+- `MODEL`: which model to use; its price must be listed in `PRICES`. A name
+  starting with `claude-` (e.g. `claude-opus-5-5`) is sent to Anthropic's
+  Claude API and needs `ANTHROPIC_API_KEY`; anything else goes to Gemini and
+  needs `GEMINI_API_KEY`. For Claude, `CLAUDE_EFFORT` sets how hard it thinks.
 - `TEST_PAGES`: the images to extract. Right now it is the 18 directory pages
   of the 5 issues hand-checked in Project 1. Set it to `[]` to extract every
   image in `images/`.

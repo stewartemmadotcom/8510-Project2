@@ -1,0 +1,70 @@
+{
+  "page_number": "7",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "DUTCH MOUNTAIN",
+      "contact_name": "Eileen Kennedy",
+      "contact_street_address": "91 Rossmore Rd #3",
+      "contact_city": "Jamaica Plain",
+      "contact_state": "MA",
+      "contact_zip": "02130",
+      "land_street_address": "",
+      "land_city": "Frankfort",
+      "land_state": "ME",
+      "land_zip": "",
+      "land_location_as_stated": "mid-coast",
+      "acreage": "100",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Older women",
+        "Recovery/substance-free",
+        "Working-class women",
+        "Lesbian separatism"
+      ],
+      "description": "A 100-acre land project in mid-coast Maine owned by a working-class lesbian separatist artist and environmental educator currently living in Boston. Plans to build housing and an intergenerational community for lesbian women and girl children, including a lesbian burial ground. Welcomes older women, working-class women, and 12-step/recovery dykes. Substance-free, with no alcohol or drugs.",
+      "raw_text": "DUTCH MOUNTAIN c/o Eileen Kennedy, 91 Rossmore Rd #3, Jamaica Plain, MA 02130 (617)522-2472 (Frankfort, ME, 12 mi from Belfast; mid-coast). I am a 39-year-old working class Lesbian separatist, artist and environmental educator with a long-time dream of an intergenerational Lesbian community (from infancy to very elderly), including a Lesbian burial ground. I'm currently living in Boston, but building May, Sept & Oct 86 - finally! Write c/o General Delivery, Frankfort, ME 04438 while I'm building. I will need a dyke(s) to cabinsit or rent real cheap through winter and maybe longer. I welcome: new members/residents, girl children, older lesbians, artists, working class dykes, 12-step Program dykes. No alcohol or drugs of any kind. I have/am: 1 lesbian, 100 acres, housing/permanent structure this year, camping space, woods, uncultivated farmland.",
+      "notes": "Type is Private/Individual Land under the two-woman rule because one woman owns it and does not live there yet ('I am a 39-year-old working class Lesbian separatist... currently living in Boston', 'I have/am: 1 lesbian'). num_residents is 0 because the owner is 'currently living in Boston' and building is only beginning in 1986. Land location in Frankfort, ME from text ('Frankfort, ME', 'Write c/o General Delivery, Frankfort, ME 04438 while I'm building'); land_location_as_stated recorded as 'mid-coast' from '(Frankfort, ME, 12 mi from Belfast; mid-coast)', leaving out distance to Belfast per instructions. Accepted groups: Lesbian women (directory context, 'Lesbian separatist', 'older lesbians, artists, working class dykes, 12-step Program dykes'); Girl children ('girl children'). Focuses: Lesbian separatism ('Lesbian separatist'); Working-class women ('working class Lesbian separatist', 'working class dykes'); Older women ('older lesbians', 'from infancy to very elderly'); Recovery/substance-free ('12-step Program dykes. No alcohol or drugs of any kind').",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "FEATHERS FARM",
+      "contact_name": "",
+      "contact_street_address": "PO Box 19",
+      "contact_city": "Bryantville",
+      "contact_state": "MA",
+      "contact_zip": "02327",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "MA",
+      "land_zip": "",
+      "land_location_as_stated": "off Rte 27 at Kingston & Pembroke Town Line on Silver Lake",
+      "acreage": "100",
+      "num_residents": "3",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "A 100-acre farm on Silver Lake in Massachusetts lived and worked on by two women and a girl child, offering camping, outdoor space for workshops and retreats, and work experience. Features ponds, organic gardens, small livestock, and bees. Welcomes new members, non-lesbian women, girl and boy children, and males (maybe).",
+      "raw_text": "FEATHERS FARM PO Box 19, Bryantville, MA 02327 (617)585-8826 (off Rte 27 at Kingston & Pembroke Town Line on Silver Lake). We offer scenic grounds and meaningful work experience with easy access to Boston and Cape Cod - secluded outdoor space available to groups and individuals for workshops, retreats, etc. Accomodations are rough (outhouse, barn kitchen) - ponds for swimming, fishing, canoe - organic gardens, small livestock, bees. Usual donation for camping $6 a night. We welcome: new members, girl & boy children, non-lesbian women, males (maybe), dogs on leashes, horses. BYO food. We have/are: two with a girl child, 100 acres, 1 house, plumbing/electricity, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Type is Private/Individual Land under the two-woman rule ('two with a girl child... women living and working on the land'); taking campers, guests, and work exchanges does not change it. num_residents is 3 ('two with a girl child' living and working on the land, counting members' children per codebook). Land state is MA from contact address and local landmarks (off Rte 27 at Kingston & Pembroke Town Line); land_city is blank because it is at the town line and PO box is not the land. Accepted groups: Lesbian women (directory context); Non-lesbian women ('non-lesbian women'); Girl children and Boy children ('girl & boy children'); Gay men and Non-gay men ('males (maybe)'). Focuses: Farming/self-sufficiency ('organic gardens, small livestock, bees' as cited in codebook); codebook explicitly notes that organic gardening as part of farming here is 'Farming only' and not Environmentalism/eco-friendly.",
+      "section": "DIRECTORY OF LAND GROUPS",
+      "continues_previous": ""
+    }
+  ]
+}

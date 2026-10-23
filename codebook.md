@@ -23,12 +23,19 @@ renaming communities, closing dates, and merging an organization with its land.
   naming two ended communities gives two rows.
 - A letter printed in the directory from a listed community that adds to or
   corrects its listing is also a not_a_listing row.
-- Groups without land are not rows, even when LC prints them. Listings under
-  an editor's note like "These groups don't have land, per se" are skipped,
-  unless the listing itself says the group lives on or owns its own land
-  (a lesbian residential community on its own property is a row even
-  without acreage). Guest houses, inns, and trips that are only businesses,
-  with no land community, are skipped too.
+- **A place on its own land is a row; a group or business with no land of
+  its own is not.** This holds even under an editor's note like "These
+  groups don't have land, per se, or they aren't exactly land groups":
+  - Rows: a women's campground on its own 10 acres (Wilderness Way, under
+    that note), a lesbian residential community on its own property even
+    without acreage (Pagoda, under that note), a women's guest house or
+    vacation ranch on its own rural land.
+  - Not rows: groups that only organize, travel, run trips or workshops
+    elsewhere, or are looking for stories (Ellie's Nest, River Most Wild,
+    Women's Wilderness Experience, Lesbians on Land); apartments or guest
+    rooms in a town with no land (Gabriel's in Provincetown).
+  - When unsure, the test is whether the listing describes land the place
+    itself holds or lives on.
 - Land groups LC says are "not women's land groups, but they do welcome
   lesbians" are rows, with `notes` beginning "NOT WOMEN'S LAND".
 - One printed paragraph that names two separate groups is two rows. Each gets
@@ -37,8 +44,9 @@ renaming communities, closing dates, and merging an organization with its land.
   Land Trust and California Women's Land Trust, each with its own address,
   so it is two rows.
 - Not rows: anything that is not about land, such as listings of books,
-  albums, records, publications, businesses, trips, or events, and the
-  introduction or instructions at the start of the directory.
+  albums, records, publications, trips, events, or businesses with no land
+  of their own, and the introduction or instructions at the start of the
+  directory (except a sentence naming an ended community, above).
 
 ## community_name
 - The name as printed, usually underlined or in capitals at the start.
@@ -98,11 +106,24 @@ renaming communities, closing dates, and merging an organization with its land.
 - `land_state` may be filled from a vague place ("southern Oregon" gives OR)
   or from the mailing state when the listing places the land nearby.
 - `land_location_as_stated` keeps the listing's own words for where the land
-  is, copied exactly, including the leading words ("Located in Days Creek,
-  OR", "southern Oregon", "25 miles southeast of Tucson"). Only the place
-  phrase: not distances to other cities or descriptions of the climate.
-  Blank if the listing says nothing about where the land is beyond the
-  address.
+  is and what setting it is in, copied exactly:
+  - where it is: "Located in Days Creek, OR", "southern Oregon", "25 miles
+    southeast of Tucson", "Between Ithaca & Watkins Glen, NY"
+  - its setting, only when a sentence of the listing describes where or in
+    what landscape the land is, in the listing's words: "the Elwha River
+    running through the back meadow", "on an old blue stone quarry with a
+    lovely, secluded pond", "beautiful desert country with big skies filled
+    with stars", "a farm in Massachusetts"
+  - never items from the "We have/are:" list ("woods", "farm land", "creek",
+    "camping space"), and never general praise ("gorgeous secluded land",
+    "in the country") or a list of what the land has ("20 acres, creek,
+    woods, open"). Most listings have no setting phrase; leave the field
+    blank unless one is clearly there.
+  - for a not_a_listing row, the place given for the ended community: "A
+    Woman's Place (Athol, NY)" gives "Athol, NY"
+  - Separate two phrases with "; ". Leave out distances to other cities,
+    climate, and buildings. Blank if the listing says nothing about where
+    the land is or its setting beyond the address.
 - A country other than the US goes in `notes`.
 
 ## type
@@ -176,15 +197,22 @@ of this listing.
 Who the listing welcomes, from the controlled vocabulary only.
 - In the questionnaire directories (1982 and later), lesbians are never on the
   "We welcome:" list because the whole directory is for lesbians.
-- **Non-lesbian women in the questionnaire directories (1982 on): code them
-  only when the listing names them** ("nonlesbian women", "straight women",
-  "non-lesbians"). General words like "women", "wimmin", "womyn",
-  "lesbian-feminists", "women living on the land" mean lesbians, not
-  non-lesbian women. This is the most common accepted-groups error. (LC's
-  1986 directory says so outright: "If the groups are open to nonlesbians or
-  dogs it will specifically say so in their listing".)
-- Only in the 1976 prose directory, "women" or "all women" means Lesbian
-  women + Non-lesbian women.
+- **Non-lesbian women depend on the date and on how "women" is used:**
+  - **Before 1986:** "women", "all women", "wimmin" or "womyn" in a
+    statement of who is welcome means Lesbian women + Non-lesbian women:
+    "women and children", "We welcome wimmin and children", "for womyn of
+    all ages, races, cultures and backgrounds", "all women of all colours
+    and persuasions".
+  - But "women" used only to describe who lives or works there ("women
+    living and working on the land", a "We have/are:" item) does not add
+    Non-lesbian women, and neither do words that name lesbians
+    ("lesbian-feminists", "dykes", "lesbians").
+  - **From 1986 on:** code Non-lesbian women only when the listing names
+    them ("nonlesbian women", "straight women"), and read general words like
+    "women" or "wimmin" as lesbians. LC's 1986 directory says: "If the groups
+    are open to nonlesbians or dogs it will specifically say so in their
+    listing".
+  - Always code Non-lesbian women when the listing names them, in any year.
 - Code Lesbian women for every questionnaire-directory listing that welcomes
   anyone or describes lesbians living there.
 - "Children", or children with no gender given, means Girl children + Boy

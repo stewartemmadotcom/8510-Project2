@@ -1,0 +1,270 @@
+{
+  "page_number": "10",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "",
+      "contact_name": "",
+      "contact_street_address": "",
+      "contact_city": "",
+      "contact_state": "",
+      "contact_zip": "",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "9",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Spirituality/ritual"
+      ],
+      "description": "Continued listing for a 9-acre land with 2 resident lesbians, offering camping space and woods, focused on healing, transforming, and unity consciousness; welcomes non-lesbian women and girl and boy children.",
+      "raw_text": "created by, all the women who come here. Our purpose is to heal, to open the path for transforming ourselves and the world, and to establish unity consciousness on the Planet. We welcome: girl & boy children, nonlesbian women, dogs on a leash. We have/are: 2 lesbians, 9 acres, 1 permanent structure, electricity, camping space, woods, 2 women living on the land.",
+      "notes": "Continued from previous page. Type is Private/Individual Land following the two-woman rule ('2 lesbians, 9 acres... 2 women living on the land'). Focus Spirituality/ritual coded from 'Our purpose is to heal, to open the path for transforming ourselves and the world, and to establish unity consciousness on the Planet'. Accepted groups include Lesbian women (directory context), Non-lesbian women, Girl children, and Boy children ('girl & boy children, nonlesbian women').",
+      "section": "",
+      "continues_previous": "yes"
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "ARLENE & ARLINE",
+      "contact_name": "ARLENE & ARLINE",
+      "contact_street_address": "PO Box 511",
+      "contact_city": "Desert Hot Springs",
+      "contact_state": "CA",
+      "contact_zip": "92240",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "CA",
+      "land_zip": "",
+      "land_location_as_stated": "beautiful desert country with big skies filled with stars",
+      "acreage": "5",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "A 5-acre rural homestead in the California desert run by two lesbian lovers who grow food, raise livestock, and welcome visits from lesbians and girl children.",
+      "raw_text": "ARLENE & ARLINE PO Box 511, Desert Hot Springs, CA 92240 (619)329-8916. We are lovers who have lived rurally for the past 10 years. We grow our own food, have milk-goats, chickens, bees, and fruit trees. We live simply and happily, without TV and media, in beautiful desert country with big skies filled with stars. We enjoy visits from lesbians who have an appreciation of rural life and physical work, who are making an effort to eradicate their racist, classist, ageist, anti-Semitic conditioning. We are ethnic women. We welcome: girl children. We have/are: 2 lesbians, 5 acres, housing/permanent structures, plumbing/electricity, camping space, desert land with much vegetation and trees, women working the land.",
+      "notes": "Type is Private/Individual Land based on two-woman rule ('lovers who have lived rurally for the past 10 years... 2 lesbians'). Land state inferred from mailing address. Focus Farming/self-sufficiency coded from 'We grow our own food, have milk-goats, chickens, bees, and fruit trees'. 'We are ethnic women' and anti-bias statement noted but not coded as Women of color focus because it does not explicitly recruit or center women of color.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "BEE SONG HONEY FARMS",
+      "contact_name": "",
+      "contact_street_address": "Rt 1 Box 174",
+      "contact_city": "Montague",
+      "contact_state": "CA",
+      "contact_zip": "96064",
+      "land_street_address": "Rt 1 Box 174",
+      "land_city": "Montague",
+      "land_state": "CA",
+      "land_zip": "96064",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "A working farm and ranch in northern California run by two lesbians raising bees, horses, donkeys, and poultry, and selling honey and mail-order merchandise; currently has no visitor facilities.",
+      "raw_text": "BEE SONG HONEY FARMS Rt 1 Box 174, Montague, CA 96064. Raise and sell bees and honey, provide pollination services, make and sell beekeeping equipment. Also breed, raise and train Bashkir Curly horses and standardbred donkeys, plus breed and raise a wide variety of poultry, waterfowl and exotics, including peafowl, rare pheasants and emus. Make and sell mail order t-shirts, caps and rubber stamps relating to bees, donkeys, mules, etc, as well as a line of women's designs. Welcome correspondence from other ranching women; no visitor facilities at present. We have/are: 2 lesbians, housing/permanent structures, plumbing/electricity, farmland, women living and working on the land.",
+      "notes": "Rural route address is the land address. Type is Private/Individual Land under the two-woman rule ('2 lesbians... women living and working on the land'). Focus Farming/self-sufficiency coded from extensive livestock breeding and honey production.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "PENTHESILEIA",
+      "contact_name": "CK",
+      "contact_street_address": "PO Box 44",
+      "contact_city": "Seal Rock",
+      "contact_state": "OR",
+      "contact_zip": "97376",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "OR",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "23",
+      "num_residents": "1",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Workshops/education"
+      ],
+      "description": "An inactive group on 23 rural coastal Oregon acres with cabins and camping, currently with one resident lesbian who hopes to revive the community and actively seeks new members and residents.",
+      "raw_text": "PENTHESILEIA c/o CK, PO Box 44, Seal Rock, OR 97376 (503)563-3643. Inactive group with 23 acres plus some primitive cabins. Many skills to share. Very rural, very private, many camping spaces, and trees. Appreciate work trades for space sharing. Come share and experience the mild central Oregon coast climate, help realize your dreams and mine. Call Carol before 5 am or between 5-8:30 pm. Bon Voyage. I welcome: new members/residents, girl & boy children under control, dogs under 100% control. I have/am: 1 lesbian, 23 acres, housing/permanent structure, electricity, lots of camping space, woods, farmland, women living and working on the land, inactive group with hopes to revive.",
+      "notes": "Type is Intentional Community/Cooperative because although currently one resident ('1 lesbian... women living and working on the land'), it is an 'inactive group with hopes to revive' actively seeking 'new members/residents'. Land state OR inferred from contact state and 'central Oregon coast'. Focus Workshops/education coded from 'Many skills to share'. 'mild central Oregon coast climate' omitted from land_location_as_stated per rule excluding climate.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "OREGON WOMEN'S LAND TRUST",
+      "contact_name": "",
+      "contact_street_address": "PO Box 1692",
+      "contact_city": "Roseburg",
+      "contact_state": "OR",
+      "contact_zip": "97470",
+      "land_street_address": "",
+      "land_city": "Days Creek",
+      "land_state": "OR",
+      "land_zip": "",
+      "land_location_as_stated": "Located in Days Creek, OR",
+      "acreage": "150",
+      "num_residents": "",
+      "type": "Land Trust",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "A 150-acre land trust in Days Creek, Oregon, providing open land access for women, fundraising to stave off mortgage foreclosure, and seeking women to live and work on the land.",
+      "raw_text": "OREGON WOMEN'S LAND TRUST PO Box 1692, Roseburg, OR 97470 (Located in Days Creek, OR ). OWLT is open Women's Land dedicated to provide women access to land, especially those women who would otherwise be denied. We are funded by contributions from women around the country. We have a newsletter that is sent quarterly, with an active mailing list of 250 women. At present, we are looking for women to live and work on the land. We are currently raising funds to pay the remaining mortgage, as the former owners (mortgage holders) are threatening us with monthly foreclosure. We welcome: new members/residents, girl children, boy children upon agreement, nonlesbian women, dogs. We have: 150 acres, housing/permanent structures, camping space, woods, farmland, women living on the land.",
+      "notes": "Type Land Trust based on name and purpose ('open Women's Land dedicated to provide women access to land'). Land location specified as Days Creek, OR. Residents left blank as no count is specified ('women living on the land'). Boy children accepted conditionally ('upon agreement').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "RAINBOW'S END",
+      "contact_name": "",
+      "contact_street_address": "886 Raven Ln",
+      "contact_city": "Roseburg",
+      "contact_state": "OR",
+      "contact_zip": "97470",
+      "land_street_address": "886 Raven Ln",
+      "land_city": "Roseburg",
+      "land_state": "OR",
+      "land_zip": "97470",
+      "land_location_as_stated": "",
+      "acreage": "50",
+      "num_residents": "6",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Older women",
+        "Spirituality/ritual",
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "An intentional community of 6 lesbians on 50 acres near Roseburg, Oregon, dedicated to goddess identification, preserving land wild, tree planting, and consensus decision-making; welcomes girl children, teens, and older lesbians.",
+      "raw_text": "RAINBOW'S END 886 Raven Ln, Roseburg, OR 97470 (503)673-7649 (13 miles west of Roseburg). We relate independently of one another - we come together for processing big decisions. We all love living in the country in the safety of women's land. We are dedicated to mother nature and are into goddess identification. We preserve the land as wild as much as possible. We love trees and plant often to make up for patriarchal cutting. We bless the land and so appreciate her cradling us. Nature is our best reflection. We welcome: girl children, teens and older lesbians. We have/are: 6 lesbians, 50 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Street address is the land address; distance '(13 miles west of Roseburg)' omitted from location per rule. Type is Intentional Community/Cooperative (6 resident lesbians). Focuses include Older women ('older lesbians'), Spirituality/ritual ('goddess identification', 'bless the land'), and Environmentalism/eco-friendly ('preserve the land as wild as much as possible', 'plant often to make up for patriarchal cutting').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "STEPPINGWOODS",
+      "contact_name": "Jemma Crae",
+      "contact_street_address": "6012 Coos Bay Wagon Rd",
+      "contact_city": "Roseburg",
+      "contact_state": "OR",
+      "contact_zip": "97470",
+      "land_street_address": "6012 Coos Bay Wagon Rd",
+      "land_city": "Roseburg",
+      "land_state": "OR",
+      "land_zip": "97470",
+      "land_location_as_stated": "",
+      "acreage": "130",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [],
+      "description": "A 130-acre woman-owned forested property near Roseburg, Oregon, home to 2 lesbians, generating income from firewood and thinning logging, with camping space available.",
+      "raw_text": "STEPPINGWOODS c/o Jemma Crae, 6012 Coos Bay Wagon Rd, Roseburg, OR 97470. 130 acre forested land woman-owned for 10 years - firewood, thinning logging for income, dogs, cats, chickens. We welcome: new residents (possibly), dogs. We have/are: 2 lesbians, 130 acres, 2 resident structures, plumbing/electricity, camping space ($3/day, 1 week limit), woods, women living and working on the land.",
+      "notes": "Road address is the land address. Type Private/Individual Land under two-woman rule ('woman-owned for 10 years... 2 lesbians'); welcoming new residents is only '(possibly)'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "ROOTWORKS",
+      "contact_name": "",
+      "contact_street_address": "2000 King Mtn Trail",
+      "contact_city": "Sunny Valley",
+      "contact_state": "OR",
+      "contact_zip": "97497",
+      "land_street_address": "2000 King Mtn Trail",
+      "land_city": "Sunny Valley",
+      "land_state": "OR",
+      "land_zip": "97497",
+      "land_location_as_stated": "",
+      "acreage": "7",
+      "num_residents": "2",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Recovery/substance-free",
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "A 7-acre land in Sunny Valley, Oregon, with solar batteries and simple lifestyle, actively seeking new residents and daytime visitors; substance-free and welcoming non-lesbian women and children.",
+      "raw_text": "ROOTWORKS 2000 King Mtn Trail, Sunny Valley, OR 97497. We are 57 & 60 years old with strong interests in photography, ecology and alternative technology. We enjoy the company and help of women of all ages who can adapt to our simple lifestyle for short or long visits. We welcome: new residents, girl children, nonaggressive boy children for daytime visits, not overnight, nonlesbian women, dogs (on leash or in car). No guns, drugs, or dope. Smoking limited to outdoor gravel area. We ask $4/day/woman. We have/are: 2 lesbians, 7 acres, housing/permanent structures, solar batteries, camping space, woods, women living on the land.",
+      "notes": "Trail address is the land address. Type is Intentional Community/Cooperative because the 2 residents actively recruit ('We welcome: new residents'). Focuses: Recovery/substance-free ('No guns, drugs, or dope') and Environmentalism/eco-friendly ('ecology and alternative technology', 'solar batteries'). Boy children welcome conditionally ('nonaggressive boy children for daytime visits, not overnight').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WOMANSHARE",
+      "contact_name": "",
+      "contact_street_address": "PO Box 681",
+      "contact_city": "Grants Pass",
+      "contact_state": "OR",
+      "contact_zip": "97526",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "OR",
+      "land_zip": "",
+      "land_location_as_stated": "southern Oregon",
+      "acreage": "23",
+      "num_residents": "5",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "A feminist collective of 5 to 8 lesbians on 23 forested acres in southern Oregon with women-built cabins and camping, welcoming short-term visits, non-lesbian women, and children.",
+      "raw_text": "WOMANSHARE PO Box 681, Grants Pass, OR 97526 (503)862-2807. WomanShare is a feminist collective of 5-8 lesbians living on forested land in southern Oregon. We have a main house and several women-built cabins and secluded camping spots. The main house has electricity, hot water, and shower. We welcome: girl children, boy children under age 8, nonlesbian women. One-to-four day visits when space is available and we ask $3/day for food and $2-10/day for our land support fund. We have/are: 5-8 lesbians, 23 acres, housing/permanent structures, plumbing/electricity, outdoor toilet, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Type Intentional Community/Cooperative ('feminist collective of 5-8 lesbians living on forested land'). num_residents stored as lower bound 5 of range 5-8. Boy children welcome with age limit ('boy children under age 8'). Land state OR from 'southern Oregon'.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

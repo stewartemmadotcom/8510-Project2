@@ -1,5 +1,25 @@
 # Decisions
 
+## 2026-10-22: three codebook questions settled (codebook v3)
+- **Places under LC's "don't have land, per se" note:** a place on its own
+  land is a row, even when it is a business or LC says it has no land
+  (Wilderness Way, a women's campground on its own 10 acres; Pagoda, a
+  residential community on its own property). Groups and businesses with
+  no land of their own are not rows (Ellie's Nest, Gabriel's apartments in
+  Provincetown). This is what I did in Project 1; v2's "skip businesses"
+  wording had made 3.8 Flash drop Wilderness Way.
+- **land_location_as_stated holds place and setting:** where the land is,
+  plus the listing's own words for its setting ("the Elwha River running
+  through the back meadow", "beautiful desert country with big skies",
+  "ocean"), and the town given for an ended community ("Athol, NY"). This is
+  what I did in Project 1; v2 had said "only the place phrase".
+- **Non-lesbian women before 1986:** "women"/"wimmin"/"womyn" in a statement
+  of who is welcome means Lesbian + Non-lesbian women ("women and children",
+  "all women of all colours and persuasions"). "Women" that only describes
+  who lives there, and words naming lesbians ("lesbian-feminists"), do not
+  add Non-lesbian women. From 1986 on, only when named. This is my
+  Project 1 rule; v2 had wrongly read "women" as lesbians from 1982 on.
+- No changes needed to the Project 1 data for any of these.
 
 
 # Notes 
@@ -173,6 +193,101 @@
     this field hold descriptions of the land, or only where it is?
   - 2 where we picked different phrases from the same listing (Whispering
     Winds, Another Demention).
+  - Answered 2026-10-22: place and setting (see Decisions).
+
+## 2026-10-22_codebook-v3_argon-4 run (codebook v3, Gemini 4 Argon)
+- Codebook v3 (the three decisions above) and model gemini-4-argon ($2 in /
+  $10 out per 1M tokens until Nov 30, 2026, then double). The 18 test pages
+  plus July 1988 p. 23 (not scored). No failures.
+- Cost $1.11, about the same as 3.8 Flash ($1.05): Argon wrote fewer
+  thinking tokens per page, which made up for the higher price. After
+  Nov 30 the same run would cost about $2.20.
+- July 1988 p. 23 extracted fine: no RECITATION refusal this time.
+- Results (v2 3.8 Flash -> v3 Argon): differences per listing 1.32 -> 1.26;
+  30 of 102 listings match me exactly.
+  - Better: type 84 -> 89%, num_residents 92 -> 95%, accepted_groups
+    89 -> 94% (partly the corrected pre-1986 rule), row_kind 99 -> 100%,
+    contact_street 96 -> 98%. Missed rows 3 -> 1 (Wilderness Way and
+    Feathers Farm's letter are found now; Women Only Ranch is still not in
+    the test pages).
+  - Worse: focuses 73 -> 66%, land_location_as_stated 91 -> 77%,
+    land_state 92 -> 89%, contact_name 97 -> 94%. Extra rows 2 -> 5 (Sea
+    Gnomes Home twice, Half Moon Pines, Pepperland, Aradia).
+- Why the two big drops:
+  - land_location_as_stated: v3 asks for the setting too, so Argon now
+    fills setting phrases in listings where I left the field blank
+    ("gorgeous secluded land; maple sugar bush", "forested property"). My
+    own Project 1 coding recorded setting for some listings but not
+    others, so this field is partly a judgment call no model can match.
+  - focuses: Argon codes more than I did (added Farming 10 times,
+    Spirituality 8, Archives 6, Recovery 6; left out only 10 in all).
+- Both changes happened at once (codebook v2 -> v3 and 3.8 Flash -> Argon),
+  so I can't tell how much each one did. A 3.8 Flash run on v3 (about $1)
+  would separate them.
+- Overall: Argon and 3.8 Flash are about equally good; Argon is better on
+  type, residents and groups, 3.8 Flash on focuses. What disagrees now is
+  mostly where my own coding is a judgment call (focuses, setting).
+- Small fixes noticed: July 1988 is not in `reference/sources.csv`; land_state
+  sometimes written out ("Arkansas" for AR).
+
+## 2026-10-22_codebook-v3_flash-3.8 run (codebook v3, 3.8 Flash)
+- Same codebook and pages as the Argon run; only the model differs. Cost
+  $0.96. July 1988 p. 23 was refused again (RECITATION), though Argon
+  extracted it: the refusal depends on the model.
+- All runs side by side (accuracy %, land_location scored loosely):
+
+  | field | v1 lite | v2 lite | v2 3.8F | v3 3.8F | v3 Argon |
+  |---|---|---|---|---|---|
+  | type | 73 | 70 | 84 | **92** | 89 |
+  | num_residents | 73 | 67 | 92 | 92 | **95** |
+  | accepted_groups | 65 | 67 | 89 | **98** | 94 |
+  | focuses | 43 | 44 | 73 | **75** | 66 |
+  | land_location_as_stated | 89 | 89 | **91** | 62 | 77 |
+  | land street/city/zip | 68/70/72 | 84/79/85 | 91/93/95 | 92/90/96 | 92/93/93 |
+  | contact_name | 88 | 86 | **97** | 96 | 94 |
+  | raw_text | 94 | 94 | 98 | 97 | 97 |
+  | differences per listing | 2.94 | 2.62 | **1.12** | 1.25 | 1.26 |
+  | missed / extra rows | 6/10 | 5/13 | 3/2 | 1/4 | 1/5 |
+
+- Model effect (v3 3.8 Flash vs v3 Argon, same codebook): about equal
+  overall (1.25 vs 1.26). 3.8 Flash is better on type, groups and focuses;
+  Argon on residents and land_location, and it did not refuse July 1988.
+  Argon is not worth paying more for on this task.
+- Codebook effect (v2 -> v3, both 3.8 Flash):
+  - The pre-1986 "women" fix worked: accepted_groups 89 -> 98%.
+  - type 84 -> 92%, missed rows 3 -> 1 (Wilderness Way found).
+  - The setting rule backfired: land_location_as_stated 91 -> 62%. In 24
+    listings the model filled it where I left it blank, mostly by copying
+    items from the "We have/are:" list ("woods", "farm land", "creek,
+    woods, open"). The v3 example "a setting word from the We have/are:
+    list such as 'ocean'" (from Pagoda) caused this. It is the only reason
+    differences per listing went up (1.12 -> 1.25).
+- To fix in v4: take out the "We have/are:" example; setting only from a
+  sentence that describes where or in what setting the land is, never from
+  questionnaire items.
+
+## 2026-10-23_codebook-v4_flash-3.8 run (setting rule fixed)
+- Codebook v4: setting in land_location_as_stated only from a sentence that
+  describes where the land is or its landscape; never "We have/are:" items,
+  general praise, or lists of what the land has. 3.8 Flash, same 19 pages.
+- Dec 1982 p. 23 was refused (RECITATION) in the first pass and extracted on
+  a retry; July 1988 p. 23 was refused both times (3.8 Flash has now refused
+  it in every run; Argon extracted it). Cost $1.03 + $0.07 retry.
+- Best run so far: 1.09 differences per listing (v2 3.8F 1.12, v3 3.8F
+  1.25, v3 Argon 1.26).
+  - land_location_as_stated 62 -> 83%: the fix worked.
+  - focuses 75 -> 78% (best yet); accepted_groups 98 -> 94%; type 92 -> 90%;
+    other fields about the same. Changes of 1-4 points are within
+    run-to-run noise.
+  - Missed 1 (Women Only Ranch, not in test pages), extra 4 (Aradia,
+    Pepperland, Sea Gnomes' Home, Half Moon Pines).
+- What is left in land_location_as_stated (17): now mostly the model leaving
+  it blank where I filled in a distance from a city ("35 miles north of
+  Baltimore", "approx 30 miles SE of Portland", "15 miles from town with
+  jobs"). The codebook says to leave out "distances to other cities", but
+  my Project 1 coding keeps them when they locate the land. Fix for v5:
+  keep a distance or direction from a named place when it says where the
+  land is.
 
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database

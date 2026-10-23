@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
+import base64
 import csv
+import io
 import json
 import mimetypes
 import os
@@ -8,9 +10,11 @@ import re
 from datetime import datetime
 from pathlib import Path
 
+import anthropic
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
+from PIL import Image
 
 SCRIPT_DIR = Path(__file__).parent
 REFERENCE_FOLDER = SCRIPT_DIR / "reference"   # copied from 8510-Project1/source_data
@@ -113,7 +117,7 @@ CODEBOOK = (SCRIPT_DIR / "codebook.md").read_text(encoding="utf-8")
 # because several coding rules depend on the date.
 PROMPT = """You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. This image is a page from {source}. It is part of the land directory, which listed women's land communities. Extract every listing on the page as one row, in the order they appear, following the codebook below exactly.
 Some listings continue from one page to the next. If the text at the top of the page does not start with a community name, it is the end of a listing from the previous page: extract it as its own entry and follow the instructions for the continues_previous column.
-Do not extract these as rows: the page number, the running header, section headings (record them in the section field instead), introductory or explanatory paragraphs that are not a listing, anything that is not about land (books, albums, publications, businesses, trips, events), the "This content downloaded from..." notice at the bottom of the page, and faint text showing through from the back of the page.
+Do not extract these as rows: the page number, the running header, section headings (record them in the section field instead), introductory or explanatory paragraphs that are not a listing, anything that is not about land (books, albums, publications, trips, events, businesses with no land of their own), the "This content downloaded from..." notice at the bottom of the page, and faint text showing through from the back of the page.
 
 Rules:
 - Extract EVERY listing. Never skip one because a field is unclear or
@@ -126,11 +130,21 @@ Rules:
 
 # --- Settings ---------------------------------------------------------------
 
-MODEL = "gemini-3.8-flash"
+# A model name starting with "claude-" is sent to Anthropic (needs
+# ANTHROPIC_API_KEY in .env); anything else is sent to Gemini (GEMINI_API_KEY).
+MODEL = "claude-sonnet-5-5"
+
+# How hard a Claude model thinks before answering: low, medium, high, xhigh, max.
+# Higher costs more. (Gemini ignores this.)
+CLAUDE_EFFORT = "high"
 
 # Paid-tier prices in US dollars per 1 million tokens: (input, output).
-# Check https://ai.google.dev/gemini-api/docs/pricing -- prices change.
+# Check https://ai.google.dev/gemini-api/docs/pricing and
+# https://platform.claude.com/docs/en/about-claude/pricing -- prices change.
 PRICES = {
+    "claude-opus-5-5": (4.00, 20.00),
+    "claude-sonnet-5-5": (2.00, 10.00),
+    "gemini-4-argon": (2.00, 10.00),    # through Nov 30, 2026; doubles Dec 1, 2026
     "gemini-3.8-flash": (0.75, 3.75),   # through Dec 31, 2026; doubles Jan 1, 2027
     "gemini-3.5-flash-lite": (0.30, 2.50),
     "gemini-3.1-flash-lite": (0.25, 1.50),
@@ -141,7 +155,7 @@ PRICES = {
 # Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
 # results are kept. Reuse the same name to retry pages that failed or to
 # add more pages to a run.
-RUN_NAME = "2026-10-22_codebook-v2_flash-3.8"
+RUN_NAME = "2026-10-23_codebook-v4_sonnet-5.5"
 
 IMAGE_FOLDER = SCRIPT_DIR / "images"
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME
@@ -163,6 +177,9 @@ TEST_PAGES = (
     + [f"lc-march83-{n:03}.png" for n in range(20, 22)]
     + [f"lc-june83-{n:03}.png" for n in range(24, 27)]
     + [f"lc-march86-{n:03}.png" for n in range(9, 14)]
+    # Not hand-checked, so not scored: the page Gemini refused (RECITATION)
+    # in the 2026-10-21 run, to see whether that still happens
+    + ["lc-july88-023.png"]
 )
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
@@ -196,8 +213,96 @@ def build_schema(fields):
     }
 
 
+def uses_claude():
+    return MODEL.startswith("claude-")
+
+
+def closed_schema(schema):
+    """Claude's structured outputs need every object in the schema to say
+    "additionalProperties": false (no fields beyond the ones listed)."""
+    if isinstance(schema, dict):
+        schema = {key: closed_schema(value) for key, value in schema.items()}
+        if schema.get("type") == "object":
+            schema["additionalProperties"] = False
+    elif isinstance(schema, list):
+        schema = [closed_schema(item) for item in schema]
+    return schema
+
+
+# Claude reads images up to 2576 pixels on the long edge; larger page scans
+# are shrunk to that size before sending
+CLAUDE_MAX_IMAGE_EDGE = 2576
+
+
+def image_for_claude(image_path):
+    """The page image as base64 JPEG, shrunk to fit Claude's size limit.
+    (A resized PNG of a page is about 10 MB, over Claude's 5 MB per image;
+    a high-quality JPEG keeps the text sharp at about a tenth of that.)"""
+    with Image.open(image_path) as image:
+        image = image.convert("RGB")
+        image.thumbnail((CLAUDE_MAX_IMAGE_EDGE, CLAUDE_MAX_IMAGE_EDGE))
+        buffer = io.BytesIO()
+        image.save(buffer, format="JPEG", quality=90)
+    return base64.standard_b64encode(buffer.getvalue()).decode("utf-8")
+
+
 def extract_page(client, image_path, source_text):
-    """Send one image to Gemini and return (parsed data, response)."""
+    """Send one image to the model and return (parsed data, input tokens,
+    output tokens)."""
+    if uses_claude():
+        return extract_page_claude(client, image_path, source_text)
+    return extract_page_gemini(client, image_path, source_text)
+
+
+def extract_page_claude(client, image_path, source_text):
+    """Send one image to Claude and return (parsed data, input tokens,
+    output tokens)."""
+    # Streaming, because a full page of listings can be a long answer
+    with client.beta.messages.stream(
+        model=MODEL,
+        max_tokens=64000,
+        output_config={
+            "effort": CLAUDE_EFFORT,
+            # answer in JSON shaped like the codebook
+            "format": {"type": "json_schema", "schema": closed_schema(build_schema(FIELDS))},
+        },
+        # If Claude's safety checks decline a page, the API retries it on
+        # another Claude model inside the same request
+        betas=["server-side-fallback-2026-07-01"],
+        fallbacks="default",
+        messages=[{
+            "role": "user",
+            "content": [
+                {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg",
+                                             "data": image_for_claude(image_path)}},
+                {"type": "text", "text": PROMPT.replace("{source}", source_text)},
+            ],
+        }],
+    ) as stream:
+        response = stream.get_final_message()
+
+    # Say why an answer is unusable, like the Gemini finish reason
+    if response.stop_reason == "refusal":
+        category = response.stop_details.category if response.stop_details else "none given"
+        raise ValueError(f"Claude declined the page (refusal; category: {category})")
+    if response.stop_reason == "max_tokens":
+        raise ValueError("Claude's answer was cut off (max_tokens)")
+    text = next((block.text for block in response.content if block.type == "text"), "")
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        raise ValueError(f"Claude's answer was not complete JSON (stop reason: "
+                         f"{response.stop_reason}; answer ended with: ...{text[-80:]!r})")
+    if response.model != MODEL:
+        print(f"  NOTE: answered by {response.model} (fallback); cost below uses {MODEL}'s prices")
+    usage = response.usage
+    # output_tokens includes Claude's thinking, which is billed as output
+    return data, usage.input_tokens, usage.output_tokens
+
+
+def extract_page_gemini(client, image_path, source_text):
+    """Send one image to Gemini and return (parsed data, input tokens,
+    output tokens)."""
     mime_type = mimetypes.guess_type(image_path)[0] or "image/jpeg"
     image_part = types.Part.from_bytes(data=image_path.read_bytes(), mime_type=mime_type)
 
@@ -218,10 +323,14 @@ def extract_page(client, image_path, source_text):
         raise ValueError(f"Gemini returned no text (finish reason: {finish}; "
                          f"feedback: {response.prompt_feedback})")
     try:
-        return json.loads(response.text), response
+        data = json.loads(response.text)
     except json.JSONDecodeError:
         raise ValueError(f"Gemini's answer was not complete JSON (finish reason: {finish}; "
                          f"answer ended with: ...{response.text[-80:]!r})")
+    usage = response.usage_metadata
+    # Gemini bills its thinking tokens as output too
+    output_tokens = (usage.candidates_token_count or 0) + (usage.thoughts_token_count or 0)
+    return data, usage.prompt_token_count or 0, output_tokens
 
 
 def issue_from_filename(image_path):
@@ -416,9 +525,10 @@ def calculate_cost(input_tokens, output_tokens):
 
 def main():
     load_dotenv(SCRIPT_DIR / ".env")
-    api_key = os.getenv("GEMINI_API_KEY")
+    key_name = "ANTHROPIC_API_KEY" if uses_claude() else "GEMINI_API_KEY"
+    api_key = os.getenv(key_name)
     if not api_key or api_key == "your-api-key-here":
-        print("No API key found. Copy .env.example to .env and add your GEMINI_API_KEY.")
+        print(f"No API key found. Add {key_name}=... to the .env file in this folder.")
         return
 
     images = sorted(p for p in IMAGE_FOLDER.iterdir() if p.suffix.lower() in IMAGE_EXTENSIONS)
@@ -432,7 +542,10 @@ def main():
         return
     print(f"Run: {RUN_NAME}  (saving to {RUN_FOLDER.relative_to(SCRIPT_DIR)})\n")
 
-    client = genai.Client(api_key=api_key)
+    if uses_claude():
+        client = anthropic.Anthropic(api_key=api_key)
+    else:
+        client = genai.Client(api_key=api_key)
     sources = load_sources()
     PAGES_FOLDER.mkdir(parents=True, exist_ok=True)
     all_rows = []
@@ -449,11 +562,11 @@ def main():
         if saved_page.exists():
             print(f"Using saved results for {image_path.name}")
             data = json.loads(saved_page.read_text(encoding="utf-8"))
-            response = None
+            tokens = None
         else:
             print(f"Extracting {image_path.name} ...")
             try:
-                data, response = extract_page(client, image_path, source_text)
+                data, *tokens = extract_page(client, image_path, source_text)
             except Exception as err:
                 print(f"  FAILED: {err}\n")
                 failed.append(f"{image_path.name}: {err}")
@@ -472,14 +585,13 @@ def main():
               f"(count them on the page -- do they match?)")
         check_entries(data["entries"])
 
-        if response is None:
+        if tokens is None:
             print()
             continue
-        usage = response.usage_metadata
-        output_tokens = (usage.candidates_token_count or 0) + (usage.thoughts_token_count or 0)
-        cost = calculate_cost(usage.prompt_token_count or 0, output_tokens)
+        input_tokens, output_tokens = tokens
+        cost = calculate_cost(input_tokens, output_tokens)
         total_cost += cost
-        print(f"  Tokens: {usage.prompt_token_count:,} in, {output_tokens:,} out   "
+        print(f"  Tokens: {input_tokens:,} in, {output_tokens:,} out   "
               f"Cost: ${cost:.6f}\n")
 
     print("=" * 40)

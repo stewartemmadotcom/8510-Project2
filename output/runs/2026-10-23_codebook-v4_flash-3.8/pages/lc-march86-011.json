@@ -1,0 +1,269 @@
+{
+  "page_number": "9",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "",
+      "contact_name": "",
+      "contact_street_address": "",
+      "contact_city": "",
+      "contact_state": "",
+      "contact_zip": "",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "50",
+      "num_residents": "2",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "Continuation of a listing describing 50 acres with two permanent structures, plumbing, electricity, woods, and farmland where two lesbians live on the land, welcoming new members/residents and girl and boy children.",
+      "raw_text": "is 2% and the growth rate is overwhelming. We welcome: new members/residents, girl & boy children. We have/are: 2 lesbians, 50 acres, 2 permanent structures/housing, plumbing/electricity, camping space, woods, farmland, women living on the land.",
+      "notes": "Continued from previous page. Type is Intentional Community/Cooperative because 2 lesbians live on the land and actively welcome new members/residents. Accepts Lesbian women from directory context, plus 'girl & boy children'.",
+      "section": "",
+      "continues_previous": "yes"
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "SILVER CIRCLE FARM",
+      "contact_name": "Gwen O Demeter",
+      "contact_street_address": "Rt 5 Box 100",
+      "contact_city": "Holly Springs",
+      "contact_state": "MS",
+      "contact_zip": "38635",
+      "land_street_address": "Rt 5 Box 100",
+      "land_city": "Holly Springs",
+      "land_state": "MS",
+      "land_zip": "38635",
+      "land_location_as_stated": "",
+      "acreage": "40",
+      "num_residents": "2",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Spirituality/ritual",
+        "Farming/self-sufficiency",
+        "Workshops/education"
+      ],
+      "description": "An intentional family caretaking 40 acres of woods and farmland with housing, electricity, running water, and an outhouse. Two women live on the land and two live in cities; they practice organic farming and spirituality, offer skill-sharing workshops, and welcome new members, non-lesbian women, and children.",
+      "raw_text": "SILVER CIRCLE FARM c/o Gwen O Demeter, Rt 5 Box 100, Holly Springs, MS 38635. We are presently two wimmin living on the land and two wimmin living in different cities who share financial/emotional responsibilities for caretaking 40 acres. We are an intentional family of four who enjoy the support of several other extended family members who visit regularly to help with the farmwork and enjoy its special energy. Our interests include spiritual tolerance and development, organic farming, prosperity thinking and being, networking, and providing a working example of an alternative to patriarchal patterns. We give training in survival back to the earth skills: organic gardening, woodswomanship, natural healing, carpentry, plumbing, etc. We welcome: new members/residents, girl & boy children, nonlesbian women, dogs on leash. We have/are: 4 lesbians, 40 acres, housing/permanent structures, electricity, outhouse, running water in kitchen, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Rural route address is the land. num_residents is 2 because the listing explicitly specifies 'presently two wimmin living on the land and two wimmin living in different cities'. Type is Intentional Community/Cooperative ('intentional family of four', welcomes new members/residents). Focuses: Spirituality/ritual ('spiritual tolerance and development'), Farming/self-sufficiency ('organic farming', 'farmwork'), Workshops/education ('training in survival back to the earth skills'). Accepted groups: Lesbian women, Non-lesbian women ('nonlesbian women'), Girl children and Boy children ('girl & boy children').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "SPIRAL WIMMIN'S LAND TRUST",
+      "contact_name": "",
+      "contact_street_address": "PO Box 337",
+      "contact_city": "Monticello",
+      "contact_state": "KY",
+      "contact_zip": "42633",
+      "land_street_address": "",
+      "land_city": "Monticello",
+      "land_state": "KY",
+      "land_zip": "",
+      "land_location_as_stated": "7 mi from Monticello",
+      "acreage": "250",
+      "num_residents": "33",
+      "type": "Land Trust",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Workshops/education",
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "A women's land trust on 250 acres with one house and a barn, holding land in perpetuity to grow food organically, provide alternative skills education, and form community. Offers supportive and community memberships, welcoming new members, non-lesbian women, and girl children.",
+      "raw_text": "SPIRAL WIMMIN'S LAND TRUST PO Box 337, Monticello, KY 42633 (606)348-5215 (7 mi from Monticello). Spiral is an all wimmin's space, open to membership. Supportive Membership is for wimmin to use the land for camping/workshops or just to be supportive. Community Membership entitles one to live here, be part of the community and own one's own improvements. In brief, our purposes say: To hold land in perpetuity, for wimmin to form community, to grow food organically, to provide education of alternative skills, etc. We welcome: new members/residents, girl children, nonlesbian women. We have/are: 30 lesbians, 3 nonlesbians, 250 acres, 1 house, 1 barn, electricity, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Type is Land Trust based on name and stated purpose 'To hold land in perpetuity'. PO Box mailing address; land stated as '7 mi from Monticello'. Questionnaire states '30 lesbians, 3 nonlesbians' alongside 'women living and working on the land', coded as 33 residents under the questionnaire rule. Focuses: Farming/self-sufficiency ('grow food organically'), Workshops/education ('provide education of alternative skills', 'workshops'), Environmentalism/eco-friendly ('grow food organically' as a defining trust purpose). Accepted groups: Lesbian women, Non-lesbian women ('nonlesbian women'), Girl children ('girl children').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "SUSAN B ANTHONY MEMORIAL UNREST HOME",
+      "contact_name": "",
+      "contact_street_address": "RR 1 Box 215",
+      "contact_city": "Millfield",
+      "contact_state": "OH",
+      "contact_zip": "45761",
+      "land_street_address": "RR 1 Box 215",
+      "land_city": "Millfield",
+      "land_state": "OH",
+      "land_zip": "45761",
+      "land_location_as_stated": "near Athens, OH; in the Appalachian hills",
+      "acreage": "152",
+      "num_residents": "2",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women"
+      ],
+      "focuses": [],
+      "description": "A rural community on 152 acres of woods in the Appalachian hills with housing, electricity, and camping space. Two lesbians live on the land and invite discussion with women interested in living in community, welcoming new members and non-lesbian women.",
+      "raw_text": "SUSAN B ANTHONY MEMORIAL UNREST HOME RR 1 Box 215, Millfield, OH 45761 (near Athens, OH). We are near Ohio University in the Appalachian hills. We invite discussion with women-identified-women who want to consider living in a rural community. There is no immediate source of income on the land. We welcome: new members/residents, nonlesbian women, dogs. We have/are: 2 lesbians, 152 acres, housing/permanent structures, plumbing/electricity, woods, camping space, women living on the land.",
+      "notes": "Rural route address is the land. Type is Intentional Community/Cooperative because 2 lesbians live on the land and actively recruit/invite women to live in the community ('invite discussion with women-identified-women who want to consider living in a rural community', 'welcome: new members/residents'). Accepted groups: Lesbian women, Non-lesbian women ('nonlesbian women').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "O.W.L. SANCTUARY",
+      "contact_name": "",
+      "contact_street_address": "Rt 1 Box 209-A",
+      "contact_city": "E Jordan",
+      "contact_state": "MI",
+      "contact_zip": "49727",
+      "land_street_address": "Rt 1 Box 209-A",
+      "land_city": "E Jordan",
+      "land_state": "MI",
+      "land_zip": "49727",
+      "land_location_as_stated": "NW Michigan 1 hr from Traverse City - Jordan River Valley",
+      "acreage": "40",
+      "num_residents": "6",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Spirituality/ritual",
+        "Women of color"
+      ],
+      "description": "A vegetarian, income-sharing lesbian community on 40 acres in the Jordan River Valley with two houses and a barn, focused on psychic, nature, and feminist spirituality. Welcomes new members, women of color, and girl children, with plans for gatherings, spiritual circles, and sanctuary space.",
+      "raw_text": "O.W.L. SANCTUARY Rt 1 Box 209-A, E Jordan, MI 49727 (616)536-2903 (NW Michigan 1 hr from Traverse City - Jordan River Valley). In May '85 land, with two smallish houses, a barn, apple trees, critters and nature spirits, was purchased. We see our primary focus as a spiritual one, experiencing and developing our psychic, spiritual and nature-all inter-connectedness with a commitment to aid the healing of the Earth Mother. Our spirituality is eclectic in its background and manifestations, but has a decidedly Lesbian Feminist emphasis. The community space is considered basically vegetarian and incomes are shared. Future goals include sponsoring wimmin's gatherings and events, creating ongoing Lesbian spiritual circles, establishing a liaison with area Native wimmin and offering a healing, contemplative space to wimmin needing sanctuary. We welcome: new members/residents in Fall '86, wimmin of color, girl children, dogs. We have/are: 6 lesbians, 40 acres, housing/permanent structures, plumbing/electricity, woods, women living on the land.",
+      "notes": "Rural route address is the land. Type is Intentional Community/Cooperative (6 residents with shared income and welcoming new members/residents). Focuses: Spirituality/ritual ('primary focus as a spiritual one', 'spiritual circles') and Women of color ('wimmin of color', 'liaison with area Native wimmin'). Accepted groups: Lesbian women, Girl children ('girl children').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "MAPLE ROW FARM",
+      "contact_name": "",
+      "contact_street_address": "Rt 1 Box 88",
+      "contact_city": "Ellsworth",
+      "contact_state": "MI",
+      "contact_zip": "49729",
+      "land_street_address": "Rt 1 Box 88",
+      "land_city": "Ellsworth",
+      "land_state": "MI",
+      "land_zip": "49729",
+      "land_location_as_stated": "Atwood, on Lake Michigan in NW lower peninsula",
+      "acreage": "70",
+      "num_residents": "2",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Recovery/substance-free",
+        "Women of color"
+      ],
+      "description": "A clean and sober homestead on 70 acres near Lake Michigan with an 80-year-old stone cabin, garden, woods, and farmland. Two lesbians live and work on the land, envisioning future farm and woodworking projects, and welcoming new members, women of color, and girl children.",
+      "raw_text": "MAPLE ROW FARM Rt 1 Box 88, Ellsworth, MI 49729 (616)599-2013 (Atwood, on Lake Michigan in NW lower peninsula). We live in a clean and sober, nicotine-free 80-year-old stone cabin with 2 cats. We have a car, truck and motorcycle, a 30' x 50' garden, a foundation for another building, and septic and electrical hookups available for a trailer. Many adjoining acreages for sale. Visions are for a woodworking collective, berry and fruit farm, writer's hermitage, and horses once the land is paid off (Dec '86). We welcome: new members/residents, girl children, Native American Women, other dykes of color, dogs. We have/are: 2 lesbians, 70 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Rural route address is the land. Type is Intentional Community/Cooperative because 2 lesbians live on the land and actively welcome new members/residents. Focuses: Recovery/substance-free ('clean and sober') and Women of color ('Native American Women, other dykes of color'). Accepted groups: Lesbian women, Girl children ('girl children').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WICONSIN WOMYN'S LAND CO-OP - D.O.E. FARM",
+      "contact_name": "",
+      "contact_street_address": "Rt 2 Box 42",
+      "contact_city": "Norwalk",
+      "contact_state": "WI",
+      "contact_zip": "54648",
+      "land_street_address": "Rt 2 Box 42",
+      "land_city": "Norwalk",
+      "land_state": "WI",
+      "land_zip": "54648",
+      "land_location_as_stated": "in west central Wisconsin",
+      "acreage": "80",
+      "num_residents": "4",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "A women's land cooperative owning 80 secluded, hilly acres in west central Wisconsin with hayfield, orchard, garden, and campground (including chemical-free space). Four year-round residents live on the land with 125 total members, welcoming new members, non-lesbian women, and girl children.",
+      "raw_text": "WICONSIN WOMYN'S LAND CO-OP - D.O.E. FARM Rt 2 Box 42, Norwalk, WI 54648 (608)269-5301. WWLC owns DOE (Daughters of Earth) Farm. The land is hilly, secluded, and very beautiful; half wooded campground (some chemical free space), half hayfield, orchard, garden, berries, etc, in west central Wisconsin. Four year-round residents, more in summer. Ten-year anniversary in '87. We welcome: new members/residents, girl children, nonlesbian womyn. Sliding scale fees. We have/are: 6-15 lesbians in group, 125 members almost all lesbians, 80 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farmland, women living and working on the land.",
+      "notes": "Rural route address is the land. num_residents is 4 ('Four year-round residents, more in summer'). Type is Intentional Community/Cooperative. Focus: Environmentalism/eco-friendly ('chemical free space'). Accepted groups: Lesbian women, Non-lesbian women ('nonlesbian womyn'), Girl children ('girl children').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "THE WEB",
+      "contact_name": "Lanning",
+      "contact_street_address": "Box 8742",
+      "contact_city": "Minneapolis",
+      "contact_state": "MN",
+      "contact_zip": "55408",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "MN",
+      "land_zip": "",
+      "land_location_as_stated": "Central Minnesota",
+      "acreage": "80",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "Eighty acres of woods and idle farmland in Central Minnesota with housing and plumbing/electricity, maintained chem-free by two lesbians living on the land part-time.",
+      "raw_text": "THE WEB c/o Lanning, Box 8742, Minneapolis, MN 55408 (Central Minnesota). We have/are: 2 lesbians, 80 acres, housing/permanent structures, plumbing/electricity, camping space, woods, idle farmland, women living on the land part-time, chem-free.",
+      "notes": "Box mailing address in Minneapolis, land located in 'Central Minnesota'. Type is Private/Individual Land by the two-woman rule (2 lesbians, no member recruitment). num_residents is 2 with 'part-time' living on the land noted. Focus is Environmentalism/eco-friendly ('chem-free'). Accepted groups: Lesbian women.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "EARTH CURRENT WOMENS HERMITAGE",
+      "contact_name": "",
+      "contact_street_address": "Rt 1 Box 137L",
+      "contact_city": "Red Rock",
+      "contact_state": "TX",
+      "contact_zip": "78662",
+      "land_street_address": "Rt 1 Box 137L",
+      "land_city": "Red Rock",
+      "land_state": "TX",
+      "land_zip": "78662",
+      "land_location_as_stated": "Between Bastrop and Lockhart, south of Austin; with Post Oak, Cedar, and Mesquite",
+      "acreage": "9",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [],
+      "description": "A women's hermitage on 9 wooded acres south of Austin, offering space for women to heal through diet, exercise, and rest.",
+      "raw_text": "EARTH CURRENT WOMENS HERMITAGE Rt 1 Box 137L, Red Rock, TX 78662 (512)764-2706 (Between Bastrop and Lockhart, south of Austin). The Hermitage is located on 9 acres of wooded land with Post Oak, Cedar, and Mesquite. On this land we are creating a space for women to discover themselves as whole women. We as women with our experiences on this planet have a strong need to heal. The Hermitage is a space for us to begin to heal our bodies through diet, exercise, and rest. The Hermitage belongs to, and is",
+      "notes": "Listing cuts off at bottom of page and continues on the following page. Rural route address is the land. Type is Retreat/Gathering Space based on hermitage purpose ('a space for us to begin to heal our bodies through diet, exercise, and rest'). num_residents is blank as not given on this page. Accepted groups: Lesbian women from directory context.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}
