@@ -38,6 +38,36 @@
     listing split (California Women's Land Trust), Feathers Farm's letter,
     Bee Song Honey Farms; Women Only Ranch (Mar 1986 p. 19) was not in the
     test pages.
+- raw_text: only 6 of 97 matched listings were below 0.98 similarity.
+  - Serious (2):
+    - Cedar (Mar 1983 p. 18, 0.61): correct, but the end of Bee Song Honey
+      Farms was attached. The model skipped the start of Bee Song at the
+      bottom of p. 18, so the continuation on p. 19 merged into Cedar, the
+      last listing on p. 18. One skipped listing made two errors (Bee Song
+      missed, Cedar wrong).
+    - Herland (Mar 1986 p. 8, 0.80): stopped mid-sentence ("Unemployment in
+      this area"), losing the rest including the We welcome / We have/are
+      lists. Also "I am interested" became "I have interested". Not split
+      across pages; the model just stopped early.
+  - Editor's notes copied in (2): Folly Farm (0.89) and Wilderness Way
+    (0.91) start with the editor's note printed above them ("NOTE: The
+    following is not a women's land group..."; "NOTE: These groups don't have
+    land, per se..."). The listing text itself is right.
+  - Small slips (2): Fly Away Home (0.978) and Greenhope (0.979): dropped
+    words ("on", "we", "and working"), "every" became "everything", an em
+    dash became an en dash, a missing space ("tipi.We").
+  - Question for me: Wilderness Way is under LC's "don't have land, per se"
+    note, but I included it in Project 1. Is there an exception to my
+    no-land rule that the codebook should say?
+- Changes to consider for the next run:
+  - codebook: section headings and editor's notes are not part of a
+    listing's raw_text.
+  - a check that flags raw_text ending mid-sentence (would have caught
+    Herland).
+  - a check for a merged row whose added text reads like a different
+    community (would have caught Cedar).
+  - raw_text from the model still needs proofreading where exact wording
+    matters.
 
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database
