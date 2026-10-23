@@ -1,0 +1,196 @@
+{
+  "run_name": "2026-10-22_codebook-v2_flash-lite-3.5",
+  "settings": {
+    "model": "gemini-3.5-flash-lite",
+    "prompt": "You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. This image is a page from {source}. It is part of the land directory, which listed women's land communities. Extract every listing on the page as one row, in the order they appear, following the codebook below exactly.\nSome listings continue from one page to the next. If the text at the top of the page does not start with a community name, it is the end of a listing from the previous page: extract it as its own entry and follow the instructions for the continues_previous column.\nDo not extract these as rows: the page number, the running header, section headings (record them in the section field instead), introductory or explanatory paragraphs that are not a listing, anything that is not about land (books, albums, publications, businesses, trips, events), the \"This content downloaded from...\" notice at the bottom of the page, and faint text showing through from the back of the page.\n\nRules:\n- Extract EVERY listing. Never skip one because a field is unclear or\n  missing: leave that field empty instead.\n- raw_text is word for word as printed. Do not correct spelling, expand\n  abbreviations, or modernize anything there.\n- Also report the printed page number.\n\n# Codebook: LC land directory listings as a flat sheet\n\nThis file is read into the extraction prompt by `01_directory_to_csv.py`, so\nit is both the documentation of the coding rules and the model's instructions.\nIt is adapted from the Project 1 rules (`8510-Project1/docs/data_model.md`).\nOne row in the flat sheet is one observation: one listing of one community on\none page of one issue. The controlled vocabularies (types, accepted groups,\nfocuses) are added below this file by the script, from `reference/`.\n\nRules from Project 1 that need several issues at once are left out here and\nare done later, by code or by hand: matching listings to communities,\nrenaming communities, closing dates, and merging an organization with its land.\n\n## What counts as a row\n- Every listing in the land directory that describes land is a row\n  (`row_kind` = listing).\n- A notice on the directory page that a community has ended (\"has folded\",\n  \"LAND SOLD\", land \"wound up in legal dissolution\") is a row with\n  `row_kind` = not_a_listing, no type, and `notes` beginning \"Not a listing\".\n  This includes a sentence inside the directory's introduction or an\n  editor's note: if it names a community that has ended, that community gets\n  its own not_a_listing row, with that sentence as `raw_text`. One sentence\n  naming two ended communities gives two rows.\n- A letter printed in the directory from a listed community that adds to or\n  corrects its listing is also a not_a_listing row.\n- Groups without land are not rows, even when LC prints them. Listings under\n  an editor's note like \"These groups don't have land, per se\" are skipped,\n  unless the listing itself says the group lives on or owns its own land\n  (a lesbian residential community on its own property is a row even\n  without acreage). Guest houses, inns, and trips that are only businesses,\n  with no land community, are skipped too.\n- Land groups LC says are \"not women's land groups, but they do welcome\n  lesbians\" are rows, with `notes` beginning \"NOT WOMEN'S LAND\".\n- One printed paragraph that names two separate groups is two rows. Each gets\n  the full shared paragraph as `raw_text`, and `notes` says it was listed\n  jointly. Example: LAND TRUSTS FOR WOMEN (1976) names both Oregon Women's\n  Land Trust and California Women's Land Trust, each with its own address,\n  so it is two rows.\n- Not rows: anything that is not about land, such as listings of books,\n  albums, records, publications, businesses, trips, or events, and the\n  introduction or instructions at the start of the directory.\n\n## community_name\n- The name as printed, usually underlined or in capitals at the start.\n- If a listing gives no name, use its opening words (\"Four Women\") or a place\n  feature it names (\"Elwha River land\"), and say so in `notes`.\n\n## raw_text\n- The full listing, word for word, from its name to its last word. Never\n  shortened, and never stopped early: copy through to the end of the\n  \"We have/are:\" list when there is one.\n- Only the listing itself. Section headings and editor's notes printed above\n  a listing (\"NOTE: The following is not a women's land group...\") are not\n  part of its `raw_text`; mention them in `notes` instead.\n- Keep the page's own spellings and typos (\"accomodate\", \"no woman woman\").\n- Join a word split by a hyphen at a line break (\"Holly-wood\" becomes\n  \"Hollywood\"); keep hyphens that belong to the text.\n- Join paragraphs within a listing with a single space. Do not mark\n  underlining.\n- Write `[?]` for a character that cannot be read, and explain it in `notes`.\n- Phone numbers and names stay in `raw_text` as printed.\n\n## description\n- A short summary in your own words of what the listing says about the place:\n  what it is, where, its land and buildings, who lives there, and what it\n  offers or is looking for.\n- Use the controlled vocabulary's terms (e.g. \"gay men\", \"non-lesbian\n  women\"), not the listing's.\n\n## Addresses and location\n- `contact_*` is the mailing address as printed, including misspellings.\n  Phone numbers are not recorded in their own field.\n- `contact_name` is the person or people the mail goes to: the name after\n  \"c/o\", or the person's name that heads a listing with no community name\n  (\"SUSAN STONE, Box 12...\", \"Rebecca, Susan, Anne & Maurine\"). Fill it even\n  when the community is named after that person. Leave it blank when the\n  mail goes only to the community by its own name.\n- Exception: a state code that is plainly a typo is corrected in the\n  `*_state` fields (\"Elk, AC 95432\" stored as CA); `raw_text` keeps the\n  printed form and `notes` records the correction.\n- `land_*` is where the land itself is, which is often not where the mail\n  goes (e.g. a Boston PO box for land in Maine). Explain every inference in\n  `notes`. Decide it from the kind of mailing address:\n  - **Rural route** (RD, RFD, Rt, RR, HCR, Star Route, e.g. \"Rt 1 Box 240\",\n    \"RD 5\", \"RFD 2 Box 3085\"): this is the land. Copy all four parts of the\n    mailing address (street, city, state, zip) into `land_*`.\n  - **Street address or road** (\"3100 Ridgewood Rd\", \"Box 130-Castine Rd\",\n    \"Samson Rd\"): this is the land, so copy all four parts, unless the\n    listing shows the people live somewhere else (e.g. a city address while\n    the land is described as elsewhere, owners \"currently living in Boston\",\n    cabins only planned). Then leave `land_street_address`, `land_city` and\n    `land_zip` blank.\n  - **PO box** (\"PO Box 274\", \"POB 133\", \"Box 1713\" with no road): never the\n    land. Leave `land_street_address` and `land_zip` blank.\n  - Whatever the mailing address, if the listing names the town the land is\n    in (\"Located in Days Creek, OR\", \"(Unger, WV)\"), put that town in\n    `land_city`; otherwise do not guess a land city.\n- `land_state` may be filled from a vague place (\"southern Oregon\" gives OR)\n  or from the mailing state when the listing places the land nearby.\n- `land_location_as_stated` keeps the listing's own words for where the land\n  is, copied exactly, including the leading words (\"Located in Days Creek,\n  OR\", \"southern Oregon\", \"25 miles southeast of Tucson\"). Only the place\n  phrase: not distances to other cities or descriptions of the climate.\n  Blank if the listing says nothing about where the land is beyond the\n  address.\n- A country other than the US goes in `notes`.\n\n## type\nEvery type is a judgment; explain it in `notes`. Judge the type at the date\nof this listing.\n- A group already living on its land is a community (usually Intentional\n  Community/Cooperative), even if the land is not paid off. An unpaid mortgage\n  alone does not make it a land fund.\n- A group not yet on land, still negotiating, or with no land mentioned is\n  Land Fund/Seeking Land.\n- Land the listing says is held \"in a land trust\" is Land Trust, whatever\n  else the listing calls itself.\n- A place that calls itself a retreat is Retreat/Gathering Space, even if\n  people live there. If it calls itself both a community and a retreat, use\n  the one it names first.\n- A place defined by what it offers visitors is Retreat/Gathering Space even\n  without the word \"retreat\": a vacation ranch, a guest house, an\n  educational center, a place that runs courses or workshops as its main\n  purpose (Who Farm Inc, Penthesileia Inc, Hardscrabble Hill Center).\n- Land the listing says one woman bought and hosts is Private/Individual Land.\n  So is land women live on and are in the process of acquiring privately.\n- **The two-woman rule.** Land owned or lived on by one or two women (a\n  couple, \"Mimi & Judy\", \"a partnership of 2 lesbians\", \"We have/are: 2\n  lesbians\") is Private/Individual Land. This is the most common type error,\n  so check it before choosing Intentional Community/Cooperative.\n  - Taking apprentices, work exchanges, guests, campers, or visitors does\n    not change it.\n  - It becomes Intentional Community/Cooperative only when the women\n    already live on the land and the listing actively recruits more members\n    to live there (\"looking for 1-3 semi-collective members\", \"want other\n    women to build houses and live here\").\n  - An owner who does not live there yet stays Private/Individual Land even\n    when welcoming new members.\n- Intentional Community/Cooperative is for three or more women, or a group\n  that describes itself as a collective, family, or community, living on\n  the land.\n- A bare listing (only the \"We have/are\" form, no description) gets no type,\n  and `notes` says it is a bare listing.\n- A not_a_listing row gets no type.\n\n## acreage\n- A number only (3/4 acre is 0.75). Blank if not given.\n- If the listing gives two different figures, store the smaller and note both.\n- Only land the listing presents as the group's own. Land they only have\n  \"access to\", or that \"surrounds\" them, is left out and noted.\n- For a Land Fund/Seeking Land listing, record the acreage they are trying to\n  acquire and note that it is not yet held.\n\n## num_residents\n- One whole number only (never two numbers, never a sum of residents and\n  non-resident members): members of the land community who live on the\n  land. This includes members' children, and men when they are part of the\n  collective. Renters count when the listing places them within the\n  community; tenants from outside it do not.\n- 0 means no members live there: the listing says so, or the owners live\n  somewhere else (\"currently living in Boston\", housing only planned, cabins\n  \"for our personal use\" in long-term plans). Blank means it does not say.\n- A questionnaire count (\"We have/are: 4 lesbians\") counts as residents when\n  the same list or the text says women live on the land (\"women living on\n  the land\", \"women living and working on the land\", \"We live...\"). Then\n  use the count. Without that, leave it blank and put the count in `notes`.\n- Count only people the listing places on the land: \"15 resident lesbians,\n  90 lesbian/nonlesbian members from all over\" is 15. \"6 lesbians, 4 on the\n  land\" is 4.\n- If a range is given, store the smaller number and note the range. Founders\n  are not counted as current residents.\n- Part-time family members are noted, not counted. Members who are the whole\n  community but live there part-time are counted, with \"part-time\" in `notes`.\n\n## accepted_groups\nWho the listing welcomes, from the controlled vocabulary only.\n- In the questionnaire directories (1982 and later), lesbians are never on the\n  \"We welcome:\" list because the whole directory is for lesbians.\n- **Non-lesbian women in the questionnaire directories (1982 on): code them\n  only when the listing names them** (\"nonlesbian women\", \"straight women\",\n  \"non-lesbians\"). General words like \"women\", \"wimmin\", \"womyn\",\n  \"lesbian-feminists\", \"women living on the land\" mean lesbians, not\n  non-lesbian women. This is the most common accepted-groups error. (LC's\n  1986 directory says so outright: \"If the groups are open to nonlesbians or\n  dogs it will specifically say so in their listing\".)\n- Only in the 1976 prose directory, \"women\" or \"all women\" means Lesbian\n  women + Non-lesbian women.\n- Code Lesbian women for every questionnaire-directory listing that welcomes\n  anyone or describes lesbians living there.\n- \"Children\", or children with no gender given, means Girl children + Boy\n  children.\n- \"Males\" or \"men\" with no orientation given means Gay men + Non-gay men, with\n  any conditions noted, including \"(maybe)\" or \"(not overnight)\". \"Gay\n  males\" or \"gay men\" means Gay men only. In the 1982 directory, males are\n  not coded unless the listing names them, because the editor says to\n  assume they are not welcome.\n- Code girl and boy children only from what the listing says about children\n  (\"girl children\" is Girl children only; \"boy babies\" or \"boy children\n  under 7\" is Boy children, with the condition noted).\n- People who are members of the land community are coded even when the\n  welcome list leaves them out. People on the land who are not members\n  (tenants, visiting friends) are not coded.\n- Follow explicit restrictions (\"live only with dykes\", \"female children\n  only\").\n- Explain every inferred group in `notes`. A listing that names no one gets\n  an empty list.\n\n## focuses\nWhat the community was built around, beyond who is welcome.\n- Code a focus only when the listing presents it as a purpose, identity, or\n  rule of the place, not a passing mention or a checked questionnaire box\n  (\"We have/are: ... farm land\" alone is not a farming focus).\n- Read the whole listing for each focus in the list; a listing often has\n  two or three. Check these in particular:\n- **Recovery/substance-free:** any stated rule against drugs, alcohol, or\n  dope is a rule of the place, so code it: \"NO DRUGS!\", \"No drugs,\n  cigarettes\", \"no drugs, alcohol or cigarettes\", \"no... drugs or dope\", \"Not\n  into drug abuse\". A ban on smoking tobacco alone is not enough. This is\n  the focus most often missed.\n- **Farming/self-sufficiency:** growing the group's own food or running a\n  farm, stated as something the place does or aims to do (\"will provide most\n  of our food\", \"beef and milk cows, chickens, bees\", \"organic gardens, small\n  livestock\", \"need to... be self-sufficient\", homesteading).\n- **Workshops/education:** the place runs or plans workshops, classes,\n  courses, apprenticeships, or skill-sharing.\n- **Archives/cultural work:** the place houses or runs an archive, press,\n  magazine, library, arts or crafts production, or music (a feminist\n  library, a publishing center, a stained-glass workshop).\n- **Environmentalism/eco-friendly:** only an explicit environmental\n  principle or practice: chemical-free land, \"ecology and alternative\n  technology\", solar or appropriate technology, organic food-raising\n  presented as a principle of the place. Organic gardening mentioned as part\n  of farming (\"organic gardens, small livestock, bees\") is Farming only.\n  \"Living in harmony with nature\" alone is not enough.\n- **Lesbian separatism:** the listing names separatism as its own politics,\n  or says only lesbians may live there. A listing that rejects separatism\n  (\"I am not a separatist\") is not coded; note the rejection.\n- Women of color: only when the listing explicitly invites, recruits, or\n  centers women of color. Statements of inclusiveness or anti-racism go in\n  `notes`, not coded.\n- Code what a place is, not what it opposes. A rejection (e.g. finding\n  separatism \"unworkable\") goes in `notes`.\n\n## notes\n- Explain every judgment call: the type, each inferred accepted group, each\n  focus, any inferred land location, corrections, ranges, and anything\n  unreadable. Quote the listing's words that the judgment rests on.\n- Use the controlled vocabulary's terms.\n\n## section, continues_previous\n- `section`: the nearest centered section heading above the listing on this\n  page (e.g. GUEST HOUSES/RETREATS/ETC), or blank.\n- `continues_previous`: \"yes\" only for the first text on the page when it does\n  not start with a community name because it is the end of a listing from the\n  previous page. Leave `community_name` blank for it and fill the other fields\n  from the text it contains.\n\n\n# Controlled vocabularies\n\n## Community types\n- Land Trust: Land held collectively/legally by a trust rather than an individual owner, often with the goal of permanent protection\n- Intentional Community/Cooperative: A residential community organized around shared values, goals, ownership, labor, or decision-making. Merged from two originally separate categories (Intentional Community, Cooperative/Collective) since in practice the distinction between organizing around shared values versus shared ownership/labor did not hold up consistently across how listings described themselves.\n- Private/Individual Land: Land owned and hosted by one person or family, sometimes open to visitors/guests\n- Retreat/Gathering Space: Land used primarily for gatherings, retreats, or events rather than year-round residency\n- Land Fund/Seeking Land: Group organizing or fundraising to acquire land, not yet an established community\n\n## Accepted groups\n- Lesbian women\n- Non-lesbian women\n- Girl children\n- Boy children\n- Gay men\n- Non-gay men\n\n## Focuses\n- Disabled women: Centers disabled women or accessibility\n- Older women: Centers or especially seeks older women\n- Recovery/substance-free: Sobriety, 12-step, or drug/alcohol-free as a defining rule of the place\n- Working-class women: Explicitly centers working-class women\n- Lesbian separatism: Names separatism, or says only lesbians may live on the land\n- Spirituality/ritual: Spiritual practice, ritual, or celebration as part of its purpose\n- Farming/self-sufficiency: Food production, homesteading, or self-sufficiency as a stated goal\n- Workshops/education: Runs workshops, classes, or skill-sharing\n- Archives/cultural work: Houses archives, presses, arts, or cultural production\n- Environmentalism/eco-friendly: Chemical-free land, or another explicit environmental practice, as a rule or purpose of the place\n- Women of color: Explicitly invites, recruits, or centers women of color\n",
+    "fields": [
+      [
+        "row_kind",
+        "'listing' for a directory listing that describes land; 'not_a_listing' for a notice that a community has ended, or a letter from a listed community (see codebook: What counts as a row).",
+        {
+          "type": "string",
+          "enum": [
+            "listing",
+            "not_a_listing"
+          ]
+        }
+      ],
+      [
+        "community_name",
+        "The community name exactly as printed, usually underlined or in capitals at the start of the listing. If none is given, see codebook: community_name."
+      ],
+      [
+        "contact_name",
+        "A person or group the mail is addressed to (e.g. after c/o), when it is not the community itself. Otherwise blank."
+      ],
+      [
+        "contact_street_address",
+        "The mailing street address or box as printed, without c/o or the contact name. Blank if not given."
+      ],
+      [
+        "contact_city",
+        "The mailing city or town as printed. Blank if not given."
+      ],
+      [
+        "contact_state",
+        "The mailing state as printed (correct only a plain typo, see codebook). Blank if not given."
+      ],
+      [
+        "contact_zip",
+        "The mailing zip code as printed. Blank if not given."
+      ],
+      [
+        "land_street_address",
+        "Where the land itself is, only if the listing says so or the inference is strong (see codebook: Addresses and location). A PO box is never the land."
+      ],
+      [
+        "land_city",
+        "The city or town where the land is, under the same rule. Blank if not known."
+      ],
+      [
+        "land_state",
+        "The state where the land is, under the same rule; may come from a vague place like 'southern Oregon'. Blank if not known."
+      ],
+      [
+        "land_zip",
+        "The zip code where the land is, under the same rule. Blank if not known."
+      ],
+      [
+        "land_location_as_stated",
+        "The listing's own words for a vague location (e.g. 'southern Oregon', '25 miles southeast of Tucson'). Blank if none."
+      ],
+      [
+        "acreage",
+        "The acreage as a number only (3/4 acre is 0.75), following codebook: acreage. Blank if not given."
+      ],
+      [
+        "num_residents",
+        "The number of residents as a whole number, following codebook: num_residents. Blank if the listing does not say."
+      ],
+      [
+        "type",
+        "The community type at the date of this listing, following codebook: type. 'none' for a bare listing or a not_a_listing row.",
+        {
+          "type": "string",
+          "enum": [
+            "Land Trust",
+            "Intentional Community/Cooperative",
+            "Private/Individual Land",
+            "Retreat/Gathering Space",
+            "Land Fund/Seeking Land",
+            "none"
+          ]
+        }
+      ],
+      [
+        "accepted_groups",
+        "Every group the listing welcomes, following codebook: accepted_groups. An empty list if it names no one.",
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Lesbian women",
+              "Non-lesbian women",
+              "Girl children",
+              "Boy children",
+              "Gay men",
+              "Non-gay men"
+            ]
+          }
+        }
+      ],
+      [
+        "focuses",
+        "What the community was built around, following codebook: focuses. An empty list if none.",
+        {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Disabled women",
+              "Older women",
+              "Recovery/substance-free",
+              "Working-class women",
+              "Lesbian separatism",
+              "Spirituality/ritual",
+              "Farming/self-sufficiency",
+              "Workshops/education",
+              "Archives/cultural work",
+              "Environmentalism/eco-friendly",
+              "Women of color"
+            ]
+          }
+        }
+      ],
+      [
+        "description",
+        "A short summary in your own words, using the controlled vocabulary's terms (see codebook: description)."
+      ],
+      [
+        "raw_text",
+        "The full listing word for word, never shortened, following codebook: raw_text."
+      ],
+      [
+        "notes",
+        "Explain every judgment call, quoting the words it rests on (see codebook: notes)."
+      ],
+      [
+        "section",
+        "The nearest centered section heading above this listing on this page, exactly as printed. Blank if none on this page."
+      ],
+      [
+        "continues_previous",
+        "'yes' only if this is the first text on the page and it is the end of a listing that began on the previous page (it does not start with a community name). Leave community_name blank for it. Otherwise blank."
+      ]
+    ]
+  },
+  "log": [
+    {
+      "date": "2026-10-22T22:06:40",
+      "test_pages": [
+        "lc-september76-014.png",
+        "lc-september76-015.png",
+        "lc-september76-016.png",
+        "lc-december82-023.png",
+        "lc-december82-024.png",
+        "lc-december82-025.png",
+        "lc-december82-026.png",
+        "lc-december82-027.png",
+        "lc-march83-020.png",
+        "lc-march83-021.png",
+        "lc-june83-024.png",
+        "lc-june83-025.png",
+        "lc-june83-026.png",
+        "lc-march86-009.png",
+        "lc-march86-010.png",
+        "lc-march86-011.png",
+        "lc-march86-012.png",
+        "lc-march86-013.png"
+      ],
+      "images": [
+        "lc-december82-023.png",
+        "lc-december82-024.png",
+        "lc-december82-025.png",
+        "lc-december82-026.png",
+        "lc-december82-027.png",
+        "lc-june83-024.png",
+        "lc-june83-025.png",
+        "lc-june83-026.png",
+        "lc-march83-020.png",
+        "lc-march83-021.png",
+        "lc-march86-009.png",
+        "lc-march86-010.png",
+        "lc-march86-011.png",
+        "lc-march86-012.png",
+        "lc-march86-013.png",
+        "lc-september76-014.png",
+        "lc-september76-015.png",
+        "lc-september76-016.png"
+      ],
+      "failed": [],
+      "rows": 130,
+      "cost_usd": 0.211378
+    }
+  ]
+}

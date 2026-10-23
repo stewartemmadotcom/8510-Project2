@@ -1,0 +1,59 @@
+Comparison of run '2026-10-22_codebook-v2_flash-lite-3.5' with the Project 1 hand-checked rows
+
+Hand-checked rows in scope:   103
+Model rows on checked pages:  113  (17 model rows on other pages were left out)
+Matched pairs (scored):       98
+Missed (hand-checked only):   5
+Extra (model only):           13
+
+Field accuracy on matched pairs:
+  row_kind                     98.0%  (96/98)
+  type                         70.4%  (69/98)
+  contact_name                 85.7%  (84/98)
+  contact_street_address       93.9%  (92/98)
+  contact_city                 98.0%  (96/98)
+  contact_state                98.0%  (96/98)
+  contact_zip                 100.0%  (98/98)
+  land_street_address          83.7%  (82/98)
+  land_city                    78.6%  (77/98)
+  land_state                   87.8%  (86/98)
+  land_zip                     84.7%  (83/98)
+  land_location_as_stated      70.4%  (69/98)
+  page                        100.0%  (98/98)
+  acreage                      98.0%  (96/98)
+  num_residents                67.3%  (66/98)
+  accepted_groups              67.3%  (66/98)
+  focuses                      43.9%  (43/98)
+  raw_text                     93.9%  (92/98)
+  raw_text mean similarity:  0.990  (a match is 0.98 or above)
+
+Missed rows (only in hand-checked data):
+  december82 p.21: A Woman's Place
+  december82 p.21: Heraseed
+  march83 p.18: Bee Song Honey Farms
+  march83 p.19: Feathers Farm
+  march86 p.19: Women Only Ranch
+
+Extra rows (only in model output):
+  december82 p.24: ELLIE'S NEST
+  december82 p.24: RIVER MOST WILD
+  december82 p.25: ARADIA INC
+  december82 p.25: WOMEN'S WILDERNESS EXPERIENCE
+  december82 p.25: LESBIANS ON LAND
+  june83 p.22: LESBIAN SELF-SUFFICIENCY WEEKENDS
+  june83 p.22: VACATION
+  june83 p.22: HEALING INTENSIVES
+  june83 p.24: PEPPERLAND
+  march83 p.19: GABRIEL'S
+  march83 p.19: SEA GNOMES HOME
+  march86 p.11: SEA GNOMES' HOME
+  march86 p.11: HALF MOON PINES
+
+Out of scope, not scored (classified ads):
+  june83 p.22: Wisconsin Womyn's Land Co-op (observation 72)  [the model also extracted it]
+  june83 p.22: Kringle/Wood's land (observation 73)  [the model also extracted it]
+  march83 p.16: Susan B Anthony Memorial Unrest Home (observation 74)
+  march86 p.19: 240 acres near Fayetteville, AR (observation 106)
+
+Pages that failed in this run (from settings.json):
+  none

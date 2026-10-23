@@ -140,7 +140,7 @@ PRICES = {
 # Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
 # results are kept. Reuse the same name to retry pages that failed or to
 # add more pages to a run.
-RUN_NAME = "2026-10-22_codebook-v1_flash-lite-3.5"
+RUN_NAME = "2026-10-22_codebook-v2_flash-lite-3.5"
 
 IMAGE_FOLDER = SCRIPT_DIR / "images"
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME
@@ -286,6 +286,24 @@ def check_entries(entries):
             print(f"    CHECK: {entry['community_name']} has no mailing address")
 
 
+def ends_complete(text):
+    """Does the text end like a finished sentence? ('...on the land.' does;
+    '...Unemployment in this area' does not. A listing may also end with its
+    phone number or zip code.)"""
+    text = text.strip()
+    return text.endswith((".", "!", "?", ")", '"', "'")) or text[-1:].isdigit()
+
+
+def check_cut_off(rows):
+    """After merging, flag listings whose raw_text stops mid-sentence: the
+    model may have stopped copying early."""
+    for row in rows:
+        if row["raw_text"] and not ends_complete(row["raw_text"]):
+            print(f"CHECK: raw_text of {row['community_name'] or '(no name)'} "
+                  f"({row['source_image']}) ends mid-sentence: "
+                  f"'...{row['raw_text'].strip()[-40:]}'")
+
+
 def apply_code_rules(rows):
     """Rules from the codebook that need no judgment, so code applies them
     the same way every time."""
@@ -313,11 +331,23 @@ def merge_continuations(rows):
         prev_image = prev["source_image"].split("; ")[-1] if prev else ""
         if (is_continuation and prev and prev["issue"] == row["issue"]
                 and image_number(prev_image) + 1 == image_number(row["source_image"])):
+            # If the listing before already ended with a full sentence and the
+            # fragment starts mid-sentence, the fragment probably belongs to a
+            # listing the model skipped at the bottom of the previous page
+            fragment = row["raw_text"].strip()
+            if ends_complete(prev["raw_text"]) and fragment[:1].islower():
+                print(f"CHECK: fragment '{fragment[:40]}...' was joined onto "
+                      f"{prev['community_name']}, which already looked complete. "
+                      f"Was a listing skipped at the bottom of {prev_image}?")
             for name in (field[0] for field in FIELDS):
                 if name in ("row_kind", "type", "community_name", "section",
                             "continues_previous") or not row[name]:
                     continue
-                if name in LIST_FIELDS:
+                if name in ("acreage", "num_residents"):
+                    # A number is never joined as text ("2" + "2" is not "2 2"):
+                    # keep the first page's number if it has one
+                    prev[name] = prev[name] or row[name]
+                elif name in LIST_FIELDS:
                     prev[name] += [item for item in row[name] if item not in prev[name]]
                 else:
                     prev[name] = f"{prev[name]} {row[name]}".strip()
@@ -453,6 +483,7 @@ def main():
 
     print("=" * 40)
     all_rows = merge_continuations(all_rows)
+    check_cut_off(all_rows)
     fill_sections(all_rows)
     apply_code_rules(all_rows)
 

@@ -69,6 +69,52 @@
   - raw_text from the model still needs proofreading where exact wording
     matters.
 
+## 2026-10-22_codebook-v2_flash-lite-3.5 run (codebook made more specific)
+- Same 18 pages and model as v1; cost $0.21; no failures.
+- Codebook changes, each based on patterns in my Project 1 notes:
+  - land_*: written out my actual practice. A rural route (RD/Rt/RFD/HCR)
+    or street address is the land (copy all four parts) unless the people
+    live elsewhere; a PO box never is. In Project 1, 34 of 37 rural-route
+    addresses and 20 of 35 street addresses were coded as the land.
+  - land_location_as_stated: copy the place phrase exactly, nothing else.
+  - contact_name: fill the person's name even when the community is named
+    after her.
+  - type: the "two-woman rule" spelled out (apprentices and visitors don't
+    make it a community; only recruiting members to live there does).
+  - num_residents: one number only; 0 when owners live elsewhere; a
+    questionnaire count counts only with "women living on the land".
+  - accepted_groups: in questionnaire directories (1982 on), Non-lesbian
+    women only when named; "women" means lesbians.
+  - focuses: any rule against drugs/alcohol is Recovery/substance-free (my
+    most-missed focus); organic gardening as farming is Farming only.
+  - rows: ended-community sentences inside intros are their own rows;
+    no-land groups skipped; joint listings split (with the 1976 example).
+  - raw_text: copy to the end; leave out editor's notes and headings.
+- Code changes: merging no longer joins numbers as text ("2" + "2" had
+  become "2 2"); new CHECK messages for a fragment joined onto a listing that
+  already looked complete (caught Cedar) and for raw_text ending
+  mid-sentence (caught Herland).
+- Results (v1 -> v2): differences per listing 3.12 -> 2.81.
+  - Clearly better: land_street_address 68 -> 84%, land_zip 72 -> 85%,
+    land_city 70 -> 79%, acreage 96 -> 98%, contact_zip 99 -> 100%.
+  - No real change: focuses 43 -> 44%, accepted_groups 65 -> 67%,
+    raw_text 94 -> 94%, land_location_as_stated 70 -> 70%.
+  - Worse: type 73 -> 70% (now over-corrects: 10 communities called
+    Private/Individual Land), num_residents 73 -> 67%, contact_name
+    88 -> 86%.
+  - Missed rows 6 -> 5 (California Women's Land Trust now split correctly).
+    Extra rows 10 -> 13: the no-land groups were still extracted, plus 3 new
+    ones (Lesbian Self-Sufficiency Weekends, Vacation, Healing Intensives).
+- The judgment fields churn between runs: for type, 11 listings were fixed
+  but 14 others became wrong; for focuses, 10 fixed and 10 newly wrong. So
+  part of the error is the model being inconsistent, not the codebook. A few
+  points of change on 98 listings can be run-to-run noise.
+- Caution: some new codebook examples come from these same test listings
+  (e.g. Hardscrabble Hill, Days Creek, "NO DRUGS!"), so scores on this test
+  set may look better than they would on issues not hand-checked yet.
+- Next to try: the same codebook with a stronger model, to see whether
+  the judgment fields are limited by flash-lite rather than the codebook.
+
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database
 

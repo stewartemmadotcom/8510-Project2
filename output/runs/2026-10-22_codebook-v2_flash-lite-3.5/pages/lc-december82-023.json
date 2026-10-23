@@ -1,0 +1,118 @@
+{
+  "page_number": "21",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "FEATHERS FARM",
+      "contact_name": "",
+      "contact_street_address": "Box 19",
+      "contact_city": "Bryantville",
+      "contact_state": "MA",
+      "contact_zip": "02327",
+      "land_street_address": "Box 19",
+      "land_city": "Bryantville",
+      "land_state": "MA",
+      "land_zip": "02327",
+      "land_location_as_stated": "on the shore of Silver Lake, in the rapidly suburbanizing South Shore area of Massachusetts",
+      "acreage": "100",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "Private land with 100 acres on a lake in Massachusetts, hosted by a partner and her co-resident. It offers camping facilities, open space, and farmwork experience, welcoming women and children, but notes that lesbian separatism was found unworkable.",
+      "raw_text": "FEATHERS FARM Box 19, Bryantville, MA 02327 (617)585-3826. My partner & I are the only residents of Feathers Farm, 100 acres of woods, swamp, cranberry bog & gardens on the shore of Silver Lake, in the rapidly suburbanizing South Shore area of Massachusetts. We have camping facilities/open space/ farmwork experience to women and children. We are currently working to organize support and resources for a land trust to control this property. We have found lesbian separatism to be unworkable and alienating approach to this endeavor and expect unconditional acceptance of this from our visitors (whom we welcome AND encourage). We request that visitors bring their own food & donate $4/night camping fee, flexible. We often work out other arrangements for longer term apprenticeships or short term large groups. It is helpful if visits are preceeded by at least a phone-call, preferably a letter.",
+      "notes": "Type is Private/Individual Land because it is owned/run by two people ('My partner & I are the only residents'). Accepted groups: Lesbian women (directory default), Non-lesbian women ('welcome AND encourage' visitors, mentioning families/women), Girl children and Boy children ('women and children'). No focuses apply; the listing rejects separatism ('lesbian separatism to be unworkable').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WOMONGROUND",
+      "contact_name": "",
+      "contact_street_address": "Rt 1, Box 2420",
+      "contact_city": "Troy",
+      "contact_state": "ME",
+      "contact_zip": "04987",
+      "land_street_address": "Rt 1, Box 2420",
+      "land_city": "Troy",
+      "land_state": "ME",
+      "land_zip": "04987",
+      "land_location_as_stated": "Maine mountains/woodland",
+      "acreage": "113",
+      "num_residents": "4",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "An intentional community in Maine with 113 acres of mountains and woodland, offering parcels for sale or building, camping, and hiking. Home to 4 lesbians.",
+      "raw_text": "WOMONGROUND Rt 1, Box 2420, Troy, ME 04987. 113 acres of Maine mountains/woodland. Parcels available for sale and/or building. Also plenty of space for camping, hiking, raspberry picking. Will answer all letters promptly. We welcome: new members/residents, girl children, nonlesbian women, lesbians interested in buying land. We have/are: 4 lesbians, 113 acres, housing/permanent structures, camping space, woods, women working and living on the land.",
+      "notes": "Type is Intentional Community/Cooperative because it has 4 residents and actively recruits new members/residents to buy land and live there. Accepted groups: Lesbian women (directory default), Non-lesbian women (explicitly listed as 'nonlesbian women'), Girl children ('girl children'), and Boy children ('children' mentioned in general alongside girl children). No focuses apply.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "GENEROUS EARTH LAND",
+      "contact_name": "",
+      "contact_street_address": "Box 51A",
+      "contact_city": "Hinesburg",
+      "contact_state": "VT",
+      "contact_zip": "05461",
+      "land_street_address": "Box 51A",
+      "land_city": "Hinesburg",
+      "land_state": "VT",
+      "land_zip": "05461",
+      "land_location_as_stated": "",
+      "acreage": "20",
+      "num_residents": "0",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [],
+      "description": "Private land in Vermont consisting of 20 acres with creek, woods, open space, and two dyke-built dwellings. None of the collective owners live there; it is rented to heterosexuals.",
+      "raw_text": "GENEROUS EARTH LAND Box 51A, Hinesburg, VT 05461. 20 acres, creek, woods, open. 2 dyke-built dwellings, one large, one small. No plumbing or electricity. None of the dyke collective owners live there. It's rented to hets. Interested in dyke renters. 15 miles from town with jobs. Write before visiting.",
+      "notes": "Type is Private/Individual Land because the owners do not live on the land ('None of the dyke collective owners live there'). Acreage is 20. Num_residents is 0 because the owners live elsewhere and the current occupants are heterosexual renters. Accepted groups: Lesbian women (directory default; seeking 'dyke renters').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "GREENHOPE",
+      "contact_name": "",
+      "contact_street_address": "Box 226",
+      "contact_city": "E Hardwick",
+      "contact_state": "VT",
+      "contact_zip": "05836",
+      "land_street_address": "Box 226",
+      "land_city": "E Hardwick",
+      "land_state": "VT",
+      "land_zip": "05836",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Workshops/education"
+      ],
+      "description": "A working homestead farm in Vermont offering a temporary living situation, workshops, maple sugar bush, draft horse, dairy goats, and chickens, welcoming women for retreats and work exchange.",
+      "raw_text": "GREENHOPE Box 226, E Hardwick, VT 05836. (802)533-7772. At present are a working homestead farm. We offer year round space to women needing retreat or temporary living situation. We have gorgeous secluded land and campsites. Hope to build visitor cabins this summer. Women from the Boston area visit almost every weekend. Right now we are offering x-country ski weekends — $35 plus meals is the fee. In summer we offer work exchange. We have an all lesbian maple sugar bush – the only one I know of. We work with a draft horse, raise dairy goats and chickens. We are vegetarians raising nearly all our food organically here. We welcome community members and will lease land to women wanting to build a cabin or tipi.We offer workshops in",
+      "notes": "Type is Intentional Community/Cooperative because it operates as a working homestead farm and leases land to women to build cabins/tipis as community members. Focuses: Farming/self-sufficiency ('working homestead farm', 'raise dairy goats and chickens', 'raising nearly all our food organically') and Workshops/education ('We offer workshops in'). Accepted groups: Lesbian women (directory default).",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}
