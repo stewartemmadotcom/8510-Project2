@@ -460,3 +460,123 @@ appear inside articles, letters, and ads, and most pages mention none.
   checking every row?
 - Should model-made rows be marked in the database (e.g. a column saying
   "hand-checked" or "model, unchecked") so queries can tell them apart?
+
+
+# Summary: all scored runs (as of 2026-10-23)
+
+Every run below used the same 18 LC directory pages from the 5 issues I
+hand-checked in Project 1, and was scored against those 103 rows by
+`02_compare_to_handchecked.py` (land_location_as_stated scored by place
+phrase). Codebook v1 -> v4 are the versions of `codebook.md`; see each run's
+notes above for what changed. Lower "differences per listing" is better: it
+counts fields that disagree with my hand coding, averaged over matched
+listings.
+
+## Differences per listing (lower is better)
+
+```
+                codebook + model                       differences per listing
+v1 flash-lite   ███████████████████████████████████  2.94
+v2 flash-lite   ███████████████████████████████      2.62
+v2 3.8 Flash    █████████████                        1.12
+v3 3.8 Flash    ███████████████                      1.25
+v3 4 Argon      ███████████████                      1.26
+v4 3.8 Flash    █████████████                        1.09   <- best
+v4 Sonnet 5.5   █████████████████                    1.38
+v4 Opus 5.5     ██████████████                       1.20
+```
+
+## Cost for the 18-19 test pages
+
+```
+v1 flash-lite   █                                  $0.18
+v2 flash-lite   ██                                 $0.21
+v2 3.8 Flash    ████████                           $1.05
+v3 3.8 Flash    ████████                           $0.96
+v3 4 Argon      █████████                          $1.11
+v4 3.8 Flash    █████████                          $1.10
+v4 Sonnet 5.5   ███████████                        $1.41
+v4 Opus 5.5     █████████████████████████████████  $4.16
+```
+
+## Full comparison
+
+Accuracy (% of matched listings that agree with me) for the fields that
+vary most; page, acreage, row_kind and the contact address were 94-100% in
+every run with a strong model.
+
+| codebook | model | type | residents | groups | focuses | land location | land street | contact name | raw_text | diffs / listing | exact listings | missed / extra rows | cost | refused pages |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| v1 | Gemini 3.5 Flash-Lite | 73 | 73 | 65 | 43 | 89 | 68 | 88 | 94 | 2.94 | 8 of 97 | 6 / 10 | $0.18 | 0 |
+| v2 | Gemini 3.5 Flash-Lite | 70 | 67 | 67 | 44 | 89 | 84 | 86 | 94 | 2.62 | 6 of 98 | 5 / 13 | $0.21 | 0 |
+| v2 | Gemini 3.8 Flash | 84 | 92 | 89 | 73 | **91** | 91 | 97 | **98** | 1.12 | **35** of 100 | 3 / **2** | $1.05 | 0 |
+| v3 | Gemini 3.8 Flash | **92** | 92 | **98** | 74 | 62 | 92 | 96 | 97 | 1.25 | 32 of 102 | 1 / 4 | $0.96 | 1* |
+| v3 | Gemini 4 Argon | 89 | **95** | 94 | 66 | 76 | 92 | 94 | 97 | 1.26 | 30 of 102 | 1 / 5 | $1.11 | 0 |
+| v4 | Gemini 3.8 Flash | 90 | 93 | 94 | **78** | 83 | 90 | 95 | 96 | **1.09** | 34 of 102 | 1 / 4 | $1.10 | 2 (1 retried)* |
+| v4 | Claude Sonnet 5.5 | 82 | 87 | 89 | 52 | **94** | 92 | **97** | 96 | 1.38 | 29 of 102 | 1 / 6 | $1.41 | 0 |
+| v4 | Claude Opus 5.5 | 86 | 93 | 92 | 67 | 86 | 92 | 95 | 97 | 1.20 | 34 of 102 | 1 / 6 | $4.16 | 0 |
+
+\* Refusals were RECITATION: Gemini declining to copy published text. July
+1988 p. 23 (not scored) was refused by 3.8 Flash every time; Dec 1982 p. 23
+was refused once and worked on a retry. Neither Claude model, nor Argon,
+refused any page. The v1 and v2 flash-lite runs ran 18 pages; v3 and v4
+added July 1988 p. 23 (19 pages, not scored).
+
+## What the runs show
+
+- **The model mattered most at first.** Moving from Flash-Lite to 3.8 Flash
+  cut differences per listing from 2.6 to 1.1, more than any codebook
+  change.
+- **The codebook mattered for specific fields.** Writing out my land
+  address rule (v2) fixed the land fields; settling the pre-1986 "women"
+  rule (v3) raised accepted groups to 94-98%; the setting rule in v3
+  backfired on land location until v4 fixed it.
+- **Among strong models the differences are small.** 3.8 Flash, Argon and
+  Opus are all at 1.1-1.3 differences per listing; run-to-run variation on
+  the same model and codebook is a few listings per field.
+- **Best value: Gemini 3.8 Flash with codebook v4** - lowest differences
+  (1.09), best focuses (78%), about $0.06 per page. Its weak point is
+  refusing some pages; Claude (Sonnet, about $0.07 per page, or Opus) can
+  pick up refused pages.
+- **The hardest fields are judgment calls**: focuses (52-78%), type
+  (82-92%), land location (62-94%). Several remaining disagreements trace
+  back to places where my own Project 1 coding is not fully consistent, or
+  where the codebook doesn't yet say what I actually did (see "To change
+  later (codebook v5)").
+- **Facts printed on the page are reliable with any strong model**: page,
+  acreage, contact address 94-100%; raw_text 96-98%.
+- **Caution:** some codebook examples come from these same test listings,
+  so these scores may be higher than on issues not yet hand-checked.
+
+
+# Maize extraction (started 2026-10-23)
+
+## Plan and decisions
+- Maize was transcribed in the Maize-OCR project (Claude Haiku 5.5, 1,209
+  pages, $1.25). Extraction reads those texts and uses Gemini 3.8 Flash,
+  the best model on LC.
+- Scope: only Country Connections listings and community reports (On the
+  Land, Land Lesy, articles by or about one land community) become rows.
+  Passing mentions in other articles, letters and announcements are left
+  out.
+- One whole issue per request (largest, #53, is about 51,000 tokens with
+  the prompt), so reports that run across pages stay together.
+- Test set: I hand-code #25 (Summer 1990) and #53 (Spring 1997) in
+  `reference/maize_handcoded/maize_handcoded.csv` before seeing any model
+  output for them.
+- Maize rules go in `codebook_maize.md`, read after `codebook.md`. It is a
+  draft with TO DECIDE notes (accepted groups, splitting joint reports,
+  letters, type); `03_maize_to_csv.py` won't send anything until they are
+  replaced by decisions.
+
+## Code
+- `extraction_common.py`: the parts shared by the LC and Maize scripts
+  (codebook columns, vocabularies, Gemini and Claude calls, costs, checks,
+  run folders). `01_directory_to_csv.py` now uses it; checked that its
+  settings, schema and output are identical to before.
+- `03_maize_to_csv.py`: one issue at a time, same run folders and checks as
+  LC; row_kind can be listing, report or not_a_listing.
+- `reference/sources.csv`: the 29 Maize issues added (source_id 6-34).
+- `02_compare_to_handchecked.py`: `HAND_CSV` setting to score against the
+  hand-coded Maize CSV; with it, every model row from a hand-coded issue is
+  scored, on any page.

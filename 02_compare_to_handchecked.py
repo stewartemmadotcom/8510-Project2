@@ -38,6 +38,13 @@ RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME
 # Project 1's hand-checked data (read only, never changed here)
 HAND_FOLDER = Path.home() / "Desktop" / "8510-Project1" / "source_data"
 
+# To score against a hand-coded CSV in the flat-sheet columns instead (the
+# Maize test set), set this to its path, e.g.
+#   SCRIPT_DIR / "reference" / "maize_handcoded" / "maize_handcoded.csv"
+# With a CSV, every model row from a hand-coded issue is scored (Project 1
+# was checked page by page, so there only the checked pages are).
+HAND_CSV = None
+
 # Two rows are paired only if their names (or the start of their raw_text)
 # are at least this similar, from 0 (nothing alike) to 1 (identical)
 MATCH_THRESHOLD = 0.7
@@ -148,6 +155,24 @@ def load_hand_rows():
             row[name] = obs[name]
         rows.append(row)
     return rows
+
+
+def load_hand_csv(csv_path):
+    """Read a hand-coded sheet in the flat-sheet columns (the Maize test set).
+    Missing columns are treated as blank; each row is traced back by its
+    line number in the file."""
+    rows = read_csv(csv_path)
+    for line, row in enumerate(rows, start=2):   # line 1 is the header
+        for name in COLUMNS:
+            row[name] = (row.get(name) or "").strip()
+        row["page"] = re.sub(r"\D", "", row["page"])
+        row["observation_id"] = f"line {line}"
+    return rows
+
+
+def load_handchecked():
+    """The hand-checked rows: from HAND_CSV if it's set, else Project 1."""
+    return load_hand_csv(HAND_CSV) if HAND_CSV else load_hand_rows()
 
 
 def load_model_rows(csv_path):
@@ -315,9 +340,14 @@ def first_name(row):
 
 def compare(hand_rows, model_rows):
     """Do steps 2 to 4. Returns everything the reports need."""
-    # Step 2: scope. Only the (issue, page) pairs that were hand-checked
-    checked_pages = {(r["issue"], str(r["page"])) for r in hand_rows}
-    model_in_scope = [r for r in model_rows if (r["issue"], str(r["page"])) in checked_pages]
+    # Step 2: scope. Project 1: only the (issue, page) pairs that were
+    # hand-checked. A hand-coded CSV covers whole issues.
+    if HAND_CSV:
+        checked_issues = {r["issue"] for r in hand_rows}
+        model_in_scope = [r for r in model_rows if r["issue"] in checked_issues]
+    else:
+        checked_pages = {(r["issue"], str(r["page"])) for r in hand_rows}
+        model_in_scope = [r for r in model_rows if (r["issue"], str(r["page"])) in checked_pages]
     model_outside = len(model_rows) - len(model_in_scope)
 
     # Classified-ad rows still take part in pairing, so the model's copy of a
@@ -453,7 +483,7 @@ def self_test():
     them with themselves, and check every field scores 100%."""
     # A throwaway folder outside the project, so git doesn't pick it up
     test_folder = Path(tempfile.mkdtemp(prefix="lc_compare_self_test_"))
-    hand_rows = load_hand_rows()
+    hand_rows = load_handchecked()
     write_csv(test_folder / "land_directory.csv", hand_rows, COLUMNS)
 
     result = compare(hand_rows, load_model_rows(test_folder / "land_directory.csv"))
@@ -492,7 +522,7 @@ def main():
     if not model_file.exists():
         print(f"No model output found at {model_file}")
         return
-    result = compare(load_hand_rows(), load_model_rows(model_file))
+    result = compare(load_handchecked(), load_model_rows(model_file))
     print(write_reports(result, RUN_FOLDER, RUN_NAME))
     print(f"Saved comparison_summary.txt, comparison_details.csv and "
           f"review_side_by_side.csv in {RUN_FOLDER}")
