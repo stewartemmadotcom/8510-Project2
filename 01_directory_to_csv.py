@@ -12,52 +12,117 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 
+SCRIPT_DIR = Path(__file__).parent
+REFERENCE_FOLDER = SCRIPT_DIR / "reference"   # copied from 8510-Project1/source_data
+
+
+def read_column(csv_name, column):
+    """Read one column of a reference CSV: e.g. every accepted group name."""
+    with open(REFERENCE_FOLDER / csv_name, newline="", encoding="utf-8") as f:
+        return [row[column] for row in csv.DictReader(f)]
+
+
+# The controlled vocabularies from the Project 1 database. The model can only
+# pick from these lists, because the schema below forces it to.
+TYPE_NAMES = read_column("community_types.csv", "type_name")
+GROUP_NAMES = read_column("accepted_groups.csv", "group_name")
+FOCUS_NAMES = read_column("focuses.csv", "focus_name")
+NO_TYPE = "none"   # the model's answer for "no type"; code turns it into a blank
+
 # --- Codebook ---------------------------------------------------------------
-# One entry per column: (column name, instructions for the model).
+# One entry per column: (column name, instructions for the model), plus an
+# optional schema when the column is not plain text. The full coding rules are
+# in codebook.md; these instructions point to them.
 # Change the columns here and the schema and CSV header change with them.
 
+CHOICE = lambda choices: {"type": "string", "enum": choices}
+LIST_OF = lambda choices: {"type": "array", "items": {"type": "string", "enum": choices}}
+
 FIELDS = [
-("section",
- "If a centered, underlined section heading (e.g. TRIPS, ALTERNATIVE LAND) appears on this page above this listing, transcribe the nearest one exactly as printed. If no heading appears above it on this page, leave blank."),
+("row_kind",
+ "'listing' for a directory listing that describes land; 'not_a_listing' for a notice that a community has ended, or a letter from a listed community (see codebook: What counts as a row).",
+ CHOICE(["listing", "not_a_listing"])),
 ("community_name",
- "Transcribe the community name exactly as written. This is usually underlined, in bold, or in all capital letters at the beginning of a listing. (e.g. FEATHERS FARM, DUTCH MOUNTAIN, NORTH CROW VACATION RANCH)"),
-("street_address", 
- "Transcribe the street address exactly as printed. If it is not included, leave blank."),
-("city",
- "Transcribe the city or town exactly as printed. If it is not included, leave blank."),
-("state",
- "Transcribe the state or province exactly as printed. If it is not included, leave blank."),
-("zip", 
- "Transcribe the zip or postal code exactly as printed. If it is not provided, leave blank."),
-("country",
- "Transcribe the country exactly as printed. If it is not included, leave blank."),
-("phone", 
- "Transcribe the phone numbers exactly as printed. If it is not included, leave blank."),
+ "The community name exactly as printed, usually underlined or in capitals at the start of the listing. If none is given, see codebook: community_name."),
+("contact_name",
+ "A person or group the mail is addressed to (e.g. after c/o), when it is not the community itself. Otherwise blank."),
+("contact_street_address",
+ "The mailing street address or box as printed, without c/o or the contact name. Blank if not given."),
+("contact_city",
+ "The mailing city or town as printed. Blank if not given."),
+("contact_state",
+ "The mailing state as printed (correct only a plain typo, see codebook). Blank if not given."),
+("contact_zip",
+ "The mailing zip code as printed. Blank if not given."),
+("land_street_address",
+ "Where the land itself is, only if the listing says so or the inference is strong (see codebook: Addresses and location). A PO box is never the land."),
+("land_city",
+ "The city or town where the land is, under the same rule. Blank if not known."),
+("land_state",
+ "The state where the land is, under the same rule; may come from a vague place like 'southern Oregon'. Blank if not known."),
+("land_zip",
+ "The zip code where the land is, under the same rule. Blank if not known."),
+("land_location_as_stated",
+ "The listing's own words for a vague location (e.g. 'southern Oregon', '25 miles southeast of Tucson'). Blank if none."),
 ("acreage",
- "Transcribe the number of acres of the land community exactly as printed, if it is provided. (e.g. 3/4 acre, 100 acres) If not, leave blank."),
+ "The acreage as a number only (3/4 acre is 0.75), following codebook: acreage. Blank if not given."),
 ("num_residents",
- "Transcribe the number of residents exactly as printed. Do not count, add up, or estimate. (e.g. 4 lesbians, 1 nonlesbian) If it is not provided, leave blank."),
-("land_description", 
- "Transcribe verbatim the description of the land community as described in the listing. If there is none, leave blank."),
-("welcomed_groups", 
- "If a listing specifically notes that they welcome certain types of people, include those people here. (e.g. 'We welcome: girl children' 'We welcome: girl children, boy babies, nonlesbian women')"),
+ "The number of residents as a whole number, following codebook: num_residents. Blank if the listing does not say."),
+("type",
+ f"The community type at the date of this listing, following codebook: type. '{NO_TYPE}' for a bare listing or a not_a_listing row.",
+ CHOICE(TYPE_NAMES + [NO_TYPE])),
+("accepted_groups",
+ "Every group the listing welcomes, following codebook: accepted_groups. An empty list if it names no one.",
+ LIST_OF(GROUP_NAMES)),
+("focuses",
+ "What the community was built around, following codebook: focuses. An empty list if none.",
+ LIST_OF(FOCUS_NAMES)),
+("description",
+ "A short summary in your own words, using the controlled vocabulary's terms (see codebook: description)."),
+("raw_text",
+ "The full listing word for word, never shortened, following codebook: raw_text."),
 ("notes",
- "Transcribe exactly as printed any information in the listing that is not already captured in another field. Do not repeat text that is in another field. Leave empty if there is nothing left over."),
- ("continues_previous", 
-  "Write 'yes' only if this is the first text on the page and it does not start with a community name, because it is the end of a listing that began on the previous page. It may start partway through a sentence, address, or phone number. Leave community_name blank and put the text in whichever other fields fit. Otherwise leave this blank.")
+ "Explain every judgment call, quoting the words it rests on (see codebook: notes)."),
+("section",
+ "The nearest centered section heading above this listing on this page, exactly as printed. Blank if none on this page."),
+("continues_previous",
+ "'yes' only if this is the first text on the page and it is the end of a listing that began on the previous page (it does not start with a community name). Leave community_name blank for it. Otherwise blank."),
 ]
 
-PROMPT = """You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. This image is a page from the periodical Lesbian Connection. Specifically, it is part of Lesbian Connection's Land Directory, which listed communities across the country. Extract every listing on the page as one row, in the order they appear.
+LIST_FIELDS = [field[0] for field in FIELDS if len(field) > 2 and field[2]["type"] == "array"]
+
+
+def vocabulary_text():
+    """The controlled vocabularies, with their definitions, for the prompt."""
+    lines = []
+    for title, csv_name, name_col in [("Community types", "community_types.csv", "type_name"),
+                                      ("Accepted groups", "accepted_groups.csv", "group_name"),
+                                      ("Focuses", "focuses.csv", "focus_name")]:
+        with open(REFERENCE_FOLDER / csv_name, newline="", encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        lines.append(f"## {title}")
+        lines += [f"- {r[name_col]}" + (f": {r['description']}" if r.get("description") else "")
+                  for r in rows]
+        lines.append("")
+    return "\n".join(lines)
+
+
+CODEBOOK = (SCRIPT_DIR / "codebook.md").read_text(encoding="utf-8")
+
+# {source} is filled in for each page, e.g. "Lesbian Connection, December-January 1982",
+# because several coding rules depend on the date.
+PROMPT = """You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. This image is a page from {source}. It is part of the land directory, which listed women's land communities. Extract every listing on the page as one row, in the order they appear, following the codebook below exactly.
 Some listings continue from one page to the next. If the text at the top of the page does not start with a community name, it is the end of a listing from the previous page: extract it as its own entry and follow the instructions for the continues_previous column.
-Do not extract these as listings: the page number, section headings (record them in the section field instead), introductory or explanatory paragraphs that are not a listing, the "This content downloaded from..." notice at the bottom of the page, and faint text showing through from the back of the page.
+Do not extract these as rows: the page number, the running header, section headings (record them in the section field instead), introductory or explanatory paragraphs that are not a listing, anything that is not about land (books, albums, publications, businesses, trips, events), the "This content downloaded from..." notice at the bottom of the page, and faint text showing through from the back of the page.
 
 Rules:
-- Extract EVERY entry. Never skip an entry because a field is unclear or
-  missing: leave that field empty instead. An entry with blank fields is
-  better than a missing entry.
-- Transcribe exactly as printed. Do not correct spelling, expand
-  abbreviations, or modernize anything.
-  Also report the printed page number. """
+- Extract EVERY listing. Never skip one because a field is unclear or
+  missing: leave that field empty instead.
+- raw_text is word for word as printed. Do not correct spelling, expand
+  abbreviations, or modernize anything there.
+- Also report the printed page number.
+
+""" + CODEBOOK + "\n\n# Controlled vocabularies\n\n" + vocabulary_text()
 
 # --- Settings ---------------------------------------------------------------
 
@@ -75,9 +140,8 @@ PRICES = {
 # Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
 # results are kept. Reuse the same name to retry pages that failed or to
 # add more pages to a run.
-RUN_NAME = "2026-10-21_gemini-flash-lite-3.5"
+RUN_NAME = "2026-10-22_codebook-v1_flash-lite-3.5"
 
-SCRIPT_DIR = Path(__file__).parent
 IMAGE_FOLDER = SCRIPT_DIR / "images"
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME
 OUTPUT_FILE = RUN_FOLDER / "land_directory.csv"
@@ -89,7 +153,16 @@ PAGES_FOLDER = RUN_FOLDER / "pages"
 
 # Only extract these images, to check the results before a full run.
 # Set to [] to extract every image in IMAGE_FOLDER.
-TEST_PAGES = []
+# These are the directory pages of the 5 issues hand-checked in Project 1
+# (september76-014 is printed p. 12, not hand-checked, but a listing may
+# continue from it onto p. 13).
+TEST_PAGES = (
+    [f"lc-september76-{n:03}.png" for n in range(14, 17)]
+    + [f"lc-december82-{n:03}.png" for n in range(23, 28)]
+    + [f"lc-march83-{n:03}.png" for n in range(20, 22)]
+    + [f"lc-june83-{n:03}.png" for n in range(24, 27)]
+    + [f"lc-march86-{n:03}.png" for n in range(9, 14)]
+)
 
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 
@@ -98,13 +171,16 @@ IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
 
 def build_schema(fields):
     """Turn the codebook into a JSON schema: one page, with a list of entries."""
+    properties = {}
+    for field in fields:
+        name, description = field[0], field[1]
+        schema = dict(field[2]) if len(field) > 2 else {"type": "string"}
+        schema["description"] = description
+        properties[name] = schema
     entry = {
         "type": "object",
-        "properties": {
-            name: {"type": "string", "description": description}
-            for name, description in fields
-        },
-        "required": [name for name, _ in fields],
+        "properties": properties,
+        "required": [field[0] for field in fields],
     }
     return {
         "type": "object",
@@ -119,14 +195,14 @@ def build_schema(fields):
     }
 
 
-def extract_page(client, image_path):
+def extract_page(client, image_path, source_text):
     """Send one image to Gemini and return (parsed data, response)."""
     mime_type = mimetypes.guess_type(image_path)[0] or "image/jpeg"
     image_part = types.Part.from_bytes(data=image_path.read_bytes(), mime_type=mime_type)
 
     response = client.models.generate_content(
         model=MODEL,
-        contents=[image_part, PROMPT],
+        contents=[image_part, PROMPT.replace("{source}", source_text)],
         config=types.GenerateContentConfig(
             response_mime_type="application/json",   # answer in JSON only...
             response_json_schema=build_schema(FIELDS),  # ...shaped like this
@@ -168,6 +244,35 @@ def month_year_from_issue(issue):
     return month.capitalize(), f"19{year}"
 
 
+def load_sources():
+    """Code looks up each issue in reference/sources.csv (the Project 1
+    sources table) by its file name: 'lc-december82.pdf' -> 'december82'."""
+    sources = {}
+    with open(REFERENCE_FOLDER / "sources.csv", newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            issue = Path(row["file_name"]).stem.removeprefix("lc-")
+            sources[issue] = row
+    return sources
+
+
+def source_columns(issue, sources):
+    """The source columns for one issue. An issue missing from sources.csv
+    gets its month and year from the file name, and no source_id."""
+    if issue in sources:
+        row = sources[issue]
+        return {"source_id": row["source_id"], "publication": row["publication"],
+                "year_recorded": row["year"], "month_recorded": row["month"]}
+    month, year = month_year_from_issue(issue)
+    return {"source_id": "", "publication": "Lesbian Connection",
+            "year_recorded": year, "month_recorded": month}
+
+
+def page_digits(page_number):
+    """The printed page as a number: '-13-' -> '13'."""
+    match = re.search(r"\d+", page_number or "")
+    return match.group() if match else ""
+
+
 def check_entries(entries):
     """Quick sanity checks. These don't prove the data is right,
     but they catch some common problems."""
@@ -176,8 +281,24 @@ def check_entries(entries):
             continue
         if not entry["community_name"]:
             print(f"    CHECK: a listing has no community name (missed continuation?)")
-        elif not entry["street_address"] and not entry["phone"]:
-            print(f"    CHECK: {entry['community_name']} has no address and no phone")
+        elif (entry["row_kind"] == "listing"
+              and not entry["contact_street_address"] and not entry["contact_city"]):
+            print(f"    CHECK: {entry['community_name']} has no mailing address")
+
+
+def apply_code_rules(rows):
+    """Rules from the codebook that need no judgment, so code applies them
+    the same way every time."""
+    for row in rows:
+        # The model answers 'none' for no type, because the schema needs a choice
+        if row["type"] == NO_TYPE:
+            row["type"] = ""
+        # In LC's questionnaire directories (1982 on), lesbians are never on the
+        # "We welcome:" list because the whole directory is for lesbians, so
+        # Lesbian women is coded for every listing that welcomes anyone
+        if (row["year_recorded"] >= "1982" and row["accepted_groups"]
+                and "Lesbian women" not in row["accepted_groups"]):
+            row["accepted_groups"].insert(0, "Lesbian women")
 
 
 def merge_continuations(rows):
@@ -192,10 +313,14 @@ def merge_continuations(rows):
         prev_image = prev["source_image"].split("; ")[-1] if prev else ""
         if (is_continuation and prev and prev["issue"] == row["issue"]
                 and image_number(prev_image) + 1 == image_number(row["source_image"])):
-            for name, _ in FIELDS:
-                if name in ("community_name", "section", "continues_previous") or not row[name]:
+            for name in (field[0] for field in FIELDS):
+                if name in ("row_kind", "type", "community_name", "section",
+                            "continues_previous") or not row[name]:
                     continue
-                prev[name] = f"{prev[name]} {row[name]}".strip()
+                if name in LIST_FIELDS:
+                    prev[name] += [item for item in row[name] if item not in prev[name]]
+                else:
+                    prev[name] = f"{prev[name]} {row[name]}".strip()
             prev["source_image"] += f"; {row['source_image']}"
             prev["split_across_pages"] = "yes"
             print(f"MERGED: fragment from {row['source_image']} into {prev['community_name']}")
@@ -277,12 +402,18 @@ def main():
     print(f"Run: {RUN_NAME}  (saving to {RUN_FOLDER.relative_to(SCRIPT_DIR)})\n")
 
     client = genai.Client(api_key=api_key)
+    sources = load_sources()
     PAGES_FOLDER.mkdir(parents=True, exist_ok=True)
     all_rows = []
     failed = []
     total_cost = 0.0
 
     for image_path in images:
+        issue = issue_from_filename(image_path)
+        source = source_columns(issue, sources)
+        if not source["source_id"]:
+            print(f"CHECK: {issue} is not in reference/sources.csv; add it there")
+        source_text = f"{source['publication']}, {source['month_recorded']} {source['year_recorded']}"
         saved_page = PAGES_FOLDER / f"{image_path.stem}.json"
         if saved_page.exists():
             print(f"Using saved results for {image_path.name}")
@@ -291,7 +422,7 @@ def main():
         else:
             print(f"Extracting {image_path.name} ...")
             try:
-                data, response = extract_page(client, image_path)
+                data, response = extract_page(client, image_path, source_text)
             except Exception as err:
                 print(f"  FAILED: {err}\n")
                 failed.append(f"{image_path.name}: {err}")
@@ -300,9 +431,9 @@ def main():
 
         # Add the columns that code fills in, not the model
         for entry in data["entries"]:
-            entry["page"] = data["page_number"]
-            entry["issue"] = issue_from_filename(image_path)
-            entry["month"], entry["year"] = month_year_from_issue(entry["issue"])
+            entry["page"] = page_digits(data["page_number"])
+            entry.update(source)
+            entry["issue"] = issue
             entry["source_image"] = image_path.name
             all_rows.append(entry)
 
@@ -323,15 +454,19 @@ def main():
     print("=" * 40)
     all_rows = merge_continuations(all_rows)
     fill_sections(all_rows)
+    apply_code_rules(all_rows)
 
     # The codebook sets the column order; code-added columns go at the end
-    columns = ([name for name, _ in FIELDS if name != "continues_previous"]
-               + ["split_across_pages", "page", "month", "year", "issue", "source_image"])
+    columns = ([field[0] for field in FIELDS if field[0] != "continues_previous"]
+               + ["split_across_pages", "page", "source_id", "publication",
+                  "year_recorded", "month_recorded", "issue", "source_image"])
     OUTPUT_FILE.parent.mkdir(exist_ok=True)
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=columns, extrasaction="ignore")
         writer.writeheader()
-        writer.writerows(all_rows)
+        for row in all_rows:
+            # A list of groups or focuses becomes one cell: "Lesbian women; Girl children"
+            writer.writerow({k: "; ".join(v) if k in LIST_FIELDS else v for k, v in row.items()})
 
     print("=" * 40)
     print(f"Saved {len(all_rows)} rows to {OUTPUT_FILE.relative_to(SCRIPT_DIR)}")

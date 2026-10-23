@@ -3,7 +3,41 @@
 
 
 # Notes 
-- Recitation error on run: 2026-10-21_gemini-flash-lite-3.5 on issue July 88, page 23 
+
+## 2026-10-21_gemini-flash-lite-3.5 run 
+- Recitation error on issue July 88, page 23 
+- Books and albums sections from multiple editions show up; I did not want Gemini to include these; need to be more specific next run 
+
+## 2026-10-22_codebook-v1_flash-lite-3.5 run (test against Project 1)
+- First run with `codebook.md` and the Project 1 columns. 18 directory pages
+  from the 5 hand-checked issues; no failures, no RECITATION; cost $0.18.
+- Compared with `02_compare_to_handchecked.py`: 103 hand-checked rows in
+  scope, 97 matched, 6 missed, 10 extra.
+- Reliable: page 100%, row_kind 99%, contact city/state/zip 98-99%,
+  acreage 96%, contact street 94%, raw_text 94% (mean similarity 0.99).
+- Weak: focuses 43%, accepted_groups 65%, land_street_address 68%,
+  land_city 70%, land_location_as_stated 70%, type 73%, num_residents 73%,
+  land_zip 72%.
+- Patterns seen:
+  - type: the model over-uses Intentional Community/Cooperative; misses
+    retreats by function (Who Farm, Penthesileia) and one-or-two-women land
+    (Misty Bottoms, Dutch Mountain).
+  - land_*: the model leaves out RD/Rt/RFD boxes that I recorded as the
+    land, and fills land_city from the mailing city where I left it blank.
+  - land_location_as_stated: mostly the same place in slightly different
+    words; exact-match scoring is too strict for this field.
+  - accepted_groups: the model adds Non-lesbian women and Boy children more
+    often than I did.
+  - focuses: the model codes too few.
+  - contact_name: the model leaves out the person when the community is
+    named after them (Susan Stone, Jan F Walsh).
+  - Extra rows: groups LC says have no land (Dec 1982: Ellie's Nest, River
+    Most Wild, Aradia, Women's Wilderness Experience, Lesbians on Land;
+    Mar 1983: Gabriel's, Sea Gnomes Home) were extracted anyway.
+  - Missed rows: folded notices (A Woman's Place, Heraseed), the joint
+    listing split (California Women's Land Trust), Feathers Farm's letter,
+    Bee Song Honey Farms; Women Only Ranch (Mar 1986 p. 19) was not in the
+    test pages.
 
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database
