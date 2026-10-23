@@ -1,0 +1,35 @@
+{
+  "page_number": "-12-",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "OREGON WOMEN'S LAND",
+      "contact_name": "OWL",
+      "contact_street_address": "PO Box 1713",
+      "contact_city": "Eugene",
+      "contact_state": "OR",
+      "contact_zip": "97401",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "Oregon",
+      "land_zip": "",
+      "land_location_as_stated": "West Coast & Southwest",
+      "acreage": "",
+      "num_residents": "",
+      "type": "Land Fund/Seeking Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women"
+      ],
+      "focuses": [
+        "Workshops/education",
+        "Archives/cultural work"
+      ],
+      "description": "An educational and fundraising multi-media caravan planning a tour of the West Coast and Southwest with slides, movies, literature, puppet shows, music, trade and barter, and speeches, seeking to schedule stops.",
+      "raw_text": "OREGON WOMEN'S LAND: plans an educational and fundraising multi-media caravan in early fall. Slides, movies, literature, puppet shows, music, trade & barter, speeches, conversation and connection. West Coast & Southwest & ? Write to schedule a stop in your area. OWL, PO Box 1713, Eugene, OR, 97401.",
+      "notes": "Type is Land Fund/Seeking Land because it is a fundraising group for Oregon Women's Land. Accepted groups: 'women' before 1986 means Lesbian women and Non-lesbian women. Focuses: Archives/cultural work ('Slides, movies, literature, puppet shows, music') and Workshops/education ('educational... speeches').",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "page_number": "-24-",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "",
+      "contact_name": "",
+      "contact_street_address": "",
+      "contact_city": "",
+      "contact_state": "",
+      "contact_zip": "",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "3",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "An intentional community with 3 lesbians, land, housing, and farm land focusing on farming/self-sufficiency, welcoming new members/residents, girl children, and non-lesbian women.",
+      "raw_text": "system of crop sharing/gardening. Ongoing projects include bridge and road construction, gardening, selecting and cutting wood, fencing, building campsites and shelters, and gathering materials. We welcome: new members/residents, girl children, nonlesbian women. We have/are: 3 lesbians, land, housing/permanent structures, plumbing/electricity, camping space (no sites), woods, farm land, women living and workin' on the land. Inactive group with hopes to revive.",
+      "notes": "continues_previous='yes' because the text starts mid-sentence without a community name. 3 residents inferred from 'We have/are: 3 lesbians'. Accepted groups coded from 'We welcome: ... girl children, nonlesbian women' and resident lesbians. Farming focus inferred from 'crop sharing/gardening', 'farm land', 'women living and workin' on the land'.",
+      "section": "",
+      "continues_previous": "yes"
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "ARLENE & ARLINE",
+      "contact_name": "",
+      "contact_street_address": "PO Box 511",
+      "contact_city": "Desert Hot Springs",
+      "contact_state": "CA",
+      "contact_zip": "92240",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "25 miles NE of Palm Springs",
+      "acreage": "5",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "Private land of 5 acres located 25 miles NE of Palm Springs, hosted by 2 lesbian feminists, welcoming non-lesbian women and girl children interested in rural life and farming.",
+      "raw_text": "ARLENE & ARLINE PO Box 511, Desert Hot Springs, CA 92240 (619)329-8916. (25 miles NE of Palm Springs in a rural desert area). We are two lesbian feminists, lovers of 15 years. We have been rural wimmin for 9 years, 3 years of which on our farm. We raise our own vegetables, herbs, chickens, goats, bees, fruit trees; many flowers. We live simply and creatively (no TV) and do enjoy sharing our skills with wimmin oriented lesbians (non-racist, non-classist etc) interested in rural life. We welcome: girl children. We have/are: 2 lesbians, 5 acres, housing/permanent structures, plumbing/electricity.",
+      "notes": "Type is Private/Individual Land because it is owned/hosted by two individuals ('We are two lesbian feminists... on our farm'). 2 residents from 'We have/are: 2 lesbians'. Acreage is 5. Accepted groups from 'We welcome: girl children' and resident lesbians/wimmin. Farming focus from raising own vegetables, herbs, chickens, goats, bees, fruit trees and 'on our farm'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "KIDS-LL-EAT IVY FARM",
+      "contact_name": "",
+      "contact_street_address": "1220 Georgetown Rd",
+      "contact_city": "Cool",
+      "contact_state": "CA",
+      "contact_zip": "95614",
+      "land_street_address": "1220 Georgetown Rd",
+      "land_city": "Cool",
+      "land_state": "CA",
+      "land_zip": "95614",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "",
+      "type": "Private/Individual Land",
+      "accepted_groups": [],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "A commercial dairy, cheeseplant, and truck gardening farm offering lesbians space to lease out part of commercial operations or buy shares. NO DRUGS.",
+      "raw_text": "KIDS-LL-EAT IVY FARM  1220 Georgetown Rd, Cool, CA 95614 (916)823-3009. A thriving commercial dairy and cheeseplant, truck gardening, various homestead animals and horses. Six dwellings with all conveniences, spa, greenhouse, pond, barns, pasture.  I welcome lesbians to lease out part of commercial operations or buy shares in the property. Requires money and responsibility. Must have country-living-animal experience and be interested, as well as believe in, ecologically run, woman owned commercial farming. NO DRUGS.",
+      "notes": "Type is Private/Individual Land because it says 'I welcome lesbians...'. Land location inferred as the contact street address because it operates directly on the property ('commercial dairy...'). Farming focus from commercial dairy, cheeseplant, truck gardening, farming.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "FOLLY FARM",
+      "contact_name": "",
+      "contact_street_address": "9380 Hebo Rd",
+      "contact_city": "Grand Ronde",
+      "contact_state": "OR",
+      "contact_zip": "97347",
+      "land_street_address": "9380 Hebo Rd",
+      "land_city": "Grand Ronde",
+      "land_state": "OR",
+      "land_zip": "97347",
+      "land_location_as_stated": "",
+      "acreage": "120",
+      "num_residents": "6",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "An intentional community of 1 lesbian and 5 non-lesbians on 120 acres practicing organic agriculture, permaculture, and communal child raising, welcoming new members, girl and boy children, and non-lesbian women and men.",
+      "raw_text": "NOTE: The following is not a women's land group, but it does welcome lesbians as visitors or members. FOLLY FARM  9380 Hebo Rd, Grand Ronde, OR 97347 (503)879-5649.  We are pacifists, vegetarians, and we practice organic agriculture, permaculture, and communal child raising. We welcome: new members/residents, girl and boy children, nonlesbian women. We have/are: 1 lesbian, 5 nonlesbians, 120 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women and men living and working on the land.",
+      "notes": "NOT WOMEN'S LAND group per note: 'The following is not a women's land group, but it does welcome lesbians...'. Type is Intentional Community/Cooperative. 6 residents total (1 lesbian + 5 nonlesbians). Acreage is 120. Accepted groups: Non-lesbian women, Girl children, Boy children, Non-gay men, Gay men (inferred from 'women and men living and working'). Focuses: Farming/self-sufficiency ('organic agriculture', 'farm land') and Environmentalism/eco-friendly ('organic agriculture, permaculture').",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WILDERNESS WAY",
+      "contact_name": "",
+      "contact_street_address": "Box 176",
+      "contact_city": "Wascott",
+      "contact_state": "WI",
+      "contact_zip": "54890",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "WI",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "10",
+      "num_residents": "1",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "Private land owned by 1 lesbian on 10 wooded acres with lake frontage, offering housekeeping units, a campground, and recreational activities, welcoming non-lesbian women and children.",
+      "raw_text": "NOTE: These groups don't have land, per se, or they aren't exactly land groups, but we included them for your information. WILDERNESS WAY. Box 176, Wascott, WI 54890. (715)466-2635. Wilderness Way is located on 10 wooded acres with 260 feet of lake frontage. There are 3 two bedroom housekeeping units each with fully equipped kitchen and bath, and living room area. The campground includes electric hook-ups, indoor bathroom facilities with hot showers and an indoor camper lounge area. Swimming, fishing, canoeing, bicycling, hiking, horseback riding and cross country skiing. Owned by 1 lesbian. Other lesbians active in planning special events and sharing management tasks. We welcome: nonlesbian women, girl and boy children, cats and dogs.",
+      "notes": "Type is Private/Individual Land because it is 'Owned by 1 lesbian' with housekeeping units/campground. 1 resident inferred from 'Owned by 1 lesbian' (living there as owner/host). Acreage is 10. Accepted groups from 'We welcome: nonlesbian women, girl and boy children'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "PEPPERLAND",
+      "contact_name": "",
+      "contact_street_address": "PO Box 464",
+      "contact_city": "Albion",
+      "contact_state": "CA",
+      "contact_zip": "95410",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "CA",
+      "land_zip": "",
+      "land_location_as_stated": "Redwoods on the Mendocino Coast just 9 miles south of Mendocino",
+      "acreage": "2",
+      "num_residents": "",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Non-lesbian women"
+      ],
+      "focuses": [],
+      "description": "A quiet, private cabin on 2 acres in the Redwoods on the Mendocino Coast, welcoming non-lesbian women visitors.",
+      "raw_text": "PEPPERLAND PO Box 464, Albion, CA 95410 (707)937-0020. We have a quiet, private cabin with detached, shared, bathroom facilities, $20 per night (up to 3 people). We are in the Redwoods on the Mendocino Coast just 9 miles south of Mendocino. We welcome: nonlesbian women. We have: 2 acres, housing/permanent structures, plumbing/electricity, woods.",
+      "notes": "Type is Private/Individual Land because it offers a private cabin for rent ('private cabin... $20 per night'). Acreage is 2. Land location stated as 'Redwoods on the Mendocino Coast just 9 miles south of Mendocino'. Accepted groups from 'We welcome: nonlesbian women'.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+Comparison of run '2026-10-22_codebook-v1_flash-lite-3.5' with the Project 1 hand-checked rows
+
+Hand-checked rows in scope:   103
+Model rows on checked pages:  107  (1 model rows on other pages were left out)
+Matched pairs (scored):       97
+Missed (hand-checked only):   6
+Extra (model only):           10
+
+Field accuracy on matched pairs:
+  row_kind                     99.0%  (96/97)
+  type                         73.2%  (71/97)
+  contact_name                 87.6%  (85/97)
+  contact_street_address       93.8%  (91/97)
+  contact_city                 99.0%  (96/97)
+  contact_state                97.9%  (95/97)
+  contact_zip                  99.0%  (96/97)
+  land_street_address          68.0%  (66/97)
+  land_city                    70.1%  (68/97)
+  land_state                   86.6%  (84/97)
+  land_zip                     72.2%  (70/97)
+  land_location_as_stated      70.1%  (68/97)
+  page                        100.0%  (97/97)
+  acreage                      95.9%  (93/97)
+  num_residents                73.2%  (71/97)
+  accepted_groups              64.9%  (63/97)
+  focuses                      43.3%  (42/97)
+  raw_text                     93.8%  (91/97)
+  raw_text mean similarity:  0.990  (a match is 0.98 or above)
+
+Missed rows (only in hand-checked data):
+  september76 p.13: California Women's Land Trust
+  december82 p.21: A Woman's Place
+  december82 p.21: Heraseed
+  march83 p.18: Bee Song Honey Farms
+  march83 p.19: Feathers Farm
+  march86 p.19: Women Only Ranch
+
+Extra rows (only in model output):
+  december82 p.24: ELLIE'S NEST
+  december82 p.24: RIVER MOST WILD
+  december82 p.25: ARADIA INC
+  december82 p.25: WOMEN'S WILDERNESS EXPERIENCE
+  december82 p.25: LESBIANS ON LAND
+  june83 p.24: PEPPERLAND
+  march83 p.19: GABRIEL'S
+  march83 p.19: SEA GNOMES HOME
+  march86 p.11: SEA GNOMES' HOME
+  march86 p.11: HALF MOON PINES
+
+Out of scope, not scored (classified ads):
+  june83 p.22: Wisconsin Womyn's Land Co-op (observation 72)
+  june83 p.22: Kringle/Wood's land (observation 73)
+  march83 p.16: Susan B Anthony Memorial Unrest Home (observation 74)
+  march86 p.19: 240 acres near Fayetteville, AR (observation 106)
+
+Pages that failed in this run (from settings.json):
+  none
