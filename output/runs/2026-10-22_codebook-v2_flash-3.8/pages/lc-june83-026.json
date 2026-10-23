@@ -1,0 +1,129 @@
+{
+  "page_number": "24",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "",
+      "contact_name": "",
+      "contact_street_address": "",
+      "contact_city": "",
+      "contact_state": "",
+      "contact_zip": "",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "3",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "Ongoing projects include bridge and road construction, gardening, selecting and cutting wood, fencing, and building campsites and shelters. Welcomes new members, non-lesbian women, and girl children. Currently inactive with hopes to revive; has three resident lesbians and farm land.",
+      "raw_text": "system of crop sharing/gardening. Ongoing projects include bridge and road construction, gardening, selecting and cutting wood, fencing, building campsites and shelters, and gathering materials. We welcome: new members/residents, girl children, nonlesbian women. We have/are: 3 lesbians, land, housing/permanent structures, plumbing/electricity, camping space (no sites), woods, farm land, women living and workin' on the land. Inactive group with hopes to revive.",
+      "notes": "Continued from previous page. Type is Intentional Community/Cooperative based on 3 lesbians living and working on the land and welcoming new members/residents. num_residents is 3 from '3 lesbians' and 'women living and workin' on the land'. Focus Farming/self-sufficiency from 'crop sharing/gardening', 'farm land', and cutting wood.",
+      "section": "",
+      "continues_previous": "yes"
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "ARLENE & ARLINE",
+      "contact_name": "ARLENE & ARLINE",
+      "contact_street_address": "PO Box 511",
+      "contact_city": "Desert Hot Springs",
+      "contact_state": "CA",
+      "contact_zip": "92240",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "CA",
+      "land_zip": "",
+      "land_location_as_stated": "25 miles NE of Palm Springs in a rural desert area",
+      "acreage": "5",
+      "num_residents": "2",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Workshops/education"
+      ],
+      "description": "A five-acre farm in a rural desert area 25 miles northeast of Palm Springs owned by two lesbian lovers. They raise vegetables, herbs, fruit trees, bees, chickens, and goats, and offer skill-sharing with lesbians interested in rural living. Welcomes girl children.",
+      "raw_text": "ARLENE & ARLINE PO Box 511, Desert Hot Springs, CA 92240 (619)329-8916. (25 miles NE of Palm Springs in a rural desert area). We are two lesbian feminists, lovers of 15 years. We have been rural wimmin for 9 years, 3 years of which on our farm. We raise our own vegetables, herbs, chickens, goats, bees, fruit trees; many flowers. We live simply and creatively (no TV) and do enjoy sharing our skills with wimmin oriented lesbians (non-racist, non-classist etc) interested in rural life. We welcome: girl children. We have/are: 2 lesbians, 5 acres, housing/permanent structures, plumbing/electricity.",
+      "notes": "Type is Private/Individual Land under the two-woman rule ('two lesbian feminists, lovers of 15 years', '2 lesbians'). land_state inferred as CA from 'Palm Springs' and mailing address. Focuses: Farming/self-sufficiency from raising vegetables, herbs, fruit trees, and livestock; Workshops/education from 'sharing our skills'. 'non-racist, non-classist' noted as inclusive statement, not coded.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "KIDS-LL-EAT IVY FARM",
+      "contact_name": "",
+      "contact_street_address": "1220 Georgetown Rd",
+      "contact_city": "Cool",
+      "contact_state": "CA",
+      "contact_zip": "95614",
+      "land_street_address": "1220 Georgetown Rd",
+      "land_city": "Cool",
+      "land_state": "CA",
+      "land_zip": "95614",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women"
+      ],
+      "focuses": [
+        "Recovery/substance-free",
+        "Farming/self-sufficiency",
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "A commercial dairy, cheeseplant, and truck garden with livestock, horses, greenhouse, pond, and six dwellings. The woman owner seeks lesbians to lease commercial operations or buy shares in ecologically run farming. Substance-free.",
+      "raw_text": "KIDS-LL-EAT IVY FARM 1220 Georgetown Rd, Cool, CA 95614 (916)823-3009. A thriving commercial dairy and cheeseplant, truck gardening, various homestead animals and horses. Six dwellings with all conveniences, spa, greenhouse, pond, barns, pasture. I welcome lesbians to lease out part of commercial operations or buy shares in the property. Requires money and responsibility. Must have country-living-animal experience and be interested, as well as believe in, ecologically run, woman owned commercial farming. NO DRUGS.",
+      "notes": "Type is Private/Individual Land ('woman owned commercial farming', 'I welcome lesbians to lease out part of commercial operations or buy shares'). Land address inferred from mailing street address. No resident count given (uses 'I'). Focuses: Farming/self-sufficiency from dairy, cheeseplant, truck gardening, and homestead animals; Recovery/substance-free from 'NO DRUGS'; Environmentalism/eco-friendly from 'ecologically run... commercial farming'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "FOLLY FARM",
+      "contact_name": "",
+      "contact_street_address": "9380 Hebo Rd",
+      "contact_city": "Grand Ronde",
+      "contact_state": "OR",
+      "contact_zip": "97347",
+      "land_street_address": "9380 Hebo Rd",
+      "land_city": "Grand Ronde",
+      "land_state": "OR",
+      "land_zip": "97347",
+      "land_location_as_stated": "",
+      "acreage": "120",
+      "num_residents": "6",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency",
+        "Environmentalism/eco-friendly"
+      ],
+      "description": "A 120-acre intentional community and farm practicing pacifism, vegetarianism, organic agriculture, permaculture, and communal child raising. Six residents (one lesbian and five non-lesbians, men and women) live and work on the land. Welcomes new members, non-lesbian women, and children.",
+      "raw_text": "FOLLY FARM 9380 Hebo Rd, Grand Ronde, OR 97347 (503)879-5649. We are pacifists, vegetarians, and we practice organic agriculture, permaculture, and communal child raising. We welcome: new members/residents, girl and boy children, nonlesbian women. We have/are: 1 lesbian, 5 nonlesbians, 120 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women and men living and working on the land.",
+      "notes": "NOT WOMEN'S LAND. LC editor note states: 'NOTE: The following is not a women's land group, but it does welcome lesbians as visitors or members.' Type is Intentional Community/Cooperative based on collective living and communal work ('women and men living and working on the land'). num_residents is 6 (1 lesbian + 5 nonlesbians). Land address inferred from mailing street address. Accepted groups include Lesbian women (editor note and 1 lesbian member), Non-lesbian women, Girl children, Boy children, and Gay men and Non-gay men ('women and men living and working on the land'). Focuses: Farming/self-sufficiency and Environmentalism/eco-friendly from 'organic agriculture, permaculture'.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

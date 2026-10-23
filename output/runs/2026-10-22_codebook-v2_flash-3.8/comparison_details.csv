@@ -1,0 +1,138 @@
+issue,page,community,field,hand_value,model_value,explanation
+december82,21,Feathers Farm,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Boy children,model missed: non-lesbian women
+december82,21,Greenhope,focuses,Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Farming/self-sufficiency; Workshops/education,model missed: environmentalism/eco-friendly
+december82,22,Susan Stone's land,accepted_groups,,Lesbian women,model added: lesbian women
+december82,22,Adlai Neubauer & Karen Hamm's land,focuses,,Recovery/substance-free,model added: recovery/substance-free
+december82,24,Who Farm Inc,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Boy children,model missed: non-lesbian women
+december82,24,Who Farm Inc,focuses,Farming/self-sufficiency; Workshops/education,Workshops/education,model missed: farming/self-sufficiency
+march83,18,Silver Circle Farm,focuses,Farming/self-sufficiency,Spirituality/ritual; Farming/self-sufficiency,model added: spirituality/ritual
+march83,19,Stepping Woods,focuses,Environmentalism/eco-friendly,,model missed: environmentalism/eco-friendly
+march83,19,Rootworks,focuses,Recovery/substance-free; Workshops/education; Archives/cultural work; Environmentalism/eco-friendly,Recovery/substance-free; Archives/cultural work; Environmentalism/eco-friendly,model missed: workshops/education
+june83,22,Lavender Hill,num_residents,0,,
+june83,23,Hardscrabble Hill Center,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
+june83,23,Heathcote Womens Community,num_residents,4,,
+june83,23,Heathcote Womens Community,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Boy children,model missed: non-lesbian women
+june83,23,Moon Ridge,accepted_groups,Lesbian women; Non-lesbian women; Girl children; Boy children,Lesbian women; Girl children; Boy children,model missed: non-lesbian women
+june83,24,Kids-ll-eat Ivy Farm,num_residents,1,,
+march86,7,Dutch Mountain,focuses,Older women; Recovery/substance-free; Working-class women; Lesbian separatism; Archives/cultural work,Older women; Recovery/substance-free; Working-class women; Lesbian separatism,model missed: archives/cultural work
+march86,8,Heathcote Womens Community,focuses,Recovery/substance-free; Environmentalism/eco-friendly,Recovery/substance-free; Farming/self-sufficiency; Environmentalism/eco-friendly,model added: farming/self-sufficiency
+march86,9,Silver Circle Farm,focuses,Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Spirituality/ritual; Farming/self-sufficiency; Workshops/education,model missed: environmentalism/eco-friendly | model added: spirituality/ritual
+march86,9,Spiral Wimmin's Land Trust,num_residents,,33,
+march86,9,Spiral Wimmin's Land Trust,focuses,Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Farming/self-sufficiency; Workshops/education,model missed: environmentalism/eco-friendly
+march86,10,Bee Song Honey Farms,accepted_groups,,Lesbian women,model added: lesbian women
+march86,10,Bee Song Honey Farms,focuses,Farming/self-sufficiency; Archives/cultural work,Farming/self-sufficiency,model missed: archives/cultural work
+september76,14,Nourishing Space for Women,contact_name,,Cave Canyon Ranch,
+september76,14,Women's Ways Retreat,land_location_as_stated,"the rolling Berkshire mountains in Craryville, New York","in the rolling Berkshire mountains in Craryville, New York",
+september76,14,Elwha River land,land_location_as_stated,the Elwha River running through the back meadow,,
+december82,22,Turtle Land for Wimmin,land_state,,VA,
+december82,22,Turtle Land for Wimmin,num_residents,,10,
+december82,22,Spiral Wimmin's Land Trust,land_state,,KY,
+december82,23,The Web,type,Intentional Community/Cooperative,Private/Individual Land,
+december82,23,"Rebecca, Susan, Anne & Maurine's land",land_state,,NM,
+december82,23,Yorkville Women's Land Collective,land_city,,Yorkville,
+december82,23,Yorkville Women's Land Collective,focuses,,Recovery/substance-free,model added: recovery/substance-free
+december82,23,Lavender Hill,land_location_as_stated,3 hours north of SF and close to the ocean,located 3 hours north of SF and close to the ocean,
+december82,23,Lavender Hill,focuses,Older women; Working-class women; Farming/self-sufficiency; Women of color,Older women; Working-class women; Women of color,model missed: farming/self-sufficiency
+december82,24,Womanshare,land_location_as_stated,forested land in Southern OR,Southern OR,
+december82,24,Womanshare,accepted_groups,Lesbian women; Non-lesbian women; Girl children,Lesbian women; Girl children,model missed: non-lesbian women
+december82,24,Mulleinsong,land_state,,OR,
+march83,18,Laughing Rock Farm,land_location_as_stated,"on an old blue stone quarry with a lovely, secluded pond",,
+march83,18,Laughing Rock Farm,focuses,Disabled women; Lesbian separatism; Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Disabled women; Lesbian separatism; Farming/self-sufficiency; Workshops/education,model missed: environmentalism/eco-friendly
+march83,18,Northwoods,land_location_as_stated,"Between Ithaca & Watkins Glen, NY","Between Ithaca & Watkins Glen, NY.",
+march83,18,Bee Song Honey Farms,type,Private/Individual Land,,
+march83,18,Bee Song Honey Farms,num_residents,2,,
+march83,19,Oregon Women's Land Trust,type,Land Trust,Intentional Community/Cooperative,
+march83,19,Oregon Women's Land Trust,focuses,Women of color,Recovery/substance-free; Women of color,model added: recovery/substance-free
+march83,19,Fly Away Home,land_location_as_stated,a secluded forest hilltop,secluded forest hilltop,
+march83,19,Fly Away Home,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
+march83,19,Ozark Wimmin's Land Trust,land_state,,AR,
+june83,23,Oneida Farm,land_location_as_stated,Between Harrisburg and Gettysburg,Between Harrisburg and Gettysburg.,
+june83,23,Whispering Winds,land_location_as_stated,"near Virginia; Northern Minnesota, ten miles from town, access to a small lake","near Virginia. Country living with privacy for womyn. Located in Northern Minnesota, ten miles from town",
+june83,23,Whispering Winds,accepted_groups,Lesbian women; Non-lesbian women,Lesbian women,model missed: non-lesbian women
+june83,23,Whispering Winds,focuses,,Older women,model added: older women
+june83,23,D W Outpost,type,Intentional Community/Cooperative,Land Fund/Seeking Land,
+march86,7,Feathers Farm,type,Intentional Community/Cooperative,Retreat/Gathering Space,
+march86,7,Feathers Farm,focuses,Farming/self-sufficiency,Farming/self-sufficiency; Workshops/education,model added: workshops/education
+march86,8,Gathering Ground,land_location_as_stated,End of #10 Rd; central Maine,central Maine,
+march86,8,Gathering Ground,focuses,Spirituality/ritual; Farming/self-sufficiency; Environmentalism/eco-friendly,Recovery/substance-free; Spirituality/ritual; Farming/self-sufficiency; Environmentalism/eco-friendly,model added: recovery/substance-free
+march86,8,Laughing Rock Farm,type,Intentional Community/Cooperative,Retreat/Gathering Space,
+march86,8,Laughing Rock Farm,focuses,Lesbian separatism; Farming/self-sufficiency; Workshops/education; Environmentalism/eco-friendly,Lesbian separatism; Spirituality/ritual; Farming/self-sufficiency; Workshops/education,model missed: environmentalism/eco-friendly | model added: spirituality/ritual
+march86,9,Susan B Anthony Memorial Unrest Home,land_location_as_stated,"near Athens, OH; near Ohio University in the Appalachian hills","near Athens, OH",
+march86,9,The Web,type,,Private/Individual Land,
+march86,9,The Web,focuses,Environmentalism/eco-friendly,Recovery/substance-free,model missed: environmentalism/eco-friendly | model added: recovery/substance-free
+march86,10,"Penthesileia, Inc",type,Intentional Community/Cooperative,Retreat/Gathering Space,
+march86,10,"Penthesileia, Inc",focuses,Workshops/education,,model missed: workshops/education
+march86,10,Rootworks,type,Intentional Community/Cooperative,Private/Individual Land,
+march86,10,Womanshare,land_location_as_stated,forested land in southern Oregon,southern Oregon,
+march86,11,Pagoda,land_location_as_stated,ocean,,
+march86,11,Pagoda,focuses,Lesbian separatism; Spirituality/ritual; Archives/cultural work,Lesbian separatism; Spirituality/ritual; Recovery/substance-free; Archives/cultural work,model added: recovery/substance-free
+september76,13,California Women's Land Trust,contact_zip,90028,9028,
+september76,13,California Women's Land Trust,land_state,CA,,
+september76,13,Women on Land,type,Intentional Community/Cooperative,Land Trust,
+september76,13,Women on Land,contact_state,AR,Arkansas,
+september76,13,Women on Land,num_residents,,0,
+september76,13,Another Demention,type,Land Fund/Seeking Land,Intentional Community/Cooperative,
+september76,13,Another Demention,land_location_as_stated,wilderness area of Oklahoma near Tishomingo,"near Tishomingo, capitol of the chicasaw nation",
+september76,13,Another Demention,num_residents,,0,
+september76,14,A Woman's Place,land_zip,12810,,
+september76,14,A Woman's Place,land_location_as_stated,the Adirondacks,in the Adirondacks,
+december82,23,Jan F Walsh's land,contact_street_address,"Two Towers, 201 S 132nd Ave",201 S 132nd Ave,
+december82,23,Jan F Walsh's land,land_street_address,"Two Towers, 201 S 132nd Ave",201 S 132nd Ave,
+december82,25,Oakynwomyn,contact_name,,Twin Oaks Community,
+december82,25,Oakynwomyn,contact_street_address,Twin Oaks Community,,
+march83,18,Cedar,land_city,,Camptonville,
+march83,18,Cedar,land_location_as_stated,"deeply forested, sub-alpine beauty at 3200'... near incredible Yuba River",near incredible Yuba River,
+june83,23,Northwoods,row_kind,listing,not_a_listing,
+june83,23,Northwoods,type,Intentional Community/Cooperative,,
+june83,23,Northwoods,accepted_groups,Lesbian women,,model missed: lesbian women
+june83,23,Northwoods,focuses,Environmentalism/eco-friendly,,model missed: environmentalism/eco-friendly
+march86,8,Chris of Coventree,type,Intentional Community/Cooperative,Private/Individual Land,
+march86,8,Chris of Coventree,land_location_as_stated,tucked away in the woods of Central Maine,Central Maine,
+march86,8,Herland,type,Intentional Community/Cooperative,Private/Individual Land,
+march86,8,Herland,land_location_as_stated,"rural Pittsboro, NC","Located in rural Pittsboro, NC",
+march86,9,Maple Row Farm,land_street_address,,Rt 1 Box 88,
+march86,9,Maple Row Farm,land_zip,,49729,
+march86,9,Maple Row Farm,focuses,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work; Women of color,Recovery/substance-free; Farming/self-sufficiency; Women of color,model missed: archives/cultural work
+march86,10,Arlene & Arline's land,land_state,,CA,
+march86,10,Arlene & Arline's land,land_location_as_stated,beautiful desert country with big skies filled with stars,,
+march86,11,Labrys,land_street_address,4115 M-22,Rt 1 Box 257,
+march86,11,Labrys,land_location_as_stated,northwest Michigan a mile from Lake Michigan; on Long Lake,located in northwest Michigan a mile from Lake Michigan,
+march86,11,Labrys,focuses,Workshops/education; Environmentalism/eco-friendly,,model missed: environmentalism/eco-friendly; workshops/education
+march86,11,River Spirit Retreat,land_city,,Kampsville,
+march86,11,River Spirit Retreat,land_location_as_stated,"Rt 100 North of Kampsville, IL, 1 hr from Alton, 2 hrs from St Louis; by the Illinois River","Located Rt 100 North of Kampsville, IL",
+september76,14,Four Women,land_street_address,,3100 Ridgewood Rd.,
+september76,14,Four Women,land_city,,Willits,
+september76,14,Four Women,land_zip,,95490,
+june83,23,Greenstalk,land_city,,Unger,
+june83,23,Greenstalk,land_state,,WV,
+june83,23,Greenstalk,land_location_as_stated,"Between Berkeley Springs, WV and Winchester, VA","Between Berkeley Springs, WV and Winchester, VA.",
+june83,23,Greenstalk,focuses,Recovery/substance-free; Farming/self-sufficiency; Archives/cultural work; Environmentalism/eco-friendly,Environmentalism/eco-friendly; Recovery/substance-free,model missed: archives/cultural work; farming/self-sufficiency
+march86,8,Deer Song,type,Intentional Community/Cooperative,Private/Individual Land,
+march86,8,Deer Song,land_street_address,RD Box 99,Steiber Rd,
+march86,8,Deer Song,land_location_as_stated,"between Albany and Binghamton, NY on Steiber Rd","Located between Albany and Binghamton, NY on Steiber Rd.",
+march86,8,Deer Song,focuses,,Recovery/substance-free,model added: recovery/substance-free
+december82,24,Pagoda,contact_street_address,207 Coastal Hwy-LC,207 Coastal Hwy—LC,
+december82,24,Pagoda,land_street_address,207 Coastal Hwy,207 Coastal Hwy—LC,
+december82,24,Pagoda,land_location_as_stated,small community on ocean,on ocean,
+september76,13,Sappha Survival School,type,Intentional Community/Cooperative,Private/Individual Land,
+september76,13,Sappha Survival School,land_street_address,,"Box 4D, Aeneaes Valley Road",
+september76,13,Sappha Survival School,land_city,,Tonasket,
+september76,13,Sappha Survival School,land_zip,,98855,
+september76,14,Ashfield Farm Women,contact_name,,Samson Road Farm,
+september76,14,Ashfield Farm Women,contact_street_address,"Samson Road Farm, Samson Rd.",Samson Rd.,
+september76,14,Ashfield Farm Women,land_street_address,"Samson Road Farm, Samson Rd.",Samson Rd.,
+september76,14,Ashfield Farm Women,land_location_as_stated,a farm in Massachusetts,,
+march86,11,Laurel Ridge,land_street_address,,RFD 2 Box 277,
+march86,11,Laurel Ridge,land_city,Northport,Lincolnville,
+march86,11,Laurel Ridge,land_zip,,04849,
+march86,11,Laurel Ridge,land_location_as_stated,"Northport, ME; in the heart of Mid-Coast Maine, where the mountains meet the sea","in the heart of Mid-Coast Maine, where the mountains meet the sea",
+december82,21,A Woman's Place,land_location_as_stated,"Athol, NY",,
+december82,21,A Woman's Place,raw_text,"When we last published a land directory in 1976, we only had 10 listings, and of those only a couple are still in existence today. In the past year A Woman's Place (Athol, NY) and Heraseed (Talmage, CA) have both folded, not to mention other lesser-known places.","In the past year A Woman's Place (Athol, NY) and Heraseed (Talmage, CA) have both folded, not to mention other lesser-known places.",similarity 0.667
+december82,21,Heraseed,land_location_as_stated,"Talmage, CA",,
+december82,21,Heraseed,raw_text,"When we last published a land directory in 1976, we only had 10 listings, and of those only a couple are still in existence today. In the past year A Woman's Place (Athol, NY) and Heraseed (Talmage, CA) have both folded, not to mention other lesser-known places.","In the past year A Woman's Place (Athol, NY) and Heraseed (Talmage, CA) have both folded, not to mention other lesser-known places.",similarity 0.667
+march86,9,Wisconsin Womyn's Land Co-op,land_location_as_stated,west central Wisconsin,in west central Wisconsin,
+march83,19,Feathers Farm,MISSED ROW (only in hand-checked data),"Dear Ambitious Amazons: Thanks for the Land Directory and including us, it might be a problem, however, that our phone number was misprinted. Our real phone can be rung at (617)585-8826. We tried out the # as printed and it doesn't belong to anyone, fortunately. Anyway you could add that we'd like to hear from any of your readers who are seriously interested in biodynamic agriculture or conservation/ecology action. Furthermore, I'd like to point out again that we don't own Feathers Farm, at least not yet, and that even groups with more people and a deed are usually burdened, as we are, with immense ongoing financial pressures. I mention this because I have noticed recurring and unrealistic attitudes toward ""wimmin on land"" which range from idealizing our self-sufficiency to guilt-baiting out non-urban ""privileges."" Our desire to share the experience of the land is large and sincere (hospitality is central in our value system), but we are also thus more vulnerable to getting ripped off or imposed upon by bad attitudes. I applaud the Land Directory and your generous efforts in making it happen, hoping it is a big step toward valuable networking among the land groups themselves, as well as a way for us to reach out to travelling and urban lesbians. But it is important, in my opinion, for the ""sisterhood"" and the very survival of land groups to discuss and understand what can and often does go wrong, why groups don't make it, how to build a political analysis beyond our interactions with each other, the land and sexual identities. Let us not get too smug about ""3000 acres of women-owned land"" - we could fr'instance do another questionnaire to find out just what are all these wimmin doing on land, how many of us are actually secure in a modest financial sense? How might urban wimmin find appropriate ways to fit into our constant reality and vice versa? --Thanks, Peggy Gallagher, Feathers Farm, Box 19, Bryantville, MA 02327 (617)585-8826",,
+june83,24,Wilderness Way,MISSED ROW (only in hand-checked data),"WILDERNESS WAY Box 176, Wascott, WI 54890 (715)466-2635. Wilderness Way is located on 10 wooded acres with 260 feet of lake frontage. There are 3 two bedroom housekeeping units each with fully equipped kitchen and bath, and living room area. The campground includes electric hook-ups, indoor bathroom facilities with hot showers and an indoor camper lounge area. Swimming, fishing, canoeing, bicycling, hiking, horseback riding and cross country skiing. Owned by 1 lesbian. Other lesbians active in planning special events and sharing management tasks. We welcome: nonlesbian women, girl and boy children, cats and dogs.",,
+march86,19,Women Only Ranch,MISSED ROW (only in hand-checked data),"WOMEN ONLY RANCH NEEDS WOMEN: to pick vegetables from June to October. Free camping. You guarantee 2 days work a week and get paid for what you pick. Must be prepared to work in hot weather! For more info, write Ann, 11101 Eastside Rd, Ukiah, CA 95482. WOMEN ONLY RANCH: is looking for a woman (or perhaps a couple) to make commitment for at least 2 years. Country living skills essential. We sell pigs, poultry, organic fruit and vegetables, and wood. Must work very long hours! For more info, write Ann, 11101 Eastside Rd, Ukiah, CA 95482.",,
+december82,25,ARADIA INC MARIE CURIE TASK FORCE,EXTRA ROW (only in model output),,"ARADIA INC MARIE CURIE TASK FORCE PO Box 7516, Grand Rapids, MI 49507. We are interested in, among other things, womyn's land. As individuals and severals we own land. We welcome: new members, girl and boy children, nonlesbian women (womyn born only), dogs sometimes. We are: 95% lesbians, 5% nonlesbians, inactive group with hopes to revive.",
+march86,11,HALF MOON PINES,EXTRA ROW (only in model output),,"HALF MOON PINES c/o Barbara Hart, RD #1 Box 1446, Hamburg, PA 19526 (215)373-5697. Vacation cabin in the Blue Mountains. 3-4 bedrooms which accommodate 7 persons, huge, cozy kitchen and enclosed porch. The cabin is in a private setting in the State Game Lands, one mile down from the Appalachian Trail and a short distance from Blue Marsh Recreation Area and PA Dutch country. Rates $225/week, $150/weekend, $50/day. We welcome: new residents, girl & boy children, nonlesbian women, males, dogs. We have/are: 2 lesbians, 2 acres, plumbing/electricity, camping space, woods.",

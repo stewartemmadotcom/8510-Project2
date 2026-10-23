@@ -1,0 +1,101 @@
+{
+  "page_number": "25",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "ARADIA INC MARIE CURIE TASK FORCE",
+      "contact_name": "",
+      "contact_street_address": "PO Box 7516",
+      "contact_city": "Grand Rapids",
+      "contact_state": "MI",
+      "contact_zip": "49507",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "An inactive group with hopes to revive, whose members own land individually and severally. They welcome new members, girl and boy children, and non-lesbian women.",
+      "raw_text": "ARADIA INC MARIE CURIE TASK FORCE PO Box 7516, Grand Rapids, MI 49507. We are interested in, among other things, womyn's land. As individuals and severals we own land. We welcome: new members, girl and boy children, nonlesbian women (womyn born only), dogs sometimes. We are: 95% lesbians, 5% nonlesbians, inactive group with hopes to revive.",
+      "notes": "Type classified as Intentional Community/Cooperative based on 'As individuals and severals we own land' and membership structure ('inactive group with hopes to revive', 'We welcome: new members'). Land location is not stated beyond the mailing address PO Box, so land fields are left blank. Accepted groups inferred from 'We welcome: new members, girl and boy children, nonlesbian women (womyn born only)' and 'We are: 95% lesbians'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "OAKYNWOMYN",
+      "contact_name": "Twin Oaks Community",
+      "contact_street_address": "",
+      "contact_city": "Louisa",
+      "contact_state": "VA",
+      "contact_zip": "23093",
+      "land_street_address": "",
+      "land_city": "Louisa",
+      "land_state": "VA",
+      "land_zip": "23093",
+      "land_location_as_stated": "",
+      "acreage": "400",
+      "num_residents": "69",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Recovery/substance-free"
+      ],
+      "description": "A group within Twin Oaks Community on 400 acres in Louisa, Virginia, with permanent housing, shops, farming, and woods. They strive to eliminate sexism, racism, heterosexism, and competition, welcoming children, non-lesbian women, lesbians, and men.",
+      "raw_text": "OAKYNWOMYN Twin Oaks Community, Louisa, VA 23093. We are a large community of women and men looking for more lesbians and wimmyn-oriented-wimmyn. By our behavior we strive to eliminate the attitudes and results of sexism, heterosexism, racism, ageism and competition. Bring no pets. NO DRUGS! We welcome: new members/residents, children (maybe), lesbians, nonlesbian women, males. We have/are: 4 lesbians, 65 nonlesbians, 400 acres, housing/permanent structures (residences, shops, garage, etc), plumbing/electricity, camping space (visitors have rooms), woods, farm land.",
+      "notes": "NOT WOMEN'S LAND: Preceded by editor's note: 'EDITOR S'NOTE: The following two are not women's land groups, but they do welcome lesbians as visitors or members.' Community is based at Twin Oaks Community in Louisa, VA. Number of residents coded as 69 from '4 lesbians, 65 nonlesbians' combined with 'We are a large community of women and men' and permanent 'residences'. Accepted groups coded from 'children (maybe), lesbians, nonlesbian women, males'. Focus on Recovery/substance-free coded from 'NO DRUGS!'. Statements against sexism, racism, and ageism noted but not coded as focuses per codebook.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "FAR AWAY FARM",
+      "contact_name": "",
+      "contact_street_address": "Rt 7 Box 279",
+      "contact_city": "Sparta",
+      "contact_state": "TN",
+      "contact_zip": "38583",
+      "land_street_address": "Rt 7 Box 279",
+      "land_city": "Sparta",
+      "land_state": "TN",
+      "land_zip": "38583",
+      "land_location_as_stated": "",
+      "acreage": "7",
+      "num_residents": "",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Spirituality/ritual",
+        "Archives/cultural work"
+      ],
+      "description": "A pacifist musical craft community on 7 acres in Sparta, Tennessee, with housing, camping space, woods, and farm land. They promote spiritual power and an androgynous philosophy, welcoming lesbians, non-lesbian women, children, and men for short visits with notice.",
+      "raw_text": "FAR AWAY FARM Rt 7 Box 279, Sparta, TN 38583 (615)277-3854. Pacifist musical craftspeople in simple lifestyle promoting spiritual power and androgynous philosophy. Short visits welcome with advance notice. No TV. Pets under strict supervision only. No hard drugs, others with our knowledge. We welcome: children, lesbians, nonlesbian women, males, dogs. We have: 7 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farm land.",
+      "notes": "NOT WOMEN'S LAND: Falls under the preceding editor's note indicating groups that are not women-only but welcome lesbians. Land address inferred from rural route mailing address. Focus on Spirituality/ritual coded from 'promoting spiritual power and androgynous philosophy'. Focus on Archives/cultural work coded from 'musical craftspeople'. Recovery/substance-free not coded because soft drugs are permitted ('No hard drugs, others with our knowledge'). Accepted groups coded from 'children, lesbians, nonlesbian women, males'.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}

@@ -115,6 +115,46 @@
 - Next to try: the same codebook with a stronger model, to see whether
   the judgment fields are limited by flash-lite rather than the codebook.
 
+## 2026-10-22_codebook-v2_flash-3.8 run (same codebook, stronger model)
+- Codebook v2 unchanged; model changed from gemini-3.5-flash-lite to
+  gemini-3.8-flash ($0.75 in / $3.75 out per 1M tokens until Dec 31, 2026,
+  then double). Same 18 pages; no failures.
+- Cost $1.05 (vs $0.21), about 5 times more, mostly because 3.8 Flash
+  "thinks" a lot (6,000-27,000 output tokens per page). Much slower: about
+  1-3 minutes per page, about 25 minutes in all.
+- Results (v2 flash-lite -> v2 3.8 Flash): differences per listing
+  2.81 -> 1.32; 29 of 100 listings match me exactly in every field.
+  - type 70 -> 84%, num_residents 67 -> 92%, accepted_groups 67 -> 89%,
+    focuses 44 -> 73%, contact_name 86 -> 97%, raw_text 94 -> 98%
+    (mean 0.993), land_street 84 -> 91%, land_city 79 -> 93%,
+    land_zip 85 -> 95%, acreage 98 -> 100%, contact_city 100%.
+  - land_location_as_stated 70 -> 71%: still low, but mostly the same place
+    with a word more or less ("in the rolling Berkshire mountains..." vs "the
+    rolling Berkshire mountains..."). My own Project 1 practice varies here
+    too; the rule or the scoring needs to be looser.
+  - Missed rows 5 -> 3, extra rows 13 -> 2. Bee Song Honey Farms is found
+    now and the p. 19 fragment joins onto it correctly. No-land groups are
+    skipped except Aradia Inc Marie Curie Task Force; Half Moon Pines is
+    still extra. Wilderness Way is now missed, because the model followed
+    the no-land rule: my open question about an exception still matters.
+    Women Only Ranch (Mar 1986 p. 19) is still not in the test pages.
+- What is left:
+  - type (16 wrong): mixed; e.g. Oregon Women's Land Trust (Land Trust)
+    called a community; Feathers Farm and Laughing Rock Farm called
+    retreats.
+  - accepted_groups: now leaves out Non-lesbian women in some 1983 listings
+    where I coded them (Feathers Farm, Who Farm, Heathcote, Moon Ridge).
+    Check whether those listings name non-lesbian women or whether I applied
+    the pre-1986 "women" rule there.
+  - focuses 73%: the hardest field; disagreements are one focus more or less.
+- Conclusion: the codebook was not the main limit; flash-lite was. The
+  stronger model, with the more specific codebook, gets close to my hand
+  coding on most fields.
+- Cost for the whole corpus: at about $0.06 per page, the 33 LC directory
+  pages would be about $2; Maize would be more, since it has many more pages.
+- Same caution as v2: some codebook examples come from these test listings.
+  Test next on a hand-checked issue that was not used to write the codebook.
+
 
 # Plan (draft, not decided yet): extracting LC and Maize into the Project 1 database
 

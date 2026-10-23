@@ -30,7 +30,7 @@ from pathlib import Path
 
 # Which run to compare: the folder name in output/runs/
 # (keep this the same as RUN_NAME in 01_directory_to_csv.py)
-RUN_NAME = "2026-10-22_codebook-v2_flash-lite-3.5"
+RUN_NAME = "2026-10-22_codebook-v2_flash-3.8"
 
 SCRIPT_DIR = Path(__file__).parent
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME

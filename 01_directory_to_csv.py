@@ -126,11 +126,12 @@ Rules:
 
 # --- Settings ---------------------------------------------------------------
 
-MODEL = "gemini-3.5-flash-lite"
+MODEL = "gemini-3.8-flash"
 
 # Paid-tier prices in US dollars per 1 million tokens: (input, output).
 # Check https://ai.google.dev/gemini-api/docs/pricing -- prices change.
 PRICES = {
+    "gemini-3.8-flash": (0.75, 3.75),   # through Dec 31, 2026; doubles Jan 1, 2027
     "gemini-3.5-flash-lite": (0.30, 2.50),
     "gemini-3.1-flash-lite": (0.25, 1.50),
     "gemini-2.5-flash-lite": (0.10, 0.40),
@@ -140,7 +141,7 @@ PRICES = {
 # Use a new name whenever you change MODEL, PROMPT, or FIELDS, so earlier
 # results are kept. Reuse the same name to retry pages that failed or to
 # add more pages to a run.
-RUN_NAME = "2026-10-22_codebook-v2_flash-lite-3.5"
+RUN_NAME = "2026-10-22_codebook-v2_flash-3.8"
 
 IMAGE_FOLDER = SCRIPT_DIR / "images"
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME

@@ -1,0 +1,160 @@
+{
+  "page_number": "11",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "LAUREL RIDGE",
+      "contact_name": "",
+      "contact_street_address": "RFD 2 Box 277",
+      "contact_city": "Lincolnville",
+      "contact_state": "ME",
+      "contact_zip": "04849",
+      "land_street_address": "RFD 2 Box 277",
+      "land_city": "Lincolnville",
+      "land_state": "ME",
+      "land_zip": "04849",
+      "land_location_as_stated": "in the heart of Mid-Coast Maine, where the mountains meet the sea",
+      "acreage": "18",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women"
+      ],
+      "focuses": [
+        "Recovery/substance-free"
+      ],
+      "description": "A women's guest house on 18 acres of fields and woods in Mid-Coast Maine offering lodging, home-cooked meals, camping space, and partial work exchange, welcoming lesbian and non-lesbian women with a substance-free policy.",
+      "raw_text": "LAUREL RIDGE RFD 2 Box 277, Lincolnville, ME 04849 (207)338-1913 (Northport, ME). Laurel Ridge is a guest house for women on 18 beautiful acres of fields and woods in the heart of Mid-Coast Maine, where the mountains meet the sea. Our rates are very reasonable and our guests enjoy comfortable lodging and delicious home-cooked meals. There are domestic and farm animals about the place, as well as vegetable, herb, and flower gardens. Partial work exchange possible. Open year round. We welcome: non-lesbian women. No drugs or alcohol. We have/are: 18 acres, housing/permanent structures, plumbing, electricity, woods, farmland, camping space, women living and working on the land.",
+      "notes": "Type is Retreat/Gathering Space because it is a guest house defined by what it offers visitors. Rural route address indicates land location. num_residents is left blank because no count of residents is given. Accepted groups are Lesbian women (directory default) and Non-lesbian women ('We welcome: non-lesbian women'). Focus is Recovery/substance-free from 'No drugs or alcohol'.",
+      "section": "GUEST HOUSES/RETREATS/ETC",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "HALF MOON PINES",
+      "contact_name": "Barbara Hart",
+      "contact_street_address": "RD #1 Box 1446",
+      "contact_city": "Hamburg",
+      "contact_state": "PA",
+      "contact_zip": "19526",
+      "land_street_address": "RD #1 Box 1446",
+      "land_city": "Hamburg",
+      "land_state": "PA",
+      "land_zip": "19526",
+      "land_location_as_stated": "in the Blue Mountains",
+      "acreage": "2",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [],
+      "description": "A vacation rental cabin accommodating up to 7 people on 2 acres in the Blue Mountains near the Appalachian Trail, welcoming new residents, lesbian and non-lesbian women, children, and men.",
+      "raw_text": "HALF MOON PINES c/o Barbara Hart, RD #1 Box 1446, Hamburg, PA 19526 (215)373-5697. Vacation cabin in the Blue Mountains. 3-4 bedrooms which accommodate 7 persons, huge, cozy kitchen and enclosed porch. The cabin is in a private setting in the State Game Lands, one mile down from the Appalachian Trail and a short distance from Blue Marsh Recreation Area and PA Dutch country. Rates $225/week, $150/weekend, $50/day. We welcome: new residents, girl & boy children, nonlesbian women, males, dogs. We have/are: 2 lesbians, 2 acres, plumbing/electricity, camping space, woods.",
+      "notes": "Type is Retreat/Gathering Space because it is a vacation rental cabin defined by what it offers visitors. Rural route indicates land address. num_residents is left blank because 'women living on the land' is not checked despite '2 lesbians' under 'We have/are:'. Accepted groups include Lesbian women (directory default), Non-lesbian women ('nonlesbian women'), Girl children ('girl & boy children'), Boy children ('girl & boy children'), and both Gay men and Non-gay men from 'males'.",
+      "section": "GUEST HOUSES/RETREATS/ETC",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "PAGODA",
+      "contact_name": "",
+      "contact_street_address": "207 Coastal Hwy",
+      "contact_city": "St Augustine",
+      "contact_state": "FL",
+      "contact_zip": "32084",
+      "land_street_address": "207 Coastal Hwy",
+      "land_city": "St Augustine",
+      "land_state": "FL",
+      "land_zip": "32084",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "15",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Lesbian separatism",
+        "Spirituality/ritual",
+        "Recovery/substance-free",
+        "Archives/cultural work"
+      ],
+      "description": "A residential community of 10 separately owned cottages with a cultural and spiritual center, feminist library, and health food store on the coast, where only lesbians may rent or own, welcoming lesbian women, non-lesbian women visitors, and girl children, with rules against alcohol on the main floor.",
+      "raw_text": "PAGODA 207 Coastal Hwy, St Augustine, FL 32084 (904)824-2970. We are a small lesbian residential community (10 separately owned cottages) with a cultural/spiritual center. Only lesbians can rent or own, but all wommin are welcome to become members and stay in one of our four bedrooms in the center as well as use our feminist library and health food store. Rules in our 2-story center: no smoking, no alcohol on main floor, no cooking or eating of meat, fish or fowl on main floor. We have a BBQ pit and flesh may be eaten elsewhere in building. No pets, no nudity on our property or directly in front of us on the beach. We welcome: new members/residents, girl children, nonlesbian women visitors. We have/are: 15 resident lesbians, 90 lesbian/nonlesbian members from all over the country, housing/permanent structures, plumbing/electricity, ocean, women living and working on the land.",
+      "notes": "Type is Intentional Community/Cooperative because it explicitly calls itself a residential community first. Street address is the land as it describes residential property with cottages. num_residents is 15 based on '15 resident lesbians'. Accepted groups include Lesbian women, Non-lesbian women ('nonlesbian women visitors'), and Girl children ('girl children'). Focuses include Lesbian separatism ('Only lesbians can rent or own'), Spirituality/ritual ('cultural/spiritual center'), Archives/cultural work ('feminist library'), and Recovery/substance-free ('no alcohol on main floor').",
+      "section": "GUEST HOUSES/RETREATS/ETC",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "LABRYS",
+      "contact_name": "Nell Wagenaar & Rebecca Clark",
+      "contact_street_address": "Rt 1 Box 257",
+      "contact_city": "Honor",
+      "contact_state": "MI",
+      "contact_zip": "49640",
+      "land_street_address": "Rt 1 Box 257",
+      "land_city": "Honor",
+      "land_state": "MI",
+      "land_zip": "49640",
+      "land_location_as_stated": "located in northwest Michigan a mile from Lake Michigan",
+      "acreage": "1",
+      "num_residents": "2",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "A 1-acre wilderness resort with three cabins on Long Lake in northwest Michigan offering beach access and boats, seeking women investors to establish an all-woman community, welcoming lesbian women, non-lesbian women, girl children, and boy children under 12.",
+      "raw_text": "LABRYS c/o Nell Wagenaar & Rebecca Clark, Rt 1 Box 257, Honor, MI 49640 (616)882-5994 (4115 M-22). Labrys is an inexpensive, synergetic wilderness resort for women located in northwest Michigan a mile from Lake Michigan. We have three cabins nestled among tall White Pine and Oak facing a sandy beach on Long Lake with dock and boats. We are looking for women to invest in property here. Our dream is to make this end of Long Lake an all-woman community, with a possible campground, a quiet area for geese and heron nesting, more cabins and a community lodge for workshops, etc. Open year round. We welcome: new members/residents, girl children, boy children under 12, nonlesbian women. We have/are: 2 lesbians, 1 acre, 3 cabins, plumbing/electricity, woods, women living and working on the land.",
+      "notes": "Type is Retreat/Gathering Space as it calls itself a 'wilderness resort for women'. Rural route is the land address (note '(4115 M-22)' printed after phone number). num_residents is 2 from '2 lesbians' and 'women living and working on the land'. Accepted groups include Lesbian women, Non-lesbian women ('nonlesbian women'), Girl children ('girl children'), and Boy children ('boy children under 12').",
+      "section": "GUEST HOUSES/RETREATS/ETC",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "RIVER SPIRIT RETREAT",
+      "contact_name": "",
+      "contact_street_address": "187 W 19th St",
+      "contact_city": "Alton",
+      "contact_state": "IL",
+      "contact_zip": "62002",
+      "land_street_address": "",
+      "land_city": "Kampsville",
+      "land_state": "IL",
+      "land_zip": "",
+      "land_location_as_stated": "Located Rt 100 North of Kampsville, IL",
+      "acreage": "14",
+      "num_residents": "4",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children",
+        "Gay men",
+        "Non-gay men"
+      ],
+      "focuses": [
+        "Workshops/education"
+      ],
+      "description": "A 14-acre secluded retreat on the Illinois River north of Kampsville offering groups and retreats led by a counselor, catering especially to lesbians but welcoming non-lesbian women, children, and men.",
+      "raw_text": "RIVER SPIRIT RETREAT 187 W 19th St, Alton, IL 62002 (618)462-4051 or 653-4349 (retreat) or (314)773-3867 (St Louis). Located Rt 100 North of Kampsville, IL, 1 hr from Alton, 2 hrs from St Louis. River Spirit Retreat is a scenic, secluded retreat for individuals and small groups by the Illinois River. Retreat caters to women, especially lesbians. Open to alternative humanitarian types, counselors or small businesses needing retreat atmosphere. Proprietor is counselor and offers groups and retreats several times a year. We welcome: new members/residents, girl & boy children, nonlesbian women, males. We have/are: 4 lesbians, 14 acres, housing/permanent structures, plumbing/electricity, woods, camping space, women living part-time and working on the land.",
+      "notes": "Type is Retreat/Gathering Space. Land location inferred from 'Located Rt 100 North of Kampsville, IL' while mailing address is in Alton. num_residents is 4 living part-time ('4 lesbians', 'women living part-time and working on the land'). Accepted groups include Lesbian women, Non-lesbian women ('nonlesbian women'), Girl children ('girl & boy children'), Boy children ('girl & boy children'), and Gay men and Non-gay men from 'males'. Focus is Workshops/education ('offers groups and retreats several times a year'). Note: SEA GNOMES' HOME at the top of the page is skipped per codebook rule ('Guest houses, inns, and trips that are only businesses, with no land community, are skipped too').",
+      "section": "GUEST HOUSES/RETREATS/ETC",
+      "continues_previous": ""
+    }
+  ]
+}

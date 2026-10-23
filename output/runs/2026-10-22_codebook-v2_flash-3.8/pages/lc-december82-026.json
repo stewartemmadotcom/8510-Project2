@@ -1,0 +1,209 @@
+{
+  "page_number": "24",
+  "entries": [
+    {
+      "row_kind": "listing",
+      "community_name": "WHO FARM INC",
+      "contact_name": "",
+      "contact_street_address": "37010 SE Snuffin Rd",
+      "contact_city": "Estacada",
+      "contact_state": "OR",
+      "contact_zip": "97023",
+      "land_street_address": "37010 SE Snuffin Rd",
+      "land_city": "Estacada",
+      "land_state": "OR",
+      "land_zip": "97023",
+      "land_location_as_stated": "approx 30 miles SE of Portland",
+      "acreage": "52",
+      "num_residents": "4",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Workshops/education"
+      ],
+      "description": "Educational, job and rural skill, and growth center on 52 acres of farmland and woods, located about 30 miles southeast of Portland. Offers Star House for visitor stays of up to two weeks and welcomes new members and residents, lesbian women, and dependent children.",
+      "raw_text": "WHO FARM INC 37010 SE Snuffin Rd, Estacada, OR 97023 (503)630-6728. Who farm is an educational, job skill, rural skill and growth center for womyn of all ages, races, cultures and backgrounds. We have 52 acres of beautiful farmland, fields, hills, evergreens, a visitor’s house in the magical woods called Star House. Our land is located approx 30 miles SE of Portland with a city bus (NO 31) running within 5 miles of the farm. Visitors may stay max 2 weeks. We charge $4 per night’s stay in Star House. Womyn with dependent children are welcome. Bring your own food. We have very rainy weather and lots of mud so sisters bring rain gear and goulashes! There’s no electricity in Star House. We welcome: new members/residents. We have/are: 4 lesbians, 52 acres, plumbing/electricity, camping space, woods, farm land, women living on the land, inactive group with hopes to revive (trying to get back on our feet).",
+      "notes": "Type Retreat/Gathering Space as an educational center / place defined by what it offers visitors, explicitly noted in codebook. Land location inferred from street address. Residents coded from 'We have/are: 4 lesbians' and 'women living on the land'. Children coded from 'Womyn with dependent children are welcome.' Workshops/education coded from 'educational, job skill, rural skill and growth center'. Anti-racism / racial diversity statement ('womyn of all ages, races, cultures and backgrounds') noted but not coded as Women of color focus.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "PENTHESILEIA, INC",
+      "contact_name": "",
+      "contact_street_address": "Box 97 Star Route 2",
+      "contact_city": "Seal Rock",
+      "contact_state": "OR",
+      "contact_zip": "97376",
+      "land_street_address": "Box 97 Star Route 2",
+      "land_city": "Seal Rock",
+      "land_state": "OR",
+      "land_zip": "97376",
+      "land_location_as_stated": "",
+      "acreage": "60",
+      "num_residents": "",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Workshops/education"
+      ],
+      "description": "Non-profit educational community organization teaching rural skills to women and children on 60 acres, offering camping and cabins for rent or trade. Welcomes lesbian women, non-lesbian women, girl children, and boy children as new members and residents.",
+      "raw_text": "PENTHESILEIA, INC Box 97 Star Route 2, Seal Rock, OR 97376 (503)563-3643. Penthesileia, Inc is a non-profit educational community organization teaching rural skills to women and their children. A matrix between rural and urban. We have camping spaces and cabins for trade and rent. Group rentals available. No violence. We welcome: new members/residents, girl and boy children, nonlesbian women, leashed dogs, work exchanges. We have/are: 60 acres, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women living and working on the land.",
+      "notes": "Type Retreat/Gathering Space as an educational center, explicitly cited in codebook. Land address inferred from Star Route address. num_residents left blank because no count is given despite 'women living and working on the land'. Accepted groups from 'girl and boy children, nonlesbian women', and lesbian women from directory context and residents. Focus Workshops/education from 'teaching rural skills to women and their children'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "RAINBOW'S END",
+      "contact_name": "",
+      "contact_street_address": "Rt 3 Box 3645",
+      "contact_city": "Roseburg",
+      "contact_state": "OR",
+      "contact_zip": "97470",
+      "land_street_address": "Rt 3 Box 3645",
+      "land_city": "Roseburg",
+      "land_state": "OR",
+      "land_zip": "97470",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "5",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [
+        "Farming/self-sufficiency"
+      ],
+      "description": "Community of five lesbians living and working on land with gardens, orchards, and livestock (chickens, sheep, ponies), while working jobs in town. Welcomes visits by prearrangement, girl children, boy babies, and non-lesbian women.",
+      "raw_text": "RAINBOW’S END Rt 3 Box 3645, Roseburg, OR 97470 (503)673-7649. Our land embraces food and flower gardens, orchards, woods and pasture. We raise chickens, sheep and working ponies. We’re paying for our home by working various jobs in town. Visitor policy: visits must be prearranged by mail or phone. Land use fee: $2-$4 per day, food: $4 per day. Sometimes, for specific projects, work exchange may be arranged. No dogs!!! We welcome: girl children, boy babies, nonlesbian women. We have/are: 5 lesbians, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women living and working on the land, women working in town.",
+      "notes": "Type Intentional Community/Cooperative for 5 lesbians living and working on the land. Land address inferred from rural route address. num_residents 5 from '5 lesbians' and 'women living and working on the land'. Boy children coded from 'boy babies'. Farming/self-sufficiency focus coded from 'food and flower gardens, orchards, woods and pasture. We raise chickens, sheep and working ponies.'",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "GOLDENWIMMIN",
+      "contact_name": "",
+      "contact_street_address": "3502 Coyote Creek Rd",
+      "contact_city": "Wolf Creek",
+      "contact_state": "OR",
+      "contact_zip": "97497",
+      "land_street_address": "3502 Coyote Creek Rd",
+      "land_city": "Wolf Creek",
+      "land_state": "OR",
+      "land_zip": "97497",
+      "land_location_as_stated": "",
+      "acreage": "",
+      "num_residents": "10",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children",
+        "Boy children"
+      ],
+      "focuses": [],
+      "description": "Community of six lesbians and four children living and working on land in Wolf Creek. Welcomes lesbian women, girl children, and boy children as new members and residents by advance contact.",
+      "raw_text": "GOLDENWIMMIN 3502 Coyote Creek Rd, Wolf Creek, OR 97497 (503)866-2520. We are a group of hard working wimmin and 4 children. Write or call first. Absolutely no drop ins. We welcome: new members/residents, girl and boy children. We have/are: 6 lesbians, housing/permanent structures, plumbing/electricity, camping space, woods, farm land, women living on and working the land.",
+      "notes": "Type Intentional Community/Cooperative for group of women and children living and working on the land and welcoming new members. Land address inferred from street road address. num_residents is 10 (6 resident lesbians plus 4 children living on the land). Accepted groups from 'new members/residents, girl and boy children'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "WOMANSHARE",
+      "contact_name": "",
+      "contact_street_address": "Box 681",
+      "contact_city": "Grants Pass",
+      "contact_state": "OR",
+      "contact_zip": "97526",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "OR",
+      "land_zip": "",
+      "land_location_as_stated": "Southern OR",
+      "acreage": "23",
+      "num_residents": "5",
+      "type": "Retreat/Gathering Space",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [
+        "Workshops/education"
+      ],
+      "description": "Feminist retreat on 23 acres of forested land in Southern Oregon with five to ten resident lesbians. Offers summer and winter workshop and skillsharing sessions for women, with cabins and camping spaces. Welcomes girl children.",
+      "raw_text": "WOMANSHARE Box 681, Grants Pass, OR 97526 (503)862-2807. A feminist retreat on forested land in Southern OR. We plan summer and winter sessions for 10-30 women — workshops, skillsharing, discussion groups, recreation and home-cooked meals. We have a main house and several women-built cabins for sleeping and many secluded spots for camping. The main house has electricity, hot water and a shower. Visitors are asked to contribute $3/day for food and $1-3/day to our land support fund. We welcome: girl children. We have/are: 5-10 lesbians, 23 acres, housing/permanent structures, plumbing/electricity (outdoor toilet), camping space, woods, farmland, women living/working on the land.",
+      "notes": "Type Retreat/Gathering Space based on 'A feminist retreat on forested land in Southern OR.' Land state and land location inferred from 'Southern OR'. num_residents coded as smaller number (5) from range '5-10 lesbians' with 'women living/working on the land'. Focus Workshops/education coded from 'workshops, skillsharing, discussion groups'.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "MULLEINSONG",
+      "contact_name": "",
+      "contact_street_address": "PO Box 302",
+      "contact_city": "Applegate",
+      "contact_state": "OR",
+      "contact_zip": "97530",
+      "land_street_address": "",
+      "land_city": "",
+      "land_state": "OR",
+      "land_zip": "",
+      "land_location_as_stated": "",
+      "acreage": "16",
+      "num_residents": "1",
+      "type": "Private/Individual Land",
+      "accepted_groups": [
+        "Lesbian women",
+        "Girl children"
+      ],
+      "focuses": [],
+      "description": "Sixteen acres of mostly undeveloped land in Oregon owned by a single lesbian, open to visitors for short stays in exchange for work. Welcomes lesbian women and girl children.",
+      "raw_text": "MULLEINSONG PO Box 302, Applegate, OR 97530. Single woman living on basically undeveloped land. Visitors welcome for 3-4 days in exchange for some work. Please write ahead of time. We welcome: girl children. We have/are: 1 lesbian, 16 acres, camping space, woods, women living on and working the land.",
+      "notes": "Type Private/Individual Land per the two-woman rule ('Single woman living on basically undeveloped land... 1 lesbian'). Land state inferred from mailing state. Accepted groups from 'girl children' and lesbian resident.",
+      "section": "",
+      "continues_previous": ""
+    },
+    {
+      "row_kind": "listing",
+      "community_name": "THE PAGODA COMMUNITY",
+      "contact_name": "",
+      "contact_street_address": "207 Coastal Hwy—LC",
+      "contact_city": "St Augustine",
+      "contact_state": "FL",
+      "contact_zip": "32084",
+      "land_street_address": "207 Coastal Hwy—LC",
+      "land_city": "St Augustine",
+      "land_state": "FL",
+      "land_zip": "32084",
+      "land_location_as_stated": "on ocean",
+      "acreage": "",
+      "num_residents": "15",
+      "type": "Intentional Community/Cooperative",
+      "accepted_groups": [
+        "Lesbian women",
+        "Non-lesbian women",
+        "Girl children"
+      ],
+      "focuses": [],
+      "description": "Oceanfront residential community of about 15 lesbians in St. Augustine, Florida, with a community center and cottages for lease. Welcomes lesbian women, girl children, and non-lesbian women as non-resident members only.",
+      "raw_text": "THE PAGODA COMMUNITY 207 Coastal Hwy—LC, St Augustine, FL 32084 (904)824-2970. We are a residential community with a community center where members can stay for limited visits. Membership is $10-$20/mo. We currently have two cottages available for 1 year lease. We welcome: new members/residents (we rent cottages on a monthly basis only), girl children, nonlesbian women (as non-resident members only). We have/are: about 15 lesbians, small community on ocean, housing/permanent structures, plumbing/electricity.",
+      "notes": "Listed under 'EDITOR S’ NOTE: These groups don’t have land, per se, but we wanted to include them for your information.' Included per codebook exception: 'unless the listing itself says the group lives on or owns its own land (a lesbian residential community on its own property is a row even without acreage)'. Type Intentional Community/Cooperative based on 'residential community' and 'small community on ocean'. num_residents coded as 15 from 'about 15 lesbians'. Ellie's Nest and River Most Wild below it are omitted per codebook rules skipping guest houses and non-community private accommodations under this editor's note.",
+      "section": "",
+      "continues_previous": ""
+    }
+  ]
+}
