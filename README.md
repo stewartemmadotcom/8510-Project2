@@ -37,10 +37,11 @@ DECISIONS.md tracks decisions made throughout this project, as well as notes for
    python3 -m venv venv
    ```
 
-3. Activate it (see below), then install the packages:
+3. Activate it (see below), then install the packages listed in
+   `requirements.txt`, at the exact versions this project was run with:
 
    ```bash
-   pip install google-genai python-dotenv
+   pip install -r requirements.txt
    ```
 
    `convert_pdfs.py` also needs ImageMagick (the `magick` command), which is
