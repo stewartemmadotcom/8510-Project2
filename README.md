@@ -13,14 +13,19 @@ DECISIONS.md tracks decisions made throughout this project, as well as notes for
 | File or folder | What it is |
 |---|---|
 | `convert_pdfs.py` | Turns every PDF in `pdfs/` into one PNG per page, saved in `images/all_pages/` |
-| `01_directory_to_csv.py` | Sends land directory page images to Gemini and saves one row per listing to a CSV |
-| `02_compare_to_handchecked.py` | Scores a run's CSV field by field against my hand-checked Project 1 data |
-| `codebook.md` | The coding rules, adapted from Project 1. The extraction script puts this whole file into the prompt |
-| `reference/` | Copies of the Project 1 vocabularies (types, accepted groups, focuses) and sources table |
-| `DECISIONS.md` | Decisions, notes on each run, and what changed between runs |
-| `images/` | The land directory page images the extraction script reads (not in git) |
+| `01_directory_to_csv.py` | **Lesbian Connection:** sends land directory page images to Gemini or Claude and saves one row per listing to a CSV |
+| `02_compare_to_handchecked.py` | Scores a run's CSV field by field against hand-coded data: my Project 1 data for LC, or `reference/maize_handcoded/maize_handcoded.csv` for Maize (the `HAND_CSV` setting) |
+| `03_maize_to_csv.py` | **Maize:** sends one whole issue's transcribed text at a time to Gemini or Claude and saves one row per Country Connections listing, On the Land report, or land announcement. Reads the transcriptions from the `Maize-OCR` project (`~/Desktop/Maize-OCR`) |
+| `extraction_common.py` | Code shared by the LC and Maize scripts: the codebook columns, vocabularies, Gemini and Claude calls, prices, checks, and run folders |
+| `codebook.md` | The coding rules, adapted from Project 1. Both extraction scripts put this whole file into the prompt |
+| `codebook_maize.md` | Maize additions to `codebook.md` (what counts as a row in Maize, and Maize-specific rules), read after it by `03_maize_to_csv.py` |
+| `reference/` | Copies of the Project 1 vocabularies (types, accepted groups, focuses) and sources table, with the 29 Maize issues added |
+| `reference/maize_handcoded/` | My hand-coded Maize test set (issues 25 and 53), the blank template, and a guide to filling it in |
+| `DECISIONS.md` | Decisions, notes on each run, what changed between runs, and reflections for the write-up |
+| `requirements.txt` | The Python packages and versions this project uses |
+| `images/` | The LC land directory page images the LC script reads (not in git) |
 | `pdfs/` | The original LC PDFs (not in git) |
-| `output/runs/` | One folder per run, with its results and the exact settings used |
+| `output/runs/` | One folder per run (LC or Maize), with its results, the exact settings used, and its comparison with the hand-coded data |
 
 
 ## Setup (once)
@@ -139,8 +144,16 @@ Results go to `output/runs/<RUN_NAME>/`:
 
 ### 3. Compare with the hand-checked data: `02_compare_to_handchecked.py`
 
-Set `RUN_NAME` at the top to the same run name as in `01_directory_to_csv.py`,
-then:
+Set the two settings at the top:
+
+- `RUN_NAME`: the same run name as in `01_directory_to_csv.py` (or
+  `03_maize_to_csv.py` for a Maize run).
+- `HAND_CSV`: `None` to compare an LC run with my Project 1 data, or
+  `SCRIPT_DIR / "reference" / "maize_handcoded" / "maize_handcoded.csv"` to
+  compare a Maize run with my hand-coded Maize issues. For Maize, only the
+  issues the run covers are scored.
+
+Then:
 
 ```bash
 python 02_compare_to_handchecked.py
@@ -164,9 +177,51 @@ python 02_compare_to_handchecked.py --self-test
 
 It compares the hand-checked rows with themselves and should report 100%.
 
+### 4. Extract Maize listings: `03_maize_to_csv.py`
+
+This reads the Maize transcriptions made in the `Maize-OCR` project
+(`~/Desktop/Maize-OCR/output/runs/2026-10-23_all_haiku-5.5/text/`, one folder
+per issue, one text file per page), so that project must be done first. It
+sends one whole issue at a time, with `codebook.md` and `codebook_maize.md`,
+and keeps only Country Connections listings, On the Land reports, and
+announcements about a specific land.
+
+Before running, check the settings near the top of the script:
+
+- `RUN_NAME`: as for LC: a new name whenever you change `MODEL`,
+  `codebook.md`, or `codebook_maize.md`; the same name to retry failed issues
+  or add more issues to a run.
+- `MODEL` and `CLAUDE_EFFORT`: as for LC (Gemini or Claude).
+- `TEST_ISSUES`: the issues to extract, as folder names (e.g.
+  `"maize-53-spring1997"`). Set it to `[]` to extract all 29 issues.
+- `MAIZE_TEXT_FOLDER`: where the transcriptions are; change it only if the
+  Maize-OCR project moves or uses a new transcription run.
+
+The script won't send anything while `codebook_maize.md` contains the words
+"TO DECIDE": those mark rules still to be decided. Open questions it should
+flag instead are written as "OPEN QUESTION"; search the output's notes for
+that phrase to find cases to decide.
+
+Then run:
+
+```bash
+python 03_maize_to_csv.py
+```
+
+It prints each issue's row counts (listings, reports, announcements), cost,
+and `CHECK:` lines. Results go to `output/runs/<RUN_NAME>/`:
+
+- `land_directory.csv`: one row per listing, report, or announcement, in the
+  same columns as the LC sheet
+- `settings.json`: the model, prompt and fields used, plus a log of each run
+- `issues/`: the model's saved answer for each issue
+
+To score it, run `02_compare_to_handchecked.py` with `HAND_CSV` set to the
+Maize hand-coded CSV (step 3).
+
 
 ## After a run
 
 Add notes on the run to `DECISIONS.md` (what changed, the results, what to
-try next), then commit the scripts, `codebook.md`, `DECISIONS.md`, and the
-run's folder.
+try next), then commit the scripts, `codebook.md` (and `codebook_maize.md`
+for Maize), `DECISIONS.md`, and the run's folder.
