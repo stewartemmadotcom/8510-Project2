@@ -580,3 +580,124 @@ added July 1988 p. 23 (19 pages, not scored).
 - `02_compare_to_handchecked.py`: `HAND_CSV` setting to score against the
   hand-coded Maize CSV; with it, every model row from a hand-coded issue is
   scored, on any page.
+
+## 2026-10-24_maize-v1_flash-3.8 run (issue 53 only)
+- First Maize extraction: whole issue 53 (61 pages, about 34,000 words) in
+  one request to Gemini 3.8 Flash with codebook.md + codebook_maize.md
+  (the two TO DECIDE notes reworded as OPEN QUESTIONs the model flags in
+  notes). Cost $0.22; no failure, no RECITATION, no MAX_TOKENS.
+- Scored against my hand-coding of issue 53 (65 rows): all 65 found, none
+  missed, none extra. Row kinds 100% (57 listings, 4 reports, 4
+  announcements), page 100%, acreage 100%, num_residents 100%, land fields
+  94-98%, contact city/zip 100%.
+- raw_text scored 100%, but that isn't an independent check: both my rows
+  and Gemini's copy the same Haiku transcription.
+- Weak fields and why:
+  - contact_street_address 49%: all 33 misses are PO boxes Gemini left
+    blank ("POBox 304", "Box 1692"). The field instruction needs to say
+    plainly that a PO box goes there.
+  - type 48%: in 32 of 34 misses I left type blank and Gemini typed it.
+    I left short Country Connections listings untyped when they only list
+    what's offered ("Camping, visitors, apprentices", "Seeking
+    residents"); the codebook doesn't say so yet.
+  - accepted_groups 80%: Gemini adds groups from "seeking residents",
+    "Wimin-only", or a land trust's name, where I only coded groups named
+    as welcome; and twice added Non-lesbian women where the listing says
+    "lesbian"/"dykes" (Bold Moon, Pumpkin Farm).
+  - focuses 74%: Gemini adds Older women from "place to retire" /
+    "Partial focus on retirement", and Workshops/education from
+    "apprentices", which I didn't code.
+- Fixed in 02_compare_to_handchecked.py: with HAND_CSV, only issues the
+  run covers are scored (issue 25's rows had counted as "missed").
+
+## Reflection to write about: Gemini as a second coder (2026-10-24)
+Comparing Gemini's Maize #53 rows with my hand-coding, many disagreements
+are not Gemini mistakes. Gemini often caught things I missed, and some of
+its readings made me question my own rules. The hand-coded set is not
+simply "ground truth": it is one coder's reading, and the model works like a
+second coder whose disagreements show where my rules are unclear,
+inconsistent, or unstated.
+
+Examples where Gemini's reading exposed something in my own coding:
+- Inconsistent with myself: I gave AMAZENJI's announcement Spirituality
+  ("Zen retreats; buddhist monk in residence") but not its Country
+  Connections listing with the same words. I coded WESTWIND's On the Land
+  report as lesbian + non-lesbian women but left the identical WEST WIND
+  listing blank. Gemini coded each pair the same way.
+- Rules I made after coding earlier rows: I decided "land trust in the name
+  means Land Trust" partway through, after leaving ARF/New Mexico Women's
+  Land Trust and Harmony Hill Farm/Northern Minnesota Women's Land Trust
+  untyped. Gemini applied my rule to them.
+- Readings I hadn't considered but find convincing: "place to retire" /
+  "Partial focus on retirement" -> Older women (Catskill Mountains,
+  Kiriwai); "apprentices" / "summer apprenticeships" -> Workshops/education;
+  "Separatist" in LESEPS's name -> Lesbian separatism; "environmentally
+  friendly development" -> Environmentalism (Spinsterhaven); "E.I. safe" ->
+  Disabled women (Alana Land); "anti-ablist education" -> Workshops/education
+  (Camp Mary).
+- Rules I applied but never wrote down: I left short Country Connections
+  listings untyped ("Seeking residents", "Visitors welcome", "Camping,
+  visitors, apprentices"); Gemini typed them. My practice may be right, but
+  only once it's in the codebook can anyone else (person or model) follow it.
+
+Places where I still think Gemini over-reads (to argue the other side):
+- Groups from a name alone: "WOMEN'S PEACELAND", "HOWL/Huntington Open
+  Women's Land" -> lesbian + non-lesbian women, though neither listing says
+  who is welcome.
+- Details the listing doesn't say: HOWL called a "collective", SHE called a
+  land trust.
+- "Womyn's concerts" / "womyn's CSA" read as welcoming non-lesbian women in
+  listings that otherwise say "dykes" / "lesbian residents".
+
+Why it matters for the method: the comparison is less an accuracy score than
+an inter-coder check. Each disagreement asks me to decide whether my rule or
+Gemini's reading is better, and to write the answer down. The codebook
+improves either way, and my hand-coded set should be revised where I agree
+with Gemini, with the reason recorded.
+
+## Hallucination check (2026-10-24)
+Question: has any model invented content (listings, text, names, addresses,
+numbers) rather than misreading or misplacing real content?
+
+Check on Maize #53 (2026-10-24_maize-v1_flash-3.8): every value Gemini
+returned was compared with the transcription it was given (offline, no
+cost).
+- raw_text of all 65 rows: every 6-word sequence appears in the source,
+  including the long reports (Belle Springs 1,059 words, Doe Farm 557).
+- community_name, contact_name, contact address, zip, land address,
+  land_location_as_stated, acreage, num_residents: all appear in the source.
+  (Belle Springs' land location joins three real phrases with "; ", as the
+  codebook says to.)
+- No invented rows: all 65 match real items in my hand-coding; no extras.
+Result: no invented text, names, addresses or numbers.
+
+Across the whole project, errors that look like hallucination but aren't:
+- Misreadings in transcription (Haiku): "Pelican Lee" -> "Pelican Leo";
+  zip 97429 -> "974239"; the page's "maintainance" corrected to
+  "maintenance"; a blank page given as "[illegible]".
+- Real text put in the wrong place (Gemini Flash-Lite, LC): the end of Bee
+  Song Honey Farms attached to Cedar; Herland's listing cut off
+  mid-sentence; "I am interested" -> "I have interested".
+- Reasoning slip: Pagoda's residents given as 105 (15 residents + 90
+  members added together).
+- Extra rows in LC runs were all real items on the page that my rules
+  exclude (groups without land, classified ads), never invented listings.
+
+Closest thing to hallucination: unsupported claims in Gemini's reasoning.
+In #53 its notes state as fact things the listing doesn't say, and code
+from them:
+- HOWL: "open women's land collective" (the listing is only a name and
+  address).
+- Sister Homelands on Earth: "the land trust organization... holding
+  Saguaro Sisterland" (the listing never says trust).
+- Catskill Mountains: "an owner who does not live on the land yet" (the
+  listing doesn't say who owns it or where they live).
+These are plausible guesses presented as facts - easy to miss because they
+look like reasoning, not invention.
+
+Limits:
+- This checks Gemini's copying against the transcription, not the
+  transcription against the page. Haiku's ~1,200 pages were spot-checked
+  only; the spot checks found misreadings, not invented text.
+- Only #53 so far. The same check should run on every Maize run (it could
+  be built into the comparison script).

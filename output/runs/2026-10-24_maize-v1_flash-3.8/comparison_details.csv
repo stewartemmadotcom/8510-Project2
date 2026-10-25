@@ -1,0 +1,116 @@
+issue,page,community,field,hand_value,model_value,explanation
+maize-53-spring1997,56,AMAZENJI,focuses,Recovery/substance-free,Recovery/substance-free; Spirituality/ritual,model added: spirituality/ritual
+maize-53-spring1997,56,BOLD MOON,accepted_groups,Lesbian women,Lesbian women; Non-lesbian women,model added: non-lesbian women
+maize-53-spring1997,57,SPIRALAND/Spiral Women's Land Trust,focuses,,Workshops/education,model added: workshops/education
+maize-53-spring1997,58,WE'MOON,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,58,WOMEN'S PEACELAND,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,14,WESTWIND,contact_street_address,POBox 304,,
+maize-53-spring1997,16,BELLE SPRINGS,contact_street_address,POBox 90623,,
+maize-53-spring1997,16,BELLE SPRINGS,focuses,Spirituality/ritual; Workshops/education; Environmentalism/eco-friendly; Farming/self-sufficiency,Spirituality/ritual; Workshops/education,model missed: environmentalism/eco-friendly; farming/self-sufficiency
+maize-53-spring1997,17,Susan B. Anthony Memorial Unrest Home,contact_state,,OH,
+maize-53-spring1997,56,CABBAGE LANE,contact_street_address,POBox 2145,,
+maize-53-spring1997,56,CAMP SISTER SPIRIT,contact_street_address,POBox 12,,
+maize-53-spring1997,56,CATSKILL MOUNTAINS,type,,Private/Individual Land,
+maize-53-spring1997,56,CATSKILL MOUNTAINS,focuses,Farming/self-sufficiency,Farming/self-sufficiency; Older women,model added: older women
+maize-53-spring1997,56,COVENTREE,type,,Intentional Community/Cooperative,
+maize-53-spring1997,56,COVENTREE,focuses,,Workshops/education,model added: workshops/education
+maize-53-spring1997,56,DOE FARM/Wisconsin Women's Land Cooperative,type,,Intentional Community/Cooperative,
+maize-53-spring1997,56,FULL CIRCLE FARM,type,,Intentional Community/Cooperative,
+maize-53-spring1997,56,KIMBILIO,type,,Retreat/Gathering Space,
+maize-53-spring1997,56,KIRIWAI,contact_street_address,"#4, 71 Constable St.","#4,71 Constable St.",
+maize-53-spring1997,56,KIRIWAI,accepted_groups,,Lesbian women,model added: lesbian women
+maize-53-spring1997,56,KIRIWAI,focuses,Farming/self-sufficiency,Farming/self-sufficiency; Older women,model added: older women
+maize-53-spring1997,57,LUNA CIRCLE FARM,type,,Private/Individual Land,
+maize-53-spring1997,57,LUNA CIRCLE FARM,focuses,,Farming/self-sufficiency; Workshops/education,model added: farming/self-sufficiency; workshops/education
+maize-53-spring1997,57,MARSHLAND BASIN,type,,Intentional Community/Cooperative,
+maize-53-spring1997,57,MARSHLAND BASIN,land_location_as_stated,,45 acre lake/wetland conservation project,
+maize-53-spring1997,57,MOONSHADOWS,type,,Intentional Community/Cooperative,
+maize-53-spring1997,57,OUTLAND,contact_street_address,POBox 130,,
+maize-53-spring1997,57,OUTLAND,accepted_groups,,Lesbian women,model added: lesbian women
+maize-53-spring1997,57,OUTLAND,focuses,,Farming/self-sufficiency; Spirituality/ritual,model added: farming/self-sufficiency; spirituality/ritual
+maize-53-spring1997,57,OWL FARM/Oregon Women's Land Trust,contact_street_address,Box 1692,,
+maize-53-spring1997,57,OWL FARM/Oregon Women's Land Trust,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,57,PUMPKIN FARM,type,,Intentional Community/Cooperative,
+maize-53-spring1997,57,PUMPKIN FARM,accepted_groups,Lesbian women,Lesbian women; Non-lesbian women,model added: non-lesbian women
+maize-53-spring1997,57,PUMPKIN FARM,focuses,Farming/self-sufficiency,Farming/self-sufficiency; Workshops/education,model added: workshops/education
+maize-53-spring1997,57,ROOTWORKS,type,,Retreat/Gathering Space,
+maize-53-spring1997,57,SILVER CIRCLE SANCTUARY,type,,Retreat/Gathering Space,
+maize-53-spring1997,57,SILVER CIRCLE SANCTUARY,focuses,,Workshops/education,model added: workshops/education
+maize-53-spring1997,57,SKY RANCH,type,,Intentional Community/Cooperative,
+maize-53-spring1997,57,SPINSTERHAVEN,contact_street_address,POBox 718,,
+maize-53-spring1997,57,SPINSTERHAVEN,focuses,Disabled women; Older women,Disabled women; Environmentalism/eco-friendly; Older women,model added: environmentalism/eco-friendly
+maize-53-spring1997,57,SUSAN B. ANTHONY MEMORIAL UNREST HOME WOMEN'S LAND TRUST,contact_street_address,POBox 5853,,
+maize-53-spring1997,57,TOAD HOLLOW FARM,type,,Intentional Community/Cooperative,
+maize-53-spring1997,58,TURTLE ROCK,type,,Retreat/Gathering Space,
+maize-53-spring1997,58,WEST WIND,contact_street_address,POBox 304,,
+maize-53-spring1997,58,WEST WIND,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,58,WOMAN'S WORLD,contact_street_address,POBox 655,,
+maize-53-spring1997,58,WOMAN'S WORLD,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,58,WOMAN'S WORLD,focuses,Farming/self-sufficiency; Workshops/education,Workshops/education,model missed: farming/self-sufficiency
+maize-53-spring1997,58,WOMEN FIRST FOUNDATION,contact_street_address,POBox 372,,
+maize-53-spring1997,58,WOMEN FIRST FOUNDATION,land_location_as_stated,,10 acres in New York,
+maize-53-spring1997,58,WOMEN'S ART COLONY FARM,type,,Retreat/Gathering Space,
+maize-53-spring1997,58,WOMEN'S ART COLONY FARM,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,58,WOMEN'S ART COLONY FARM,focuses,Archives/cultural work; Farming/self-sufficiency,Archives/cultural work; Workshops/education,model missed: farming/self-sufficiency | model added: workshops/education
+maize-53-spring1997,58,"WOMLAND, Inc.",contact_street_address,POBox 293,,
+maize-53-spring1997,59,CABBAGE LANE LAND TRUST,contact_street_address,POBox 2145,,
+maize-53-spring1997,56,ARF/New Mexico Women's Land Trust,type,,Land Trust,
+maize-53-spring1997,56,ARF/New Mexico Women's Land Trust,contact_street_address,POBox 707,,
+maize-53-spring1997,56,BELLE SPRINGS,type,,Intentional Community/Cooperative,
+maize-53-spring1997,56,BELLE SPRINGS,contact_street_address,POBox 90623,,
+maize-53-spring1997,56,CAMP MARY,type,Retreat/Gathering Space,Intentional Community/Cooperative,
+maize-53-spring1997,56,CAMP MARY,contact_street_address,POBox 374,,
+maize-53-spring1997,56,CAMP MARY,focuses,Disabled women,Disabled women; Workshops/education,model added: workshops/education
+maize-53-spring1997,56,FULL MOON ENTERPRISES,type,,Retreat/Gathering Space,
+maize-53-spring1997,56,FULL MOON ENTERPRISES,contact_street_address,POBox 416,,
+maize-53-spring1997,56,FULL MOON ENTERPRISES,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,56,FULL MOON ENTERPRISES,focuses,Archives/cultural work; Farming/self-sufficiency,Farming/self-sufficiency,model missed: archives/cultural work
+maize-53-spring1997,56,HARMONY HILL FARM/Northern Minnesota Women's Land Trust,type,,Land Trust,
+maize-53-spring1997,56,HARMONY HILL FARM/Northern Minnesota Women's Land Trust,contact_street_address,POBox 124,,
+maize-53-spring1997,56,LAUGHING R.O.C.S.,type,,Intentional Community/Cooperative,
+maize-53-spring1997,56,LAUGHING R.O.C.S.,contact_street_address,POBox 2125,,
+maize-53-spring1997,57,LESEPS,type,,Intentional Community/Cooperative,
+maize-53-spring1997,57,LESEPS,land_city,,Oberwart,
+maize-53-spring1997,57,LESEPS,focuses,,Lesbian separatism,model added: lesbian separatism
+maize-53-spring1997,57,RAVEN'S HOLLOW,type,,Retreat/Gathering Space,
+maize-53-spring1997,57,RAVEN'S HOLLOW,contact_street_address,POBox 41,,
+maize-53-spring1997,57,SISTER HOMELANDS ON EARTH (SHE),type,,Land Trust,
+maize-53-spring1997,57,SISTER HOMELANDS ON EARTH (SHE),contact_street_address,Box 5285,,
+maize-53-spring1997,57,SONORAN DESERT,type,,Retreat/Gathering Space,
+maize-53-spring1997,57,SONORAN DESERT,contact_street_address,POBox 544,,
+maize-53-spring1997,57,SONORAN DESERT,land_location_as_stated,,Sonoran Desert,
+maize-53-spring1997,57,SPINSTERVALE,type,,Retreat/Gathering Space,
+maize-53-spring1997,57,SPINSTERVALE,contact_street_address,Box 429,,
+maize-53-spring1997,58,WISEHEART FARMS,type,,Intentional Community/Cooperative,
+maize-53-spring1997,58,WISEHEART FARMS,contact_street_address,Box 237,,
+maize-53-spring1997,58,WOMEN'S HOLIDAY RETREAT,type,,Retreat/Gathering Space,
+maize-53-spring1997,58,WOMEN'S HOLIDAY RETREAT,contact_street_address,POBox 330,,
+maize-53-spring1997,59,Alana Land,type,Land Trust,Land Fund/Seeking Land,
+maize-53-spring1997,59,Alana Land,contact_street_address,POBox 381447,,
+maize-53-spring1997,59,Alana Land,accepted_groups,,Lesbian women,model added: lesbian women
+maize-53-spring1997,59,Alana Land,focuses,,Disabled women,model added: disabled women
+maize-53-spring1997,59,OWL FARM,contact_name,Oregon Women's Land Trust,,
+maize-53-spring1997,59,OWL FARM,contact_street_address,POBox 1692,,
+maize-53-spring1997,56,HOWL/Huntington Open Women's Land,type,,Intentional Community/Cooperative,
+maize-53-spring1997,56,HOWL/Huntington Open Women's Land,contact_street_address,POBox 53,,
+maize-53-spring1997,56,HOWL/Huntington Open Women's Land,land_city,,Huntington,
+maize-53-spring1997,56,HOWL/Huntington Open Women's Land,accepted_groups,,Lesbian women; Non-lesbian women,model added: lesbian women; non-lesbian women
+maize-53-spring1997,56,INTOUCH,type,,Retreat/Gathering Space,
+maize-53-spring1997,56,INTOUCH,contact_street_address,"Rt 2, Box 1096","Rt 2,Box 1096",
+maize-53-spring1997,56,INTOUCH,land_street_address,"Rt 2, Box 1096","Rt 2,Box 1096",
+maize-53-spring1997,57,RATHGASKIG (aka Raa),type,,Retreat/Gathering Space,
+maize-53-spring1997,57,RATHGASKIG (aka Raa),contact_state,Co Cork,,
+maize-53-spring1997,57,RATHGASKIG (aka Raa),land_state,Co Cork,,
+maize-53-spring1997,57,RATHGASKIG (aka Raa),land_location_as_stated,,"Mountain, pinetrees",
+maize-53-spring1997,58,WOMANSHARE,type,,Intentional Community/Cooperative,
+maize-53-spring1997,58,WOMANSHARE,contact_street_address,POBox 681,,
+maize-53-spring1997,58,WOMANSHARE,land_city,,Grants Pass,
+maize-53-spring1997,57,OWL HOLLOW,contact_street_address,c/o 25650 Vanderburg Lane,25650 Vanderburg Lane,
+maize-53-spring1997,57,OWL HOLLOW,land_street_address,,25650 Vanderburg Lane,
+maize-53-spring1997,57,OWL HOLLOW,land_city,,Arlee,
+maize-53-spring1997,57,OWL HOLLOW,land_zip,,59821,
+maize-53-spring1997,56,GARVESK,type,,Retreat/Gathering Space,
+maize-53-spring1997,56,GARVESK,contact_street_address,An Damhshrath (Dowra),An Damhshrath(Dowra),
+maize-53-spring1997,56,GARVESK,contact_state,Co Leitrum,,
+maize-53-spring1997,56,GARVESK,land_street_address,An Damhshrath (Dowra),An Damhshrath(Dowra),
+maize-53-spring1997,56,GARVESK,land_state,Co Leitrum,,

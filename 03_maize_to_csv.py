@@ -71,7 +71,7 @@ CLAUDE_EFFORT = "high"
 # Use a new name whenever you change MODEL or the codebooks, so earlier
 # results are kept. Reuse the same name to retry issues that failed or to
 # add more issues to a run.
-RUN_NAME = "2026-10-23_maize-v1_flash-3.8"
+RUN_NAME = "2026-10-24_maize-v1_flash-3.8"
 
 # The page transcriptions made in the Maize-OCR project, one folder per issue
 MAIZE_TEXT_FOLDER = (Path.home() / "Desktop" / "Maize-OCR" / "output" / "runs"

@@ -1,0 +1,39 @@
+Comparison of run '2026-10-24_maize-v1_flash-3.8' with the Project 1 hand-checked rows
+
+Hand-checked rows in scope:   65
+Model rows on checked pages:  65  (0 model rows on other pages were left out)
+Matched pairs (scored):       65
+Missed (hand-checked only):   0
+Extra (model only):           0
+
+Field accuracy on matched pairs:
+  row_kind                    100.0%  (65/65)
+  type                         47.7%  (31/65)
+  contact_name                 98.5%  (64/65)
+  contact_street_address       49.2%  (32/65)
+  contact_city                100.0%  (65/65)
+  contact_state                95.4%  (62/65)
+  contact_zip                 100.0%  (65/65)
+  land_street_address          95.4%  (62/65)
+  land_city                    93.8%  (61/65)
+  land_state                   96.9%  (63/65)
+  land_zip                     98.5%  (64/65)
+  land_location_as_stated      93.8%  (61/65)
+  page                        100.0%  (65/65)
+  acreage                     100.0%  (65/65)
+  num_residents               100.0%  (65/65)
+  accepted_groups              80.0%  (52/65)
+  focuses                      73.8%  (48/65)
+  raw_text                    100.0%  (65/65)
+  raw_text mean similarity:  1.000  (a match is 0.98 or above)
+
+Missed rows (only in hand-checked data):
+  none
+
+Extra rows (only in model output):
+  none
+
+Out of scope, not scored (classified ads):
+
+Pages that failed in this run (from settings.json):
+  none

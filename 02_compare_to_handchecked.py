@@ -30,7 +30,7 @@ from pathlib import Path
 
 # Which run to compare: the folder name in output/runs/
 # (keep this the same as RUN_NAME in 01_directory_to_csv.py)
-RUN_NAME = "2026-10-23_codebook-v4_opus-5.5"
+RUN_NAME = "2026-10-24_maize-v1_flash-3.8"
 
 SCRIPT_DIR = Path(__file__).parent
 RUN_FOLDER = SCRIPT_DIR / "output" / "runs" / RUN_NAME
@@ -43,7 +43,7 @@ HAND_FOLDER = Path.home() / "Desktop" / "8510-Project1" / "source_data"
 #   SCRIPT_DIR / "reference" / "maize_handcoded" / "maize_handcoded.csv"
 # With a CSV, every model row from a hand-coded issue is scored (Project 1
 # was checked page by page, so there only the checked pages are).
-HAND_CSV = None
+HAND_CSV = SCRIPT_DIR / "reference" / "maize_handcoded" / "maize_handcoded.csv"
 
 # Two rows are paired only if their names (or the start of their raw_text)
 # are at least this similar, from 0 (nothing alike) to 1 (identical)
@@ -343,6 +343,10 @@ def compare(hand_rows, model_rows):
     # Step 2: scope. Project 1: only the (issue, page) pairs that were
     # hand-checked. A hand-coded CSV covers whole issues.
     if HAND_CSV:
+        # Only issues both sides cover: a test run of one issue isn't
+        # counted as missing every row of the other hand-coded issue
+        run_issues = {r["issue"] for r in model_rows}
+        hand_rows = [r for r in hand_rows if r["issue"] in run_issues]
         checked_issues = {r["issue"] for r in hand_rows}
         model_in_scope = [r for r in model_rows if r["issue"] in checked_issues]
     else:

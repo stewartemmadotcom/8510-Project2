@@ -6,8 +6,9 @@ after `codebook.md`. Where the two disagree, this file wins for Maize.
 rules for raw_text, addresses, type, acreage, num_residents and focuses apply
 to Maize as written unless this file says otherwise.
 
-DRAFT: the sections marked TO DECIDE need my decisions (made while
-hand-coding issues 25 and 53) before any paid run.
+Rules marked "Decided" were settled while hand-coding issues 25 and 53. Two
+questions are still open (marked OPEN QUESTION): code those cases as best
+you can and flag them in notes, so the rules can be decided from real cases.
 
 ## The source
 Maize: A Lesbian Country Magazine (1990-1998), quarterly. Each request gives
@@ -68,9 +69,12 @@ land is not a row (e.g. Wildflower Farm, "A Partial Journal", #53): it tells
 her own story rather than presenting the land, and doesn't say clearly who
 lives there or who is welcome. (Decided 2026-10-23.)
 
-TO DECIDE - splitting: a report that covers several lands (e.g. a visit to
-three places): one row per land, each with the full shared text as raw_text
-and notes saying it was reported jointly (as for LC joint listings)?
+OPEN QUESTION - splitting: no case yet of one report, listing or
+announcement that covers several separate lands (e.g. a visit to three
+places). If you find one, give each land its own row with the full shared
+text as raw_text (as for LC joint listings), and start each row's notes with
+"OPEN QUESTION (joint report):" followed by the other lands it was reported
+with.
 
 ## page
 The printed page number where the item begins, taken from the
@@ -129,8 +133,10 @@ Land Trust", "SPIRALAND/Spiral Women's Land Trust", "... WOMEN'S LAND
 TRUST") is Land Trust, even if the rest of the listing says nothing about
 type. (Decided 2026-10-24.) This is different from a credit line naming a
 land trust's newsletter, which doesn't count.
-TO DECIDE while hand-coding: anything in Maize the rules don't fit (e.g. land
-shared by shareholders or a land "co-op").
+OPEN QUESTION - types that don't fit: no case yet of land the five types
+don't fit well (e.g. land owned by shareholders, a land "co-op", a mix of
+private and shared plots). If you find one, choose the closest type, and
+start the notes with "OPEN QUESTION (type):" followed by what doesn't fit.
 
 ## Credit lines, illustration captions, and photo captions
 Lines saying where a report came from (e.g. "Residents Reports Newsletter of
