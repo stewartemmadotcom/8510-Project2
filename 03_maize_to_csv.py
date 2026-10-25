@@ -25,11 +25,11 @@ from extraction_common import (
 
 FIELDS = [
 ("row_kind",
- "'listing' for a Country Connections entry; 'report' for an On the Land entry, a Land Lesy notice, or an article by or about one land community presenting it; 'not_a_listing' for a notice that a community has ended (see Maize codebook: What counts as a row).",
- CHOICE(["listing", "report", "not_a_listing"])),
+ "'listing' for a Country Connections entry; 'report' for an On the Land entry; 'announcement' for a notice in Announcements by or about a specific land community; 'not_a_listing' for an entry in any of these sections saying a community has ended (see Maize codebook: What counts as a row).",
+ CHOICE(["listing", "report", "announcement", "not_a_listing"])),
 *COMMON_FIELDS,
 ("section",
- "The Maize section the item is in, as printed: Country Connections, On the Land, Land Lesy, or the article's own heading (see Maize codebook: section)."),
+ "'Country Connections', 'On the Land', or 'Announcements' (see Maize codebook: section)."),
 ("page",
  "The printed page number where the item begins, from the [Page number: N] at the end of that page; a number only. Blank if that page has no printed number."),
 ("image_page",
@@ -42,13 +42,16 @@ CODEBOOK_MAIZE = (SCRIPT_DIR / "codebook_maize.md").read_text(encoding="utf-8")
 
 # {source} is filled in for each issue, e.g. "Maize, Spring 1997 (issue 53)".
 # The issue's text follows this prompt in the same request.
-PROMPT = """You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. Below the codebook is the full text of one issue of {source}, a magazine by and for lesbians living in the country, transcribed page by page. Extract every Country Connections listing and every land community report in the issue as one row, in the order they appear, following the codebook and the Maize addendum below exactly.
+PROMPT = """You are a historian creating structured data from historical sources from the 1970s, 80s, and 90s. Below the codebook is the full text of one issue of {source}, a magazine by and for lesbians living in the country, transcribed page by page. Extract every entry in the issue's Country Connections and On the Land sections, and every announcement in its Announcements section that is by or about a specific land community, as one row, in the order they appear, following the codebook and the Maize addendum below exactly.
 
 Rules:
-- Extract EVERY listing and report. Never skip one because a field is unclear or
-  missing: leave that field empty instead.
-- Do not extract anything else as a row: passing mentions, poems, reviews,
-  how-to articles, events, the contents page, subscription information.
+- Extract EVERY Country Connections and On the Land entry and every land
+  announcement. Never skip one because a field is unclear or missing: leave
+  that field empty instead.
+- Do not extract anything outside those three sections, even when it is
+  about a land community: articles, gathering reports, Land Lesy, letters,
+  poems, reviews, how-to pieces. In Announcements, skip notices that are not
+  about a specific land (gatherings, publications, businesses, events).
 - raw_text is word for word as transcribed. Do not correct spelling, expand
   abbreviations, or modernize anything there.
 
@@ -200,9 +203,10 @@ def main():
             all_rows.append(entry)
 
         kinds = {kind: sum(1 for e in data["entries"] if e["row_kind"] == kind)
-                 for kind in ("listing", "report", "not_a_listing")}
+                 for kind in ("listing", "report", "announcement", "not_a_listing")}
         print(f"  {len(data['entries'])} rows: {kinds['listing']} listings, "
-              f"{kinds['report']} reports, {kinds['not_a_listing']} not_a_listing")
+              f"{kinds['report']} reports, {kinds['announcement']} announcements, "
+              f"{kinds['not_a_listing']} not_a_listing")
         check_entries(data["entries"])
 
         if tokens is None:

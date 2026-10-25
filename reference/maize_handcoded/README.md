@@ -19,8 +19,8 @@ images: the transcription can misread them (e.g. "Pelican Leo" for Pelican Lee).
 |---|---|
 | issue | `maize-25-summer1990` or `maize-53-spring1997` |
 | page | printed page number where the item begins (a number only) |
-| row_kind | `listing`, `report`, or `not_a_listing` |
-| section | Country Connections, On the Land, Land Lesy, or the article's heading |
+| row_kind | `listing` (Country Connections), `report` (On the Land), `announcement` (a land announcement), or `not_a_listing` |
+| section | Country Connections, On the Land, or Announcements |
 | community_name ... land_location_as_stated | as in `codebook.md` |
 | acreage, num_residents | a number, or blank |
 | type | one of the type names below, or blank |
